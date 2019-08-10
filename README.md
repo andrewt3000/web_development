@@ -16,3 +16,8 @@ Route all requests through an authentication layer.
 const app = express()
 app.all("/api/*", jwtCheck)
 ```
+
+Metal view used library 
+```
+var jwt = require('jsonwebtoken');
+```
