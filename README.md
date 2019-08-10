@@ -1,8 +1,12 @@
 # Web Development
 
-The stack I prefer for web apps is:
-Server: Nodejs, express  
+One of the first consideration for building a web app is what stack to use. Is the app for the desktop and/or mobile?   
+
+The stack I prefer for desktop web apps is:  
+Server api: Nodejs, express  
 Client: Reactjs  
+
+You will need to choose a UI library also. 
 
 ## Authentication and Authorization
 Authentication is establish the identity of a user.   
