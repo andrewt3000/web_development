@@ -5,10 +5,9 @@ Server: Nodejs, express
 Client: Reactjs  
 
 ## Authentication
-I prefer using JWT for authentication, although I also consider using authentication as a service providers such as [auth0](https://auth0.com/) 
+Consider using identity as a service providers such as [auth0](https://auth0.com/) because you don't have to store and protect sensitive information including user's passwords, and your jwt secret key. It's also simple to implement 3rd party logins such as Google or Faceboook.     
 
 https://medium.com/swlh/a-practical-guide-for-jwt-authentication-using-nodejs-and-express-d48369e7e6d4#0e3b
-
 
 
 ### JWT 
