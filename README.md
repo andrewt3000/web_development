@@ -8,7 +8,7 @@ Client: Reactjs
 Consider using authentication as a service providers such as [auth0](https://auth0.com/) 
 
 ### JWT 
-Consider using [jwt](https://jwt.io/)  
+Consider using [jwt](https://jwt.io/) It provides stateless authentication.  
 
 Server side authentication. 
 Route all requests through an authentication layer.  
