@@ -4,8 +4,11 @@ The stack I prefer for web apps is:
 Server: Nodejs, express  
 Client: Reactjs  
 
-## Authentication
-Consider using identity as a service providers such as [auth0](https://auth0.com/) because you don't have to store and protect sensitive information including user's passwords, and your jwt secret key. It's also simple to implement 3rd party logins such as Google or Faceboook.     
+## Authentication and Authorization
+Authentication is establish the identity of a user.   
+Authorization is establishing the user privileges and access.  
+
+Consider using identity as a service providers such as [auth0](https://auth0.com/), okta, and [Amazon cognito](https://aws.amazon.com/cognito/) because you don't have to store and protect sensitive information including user's passwords, and your jwt secret key. It's also simple to implement 3rd party logins such as Google or Faceboook.     
 
 https://medium.com/swlh/a-practical-guide-for-jwt-authentication-using-nodejs-and-express-d48369e7e6d4#0e3b
 
