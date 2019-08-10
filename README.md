@@ -7,6 +7,10 @@ Client: Reactjs
 ## Authentication
 I prefer using JWT for authentication, although I also consider using authentication as a service providers such as [auth0](https://auth0.com/) 
 
+https://medium.com/swlh/a-practical-guide-for-jwt-authentication-using-nodejs-and-express-d48369e7e6d4#0e3b
+
+
+
 ### JWT 
 I prefer using [jwt](https://jwt.io/) because it doesn't require tracking state on the server. JWT has 3 parts: header, payload, and signature. Payload contains stateful fields such as user name, user status, etc. The token is sent to the server in authorization header as Bearer {token}.    
 
