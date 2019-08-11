@@ -48,6 +48,7 @@ app.all("/api/*", jwtCheck)
 
 Metal view used library 
 
+Authenticate through application level [middleware](http://expressjs.com/en/guide/using-middleware.html). If authenticated, add into to request and call next middleware. Otherwise, respond with 401.  
 
 ```
 var jwt = require('jsonwebtoken');
