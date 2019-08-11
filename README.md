@@ -6,7 +6,8 @@ The stack I prefer for desktop web apps is:
 Server api: Nodejs, express  
 Client: Reactjs  
 
-You will need to choose a UI library also. 
+React UI libraries: [styled components](https://www.styled-components.com/)  
+
 
 ## Authentication and Authorization
 Authentication is establish the identity of a user.   
