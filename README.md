@@ -4,10 +4,15 @@ One of the first consideration for building a web app is what stack to use. Is t
 
 The stack I prefer for desktop web apps is:  
 Server api: Nodejs, express  
-Client: Reactjs  
+Client: [Reactjs](https://reactjs.org/docs/getting-started.html)    
 
-React UI libraries: [styled components](https://www.styled-components.com/)  
+React UI libraries:  
+[styled components](https://www.styled-components.com/)   
+[material UI](https://material-ui.com/)  
 
+### Node basics
+request object: req.params, req.body  
+[Middleware](http://expressjs.com/en/guide/using-middleware.html)
 
 ## Authentication and Authorization
 Authentication is establish the identity of a user.   
