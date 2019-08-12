@@ -1,14 +1,18 @@
 # Web Development
+Resources for building web applications.  
 
-One of the first consideration for building a web app is what stack to use. Is the app for the desktop and/or mobile?   
-
-The stack I prefer for desktop web apps is:  
-Server api: Nodejs, express  
-Client: [Reactjs](https://reactjs.org/docs/getting-started.html)    
+### React  
+[Reactjs](https://reactjs.org/docs/getting-started.html)    
+[create react app](https://github.com/facebook/create-react-app)  
 
 React UI libraries:  
 [styled components](https://www.styled-components.com/)   
+[antd](https://ant.design/docs/react/introduce)  
+[react bootstrap](https://react-bootstrap.github.io/)  
 [material UI](https://material-ui.com/)  
+
+[react router](https://reacttraining.com/react-router/web/guides/philosophy)  
+
 
 ### Node basics
 request object: req.params, req.body  
