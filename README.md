@@ -28,7 +28,9 @@ https://medium.com/swlh/a-practical-guide-for-jwt-authentication-using-nodejs-an
 
 
 ### JWT 
-I prefer using [jwt](https://jwt.io/) because it doesn't require tracking state on the server. JWT has 3 parts: header, payload, and signature. Payload contains stateful fields such as user name, user status, etc. The token is sent to the server in authorization header as Bearer {token}.    
+I prefer using [jwt](https://jwt.io/) because it doesn't require tracking state on the server. JWT has 3 parts: header, payload, and signature. Payload contains stateful fields such as user name, user privileges, company_id etc. 
+
+If the user login is successful it returns a jwt token to the client. I typically store the token in localStorage and have a function to add the jtw token to all ajax requests in authorization header as Bearer {token}. The node api has middleware that filters out routes that are not authenticated. 
 
 ### Implementations
 Server side authentication. 
