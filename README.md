@@ -18,6 +18,7 @@ React UI libraries:
 request object: req.params, req.body  
 [Middleware](http://expressjs.com/en/guide/using-middleware.html)
 
+
 ## Authentication and Authorization
 Authentication is establish the identity of a user.   
 Authorization is establishing the user privileges and access.  
@@ -107,3 +108,8 @@ app.use(function(req, res, next) {
 });
 
 ```
+
+### Interesting technologies
+[serverless](https://serverless.com/)  
+[graphql](https://graphql.org/)  
+
