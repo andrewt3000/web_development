@@ -1,5 +1,7 @@
 # Web Development
-Resources for building web applications. I chose to use rest apis and javascript front ends so that you can reuse the rest api for 3rd party integrations or mobile apps.  
+Resources for building web applications.  
+
+I prefer to use [rest apis](https://en.wikipedia.org/wiki/Representational_state_transfer) and javascript front ends so that you can reuse the rest api for 3rd party integrations or mobile apps.  
 I prefer react over vue and angular due to simple nature of creating a component.  
 
 ### React  
