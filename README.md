@@ -1,5 +1,6 @@
 # Web Development
-Resources for building web applications.  
+Resources for building web applications. I prefer to use rest apis and javascript front ends so that you can reuse the rest api for 3rd party integrations or mobile apps.  
+I prefer react over vue and angular due to simple nature of creating a component.  
 
 ### React  
 [Reactjs](https://reactjs.org/docs/getting-started.html)    
@@ -14,9 +15,16 @@ React UI libraries:
 [react router](https://reacttraining.com/react-router/web/guides/philosophy)  
 
 
-### Node basics
+### Node  
+I prefer node because I am a full stack developer and prefer to work in the same language.  
+
+I prefer express  
 request object: req.params, req.body  
 [Middleware](http://expressjs.com/en/guide/using-middleware.html)
+
+I am interested in  
+[serverless](https://serverless.com/)   
+[graphql](https://graphql.org/)   
 
 
 ## Authentication and Authorization
@@ -109,7 +117,4 @@ app.use(function(req, res, next) {
 
 ```
 
-### Interesting technologies
-[serverless](https://serverless.com/)  
-[graphql](https://graphql.org/)  
 
