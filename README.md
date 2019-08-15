@@ -1,5 +1,5 @@
 # Web Development
-Resources for building web applications. I prefer to use rest apis and javascript front ends so that you can reuse the rest api for 3rd party integrations or mobile apps.  
+Resources for building web applications. I chose to use rest apis and javascript front ends so that you can reuse the rest api for 3rd party integrations or mobile apps.  
 I prefer react over vue and angular due to simple nature of creating a component.  
 
 ### React  
@@ -16,7 +16,7 @@ React UI libraries:
 
 
 ### Node  
-I prefer node because I am a full stack developer and prefer to work in the same language.  
+I chose node because I am a full stack developer and prefer to work in javascript.  
 
 I prefer express  
 request object: req.params, req.body  
