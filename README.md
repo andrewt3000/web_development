@@ -21,7 +21,8 @@ I chose node because I am a full stack developer and prefer to work in javascrip
 I prefer Express for routing.  
 Guide: [Routing](https://expressjs.com/en/guide/routing.html) [Using Middleware](http://expressjs.com/en/guide/using-middleware.html)  
 [4.X API](https://expressjs.com/en/api.html)
-request object: req.params, req.body   
+Node contains objects: express, request, response and router.
+commonly used object properties: app.use(), router.route(), req.params, req.body    
 
 I am interested in  
 [serverless](https://serverless.com/)   
