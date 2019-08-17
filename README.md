@@ -5,7 +5,7 @@ I chose to use [rest apis](https://en.wikipedia.org/wiki/Representational_state_
 I prefer react over vue and angular due to simple nature of creating a component.  
 
 ### Source Control
-[git reference](https://git-scm.com/docs) for source control.  
+[git reference](https://git-scm.com/docs)  
 [git book](https://git-scm.com/book/en/v2)  
 
 
