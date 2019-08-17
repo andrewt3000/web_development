@@ -1,7 +1,7 @@
 # Web Development
-Resources for building web applications.  
+This is the documentation for a web project I am working on called image trainer.  
 
-I prefer to use [rest apis](https://en.wikipedia.org/wiki/Representational_state_transfer) and javascript front ends so that you can reuse the rest api for 3rd party integrations or mobile apps.  
+I chose to use [rest apis](https://en.wikipedia.org/wiki/Representational_state_transfer) and javascript front ends so that you can reuse the rest api for 3rd party integrations or mobile apps.  
 I prefer react over vue and angular due to simple nature of creating a component.  
 
 ### React  
@@ -32,12 +32,16 @@ I am interested in
 [serverless](https://serverless.com/)   
 [graphql](https://graphql.org/)   
 
+### Mongo DB
+I am using mongo db due to large number of images stored.  
+[Mongo node driver](https://mongodb.github.io/node-mongodb-native/contents.html)  
+I am considering using [mongoose](https://mongoosejs.com/).  
 
 ## Authentication and Authorization
 Authentication is establish the identity of a user.   
 Authorization is establishing the user privileges and access.  
 
-Consider using identity as a service providers such as [auth0](https://auth0.com/), okta, and [Amazon cognito](https://aws.amazon.com/cognito/) because you don't have to store and protect sensitive information including user's passwords, and your jwt secret key. It's also simple to implement 3rd party logins such as Google or Faceboook.     
+I considered using identity as a service providers such as [auth0](https://auth0.com/), okta, and [Amazon cognito](https://aws.amazon.com/cognito/) because you don't have to store and protect sensitive information including user's passwords, and your jwt secret key. They also make it easier to implement 3rd party logins such as Google or Faceboook.     
 
 https://medium.com/swlh/a-practical-guide-for-jwt-authentication-using-nodejs-and-express-d48369e7e6d4#0e3b
 
