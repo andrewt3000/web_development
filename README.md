@@ -4,6 +4,11 @@ This is the documentation for a web project I am working on called image trainer
 I chose to use [rest apis](https://en.wikipedia.org/wiki/Representational_state_transfer) and javascript front ends so that you can reuse the rest api for 3rd party integrations or mobile apps.  
 I prefer react over vue and angular due to simple nature of creating a component.  
 
+### Source Control
+[git reference](https://git-scm.com/docs) for source control.  
+[git book](https://git-scm.com/book/en/v2)  
+
+
 ### React  
 [Reactjs](https://reactjs.org/docs/getting-started.html)    
 [create react app](https://github.com/facebook/create-react-app)  
