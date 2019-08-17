@@ -1,8 +1,6 @@
 # Web Development
-This is the documentation for a web project I am working on called image trainer.  
-
-I chose to use [rest apis](https://en.wikipedia.org/wiki/Representational_state_transfer) and javascript front ends so that you can reuse the rest api for 3rd party integrations or mobile apps.  
-I prefer react over vue and angular due to simple nature of creating a component.  
+[rest apis](https://en.wikipedia.org/wiki/Representational_state_transfer) 
+[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
 
 ### Source Control
 [git reference](https://git-scm.com/docs)  
