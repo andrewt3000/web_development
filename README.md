@@ -12,13 +12,15 @@
 [create react app](https://github.com/facebook/create-react-app)  
 
 React UI libraries:  
-[styled components](https://www.styled-components.com/)   
-[antd](https://ant.design/docs/react/introduce)  
+[styled components](https://www.styled-components.com/) - popular react library for styling custom components.   
+[antd](https://ant.design/docs/react/introduce) - desktop oriented react ui components. used by alibaba.   
+
+Alternatives:  
 [react bootstrap](https://react-bootstrap.github.io/)  
 [material UI](https://material-ui.com/)  
 
-
-[mobx](https://mobx.js.org/intro/overview.html)  
+Other react libraries 
+[mobx](https://mobx.js.org/intro/overview.html) - state managment. Alternative to [redux](https://redux.js.org/)    
 [react router](https://reacttraining.com/react-router/web/guides/philosophy)  
 
 
