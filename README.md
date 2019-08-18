@@ -41,6 +41,7 @@ I am interested in
 I am using mongo db due to large number of images stored.  
 [Mongo node driver](https://mongodb.github.io/node-mongodb-native/contents.html)  
 I am considering using [mongoose](https://mongoosejs.com/).  
+[Mongo Compass](https://www.mongodb.com/products/compass) - gui for mongo
 
 ## Authentication and Authorization
 Authentication is establish the identity of a user.   
