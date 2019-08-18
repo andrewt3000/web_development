@@ -1,11 +1,13 @@
 # Web Development
-[rest apis](https://en.wikipedia.org/wiki/Representational_state_transfer)   
-[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
+These are notes on building the image trainer web app.  
+The app uses [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  front end and  [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.   
+
 
 ### Source Control
+Code is tracked using git.  
 [git reference](https://git-scm.com/docs)  
 [git book](https://git-scm.com/book/en/v2)  
-
+I am planning to do continuous integration. Pushing to master will publish.  
 
 ### React  
 [Reactjs](https://reactjs.org/docs/getting-started.html)    
