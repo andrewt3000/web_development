@@ -19,7 +19,7 @@ Alternatives:
 [react bootstrap](https://react-bootstrap.github.io/)  
 [material UI](https://material-ui.com/)  
 
-Other react libraries 
+Other react libraries   
 [mobx](https://mobx.js.org/intro/overview.html) - state managment. Alternative to [redux](https://redux.js.org/)    
 [react router](https://reacttraining.com/react-router/web/guides/philosophy)  
 
