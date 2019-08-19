@@ -13,7 +13,7 @@ I am planning to do continuous integration. Pushing to master will publish.
 [Reactjs](https://reactjs.org/docs/getting-started.html)    
 [create react app](https://github.com/facebook/create-react-app)  
 
-React UI libraries:  
+### React componet libraries:  
 [styled components](https://www.styled-components.com/) - popular react library for styling custom components.   
 [antd](https://ant.design/docs/react/introduce) - desktop oriented react ui components. used by alibaba.   
 
