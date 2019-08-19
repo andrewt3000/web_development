@@ -24,6 +24,12 @@ Alternatives:
 ### State Management   
 [mobx](https://mobx.js.org/intro/overview.html) - state managment. Alternative to [redux](https://redux.js.org/)    
 
+```
+import { inject, observer } from "mobx-react"
+props.appState.cameraID
+export default inject("appState")(observer(CameraSelect))
+```
+
 ### React Router
 [react router](https://reacttraining.com/react-router/web/guides/philosophy)  App uses BrowserRouter which uses history api.
 
