@@ -27,8 +27,9 @@ Alternatives:
 ### React Router
 [react router](https://reacttraining.com/react-router/web/guides/philosophy)  App uses BrowserRouter which uses history api.
 
-Common methods
 ```
+<Route path="/image" exact component={Image} />
+<Link to="/camera">Cameras</Link>
 history.push('/myroute')
 ````
 
