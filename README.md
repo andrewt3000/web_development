@@ -24,7 +24,7 @@ Alternatives:
 ### State Management   
 [mobx](https://mobx.js.org/intro/overview.html) - state managment. Alternative to [redux](https://redux.js.org/)    
 
-```
+```javascript
 import { inject, observer } from "mobx-react"
 props.appState.cameraID
 export default inject("appState")(observer(CameraSelect))
@@ -33,7 +33,7 @@ export default inject("appState")(observer(CameraSelect))
 ### React Router
 [react router](https://reacttraining.com/react-router/web/guides/philosophy)  App uses BrowserRouter which uses history api.
 
-```
+```javascript
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 <Route path="/image" exact component={Image} />
 <Link to="/camera">Cameras</Link>
@@ -79,7 +79,7 @@ Server side authentication.
 Route all requests through an authentication layer.  
 
 Jemison ERP code uses [auth0 express-jwt](https://github.com/auth0/express-jwt)   
-```
+```javascript
 const jwt = require("express-jwt")
 
 const app = express()
@@ -103,7 +103,7 @@ Metal view used library
 
 Authenticate through application level [middleware](http://expressjs.com/en/guide/using-middleware.html). If authenticated, add into to request and call next middleware. Otherwise, respond with 401.  
 
-```
+```javascript
 var jwt = require('jsonwebtoken');
 
 
