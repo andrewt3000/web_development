@@ -63,6 +63,19 @@ Using a browser error logging service such as [sentry](https://sentry.io/) helps
 Jest (bundled with create react app) is test runner, assertion library, and mocking library.  
 Enzyme is used for assert, manipulate, and traverse your React Components’ output.  
 
+## Authentication and Authorization
+Authentication is establish the identity of a user.   
+Authorization is establishing the user privileges and access.  
+
+I prefer using [jwt](https://jwt.io/) over server side state management because it consumes resources on the servers and it is easier to load balance accross multiple servers. 
+
+JWT has 3 parts: header, payload, and signature. Payload contains stateful fields such as user name, user privileges, company_id etc. 
+
+If the user login is successful it returns a jwt token to the client. I store the token in localStorage and have a function to add the jtw token to all ajax requests in authorization header as Bearer {token}. The node api has [middleware](http://expressjs.com/en/guide/using-middleware.html) that filter routes. If authenticated, add info to request and call next middleware. Otherwise, api responds with 401.   
+
+I considered using identity as a service providers such as [auth0](https://auth0.com/), and [Amazon cognito](https://aws.amazon.com/cognito/) because you don't have to store and protect sensitive information including user's passwords, and your jwt secret key. They also make it easier to implement 3rd party logins such as Google or Faceboook.     
+
+
 ### Node  
 I chose node because I am a full stack developer and prefer to work in javascript.  
 
@@ -72,22 +85,14 @@ Guide: [Routing](https://expressjs.com/en/guide/routing.html) [Using Middleware]
 Node contains objects: express, request, response and router.  
 Commonly used: app.use(), router.route(), req.params, req.body    
 
-I am interested in  
+Alternatives:  
+[graphql](https://graphql.org/) - I chose not to use graphql because we have more full stack developers rather than a front end team and a backend team.     
+
+Using serverless is an archticture that I am still considering and may move towards replacing express.  
 [serverless](https://serverless.com/)   
-[graphql](https://graphql.org/)   
 
 ### Mongo DB
-I am using mongo db due to large number of images stored.  
+I am using mongo db due to large number of records stored.  
 [Mongo node driver](https://mongodb.github.io/node-mongodb-native/contents.html)  
-I am considering using [mongoose](https://mongoosejs.com/).  
+I am considering using [mongoose](https://mongoosejs.com/) for an ORM.  
 [Mongo Compass](https://www.mongodb.com/products/compass) - gui for mongo
-
-## Authentication and Authorization
-Authentication is establish the identity of a user.   
-Authorization is establishing the user privileges and access.  
-
-I prefer using [jwt](https://jwt.io/) because it doesn't require tracking state on the server. JWT has 3 parts: header, payload, and signature. Payload contains stateful fields such as user name, user privileges, company_id etc. 
-
-If the user login is successful it returns a jwt token to the client. I store the token in localStorage and have a function to add the jtw token to all ajax requests in authorization header as Bearer {token}. The node api has [middleware](http://expressjs.com/en/guide/using-middleware.html) that filter routes. If authenticated, add info to request and call next middleware. Otherwise, api responds with 401.   
-
-I considered using identity as a service providers such as [auth0](https://auth0.com/), and [Amazon cognito](https://aws.amazon.com/cognito/) because you don't have to store and protect sensitive information including user's passwords, and your jwt secret key. They also make it easier to implement 3rd party logins such as Google or Faceboook.     
