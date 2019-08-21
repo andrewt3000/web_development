@@ -41,10 +41,15 @@ export default inject("appState")(observer(CameraSelect))
 ### React Router
 [react router](https://reacttraining.com/react-router/web/guides/philosophy)  App uses BrowserRouter which uses history api.
 
+There is a page that routes urls to react components. Use the Link object to link to urls.   
 ```javascript
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 <Route path="/image" exact component={Image} />
 <Link to="/camera">Cameras</Link>
+```
+
+Use the history object to redirect to a route. This comes from createBrowserHistory.  
+```javascript
 history.push('/myroute')
 ````
 
