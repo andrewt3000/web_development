@@ -47,6 +47,9 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 history.push('/myroute')
 ````
 
+### Socket io
+[socket.io](https://socket.io) can be used for real time notifications to browser.  
+
 ### Browser error logging
 Using a browser error logging service such as [sentry](https://sentry.io/) helps alert to production problems.  
 
