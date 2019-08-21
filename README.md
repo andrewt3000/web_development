@@ -54,6 +54,10 @@ history.push('/myroute')
 ### Browser error logging
 Using a browser error logging service such as [sentry](https://sentry.io/) helps alert to production problems.  
 
+### front end testing
+Jest (bundled with create react app) is test runner, assertion library, and mocking library.  
+Enzyme is used for assert, manipulate, and traverse your React Components’ output.  
+
 ### Node  
 I chose node because I am a full stack developer and prefer to work in javascript.  
 
