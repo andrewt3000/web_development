@@ -42,6 +42,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 history.push('/myroute')
 ````
 
+### Browser error logging
+Using a browser error logging service such as [sentry](https://sentry.io/) helps alert to production problems.  
 
 ### Node  
 I chose node because I am a full stack developer and prefer to work in javascript.  
