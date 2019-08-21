@@ -1,6 +1,7 @@
 # Web Development
 These are notes on building the image trainer web app.  
 The app consists of a [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.   
+This app is targeted to desktop computers and not mobile.  
 
 
 ### Source Control
