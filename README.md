@@ -18,15 +18,16 @@ I am planning to do continuous integration. Pushing to master will publish.
 I prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html). I also prefer to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html)     
 
 ### React componet libraries:  
-[styled components](https://www.styled-components.com/) - popular react library for styling custom components.   
 [antd](https://ant.design/docs/react/introduce) - desktop oriented react ui components. used by alibaba.   
+[styled components](https://www.styled-components.com/) - is popular react library for styling custom components. It should be used for any custom components.   
 
 Alternatives:  
+These are alternative libraries that were considered and should be reconsidered if we need a component that is not available. 
 [react bootstrap](https://react-bootstrap.github.io/)  
 [material UI](https://material-ui.com/)  
 
 ### State Management   
-[mobx](https://mobx.js.org/intro/overview.html) - state managment. Alternative to [redux](https://redux.js.org/)    
+[mobx](https://mobx.js.org/intro/overview.html) - state managment. This was chosen over [redux](https://redux.js.org/) becuase it has less boilerplate.    
 
 Use inject when you need to access state variables. Use observer to react to state variables.  
 We are not using the decorators.  
@@ -48,7 +49,7 @@ history.push('/myroute')
 ````
 
 ### Socket io
-[socket.io](https://socket.io) can be used for real time notifications to browser.  
+[socket.io](https://socket.io) is prefered for real time notifications to browser.  
 
 ### Browser error logging
 Using a browser error logging service such as [sentry](https://sentry.io/) helps alert to production problems.  
