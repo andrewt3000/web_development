@@ -13,6 +13,8 @@ I am planning to do continuous integration. Pushing to master will publish.
 [Reactjs](https://reactjs.org/docs/getting-started.html)    
 [create react app](https://github.com/facebook/create-react-app)  
 
+I prefer to use function components rather than class components. I also prefer to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html)     
+
 ### React componet libraries:  
 [styled components](https://www.styled-components.com/) - popular react library for styling custom components.   
 [antd](https://ant.design/docs/react/introduce) - desktop oriented react ui components. used by alibaba.   
