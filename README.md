@@ -2,11 +2,13 @@
 These are notes on several web apps that I have built and maintain. It discusses libraries choosen and why. It also gives example code and preferences among options within the libraries.   
 
 The app consists of a [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.   
-This app is targeted to desktop computers and not mobile.  
+This app is targeted to desktop computers and not mobile.
 
-[Visual Studio Code](https://code.visualstudio.com/)  
+I typically use IDE [Visual Studio Code](https://code.visualstudio.com/)  
 
 I use ncu to keep javascript packages up to date.  ncu command show what needs to be updated. ncu -u updates the package.json file. 
+
+Alternatives: I have considered typescript and [flow](https://flow.org/)  
 
 ### Source Control
 Code is tracked using git.  
