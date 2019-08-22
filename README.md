@@ -98,4 +98,4 @@ I am considering using [mongoose](https://mongoosejs.com/) for an ORM.
 [Mongo Compass](https://www.mongodb.com/products/compass) - gui for mongo
 
 ### Deployment
-I am using Azure blob storage for images and considering Azure App Services to host the node app. 
+I am using Azure blob storage for images. I am considering Azure App Services to host the node app. I am considering using App services or blob storage for hosting the front end.  
