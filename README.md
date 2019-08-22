@@ -13,6 +13,7 @@ Code is tracked using git.
 [git reference](https://git-scm.com/docs)  
 [git book](https://git-scm.com/book/en/v2)  
 I am planning to do continuous integration. Pushing to master will publish.  
+I also plan to track an app version number in the package.json file and reflect that number to users to make sure they have the latest version. Also consider using cache busting.  
 
 ### React  
 [Reactjs](https://reactjs.org/docs/getting-started.html)    
