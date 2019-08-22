@@ -99,3 +99,7 @@ I am considering using [mongoose](https://mongoosejs.com/) for an ORM.
 
 ### Deployment
 I am using Azure blob storage for images. I am considering Azure App Services to host the node app. I am considering using App services or blob storage for hosting the front end.  
+
+A serverless option to consider is to use azure functions.
+
+Database is hosted on mongo db.  
