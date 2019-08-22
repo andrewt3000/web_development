@@ -64,16 +64,13 @@ Jest (bundled with create react app) is test runner, assertion library, and mock
 Enzyme is used for assert, manipulate, and traverse your React Components’ output.  
 
 ## Authentication and Authorization
-Authentication is establish the identity of a user.   
-Authorization is establishing the user privileges and access.  
-
 I prefer using [jwt](https://jwt.io/) over server side state management because it consumes resources on the servers and it is easier to load balance accross multiple servers. 
 
-JWT has 3 parts: header, payload, and signature. Payload contains stateful fields such as user name, user privileges, company_id etc. 
+JWT has 3 parts: header, payload, and signature. Payload contains session fields such as user name, user privileges, company_id etc. 
 
-If the user login is successful it returns a jwt token to the client. I store the token in localStorage and have a function to add the jtw token to all ajax requests in authorization header as Bearer {token}. The node api has [middleware](http://expressjs.com/en/guide/using-middleware.html) that filter routes. If authenticated, add info to request and call next middleware. Otherwise, api responds with 401.   
+If the user login is successful it returns a jwt token to the client. The token is stored in localStorage and have a function to add the jtw token to all ajax requests in authorization header as Bearer {token}. The node api has [middleware](http://expressjs.com/en/guide/using-middleware.html) that filter routes. If authenticated, add info to request and call next middleware. Otherwise, api responds with 401.   
 
-I considered using identity as a service providers such as [auth0](https://auth0.com/), and [Amazon cognito](https://aws.amazon.com/cognito/) because you don't have to store and protect sensitive information including user's passwords, and your jwt secret key. They also make it easier to implement 3rd party logins such as Google or Faceboook.     
+I considered using identity as a service providers such as [auth0](https://auth0.com/), and [Amazon cognito](https://aws.amazon.com/cognito/) because you don't have to store and protect sensitive information including user's passwords, and your jwt secret key.  
 
 
 ### Node  
