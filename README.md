@@ -6,6 +6,8 @@ This app is targeted to desktop computers and not mobile.
 
 [Visual Studio Code](https://code.visualstudio.com/)  
 
+I use ncu to keep javascript packages up to date.  ncu command show what needs to be updated. ncu -u updates the package.json file. 
+
 ### Source Control
 Code is tracked using git.  
 [git reference](https://git-scm.com/docs)  
