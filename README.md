@@ -4,6 +4,7 @@ These are notes on building the image trainer web app. It discusses libraries ch
 The app consists of a [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.   
 This app is targeted to desktop computers and not mobile.  
 
+[Visual Studio Code](https://code.visualstudio.com/)  
 
 ### Source Control
 Code is tracked using git.  
@@ -93,3 +94,6 @@ I am using mongo db due to large number of records stored.
 [Mongo node driver](https://mongodb.github.io/node-mongodb-native/contents.html)  
 I am considering using [mongoose](https://mongoosejs.com/) for an ORM.  
 [Mongo Compass](https://www.mongodb.com/products/compass) - gui for mongo
+
+### Deployment
+I am using Azure blob storage for images and considering Azure App Services to host the node app. 
