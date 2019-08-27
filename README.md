@@ -101,7 +101,7 @@ Using serverless is an archticture that I am still considering and may move towa
 ### Mongo DB
 I am using mongo db due to large number of records stored.  
 [Mongo node driver](https://mongodb.github.io/node-mongodb-native/contents.html)  
-I am considering using [mongoose](https://mongoosejs.com/) for an ORM.  
+I am considering using [mongoose](https://mongoosejs.com/) for an ORM. One advantage is versioning system that helps resolve update conflicts.    
 [Mongo Compass](https://www.mongodb.com/products/compass) - gui for mongo
 
 ### Deployment
