@@ -54,6 +54,9 @@ There is a page that routes urls to react components. Use the Link object to lin
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 <Route path="/image" exact component={Image} />
 <Link to="/camera">Cameras</Link>
+
+//to read route parameters
+props.match.params.myParam
 ```
 
 Use the history object to redirect to a route. This comes from createBrowserHistory.  
