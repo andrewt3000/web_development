@@ -8,7 +8,7 @@ Alternatives: I have considered typescript (a superset of javascript) because of
 
 I typically use IDE [Visual Studio Code](https://code.visualstudio.com/)  
 
-I use ncu to keep javascript packages up to date.  
+I use ncu to keep javascript packages up to date on front and back end.  
 ```
 #command show what needs to be updated
 ncu 
