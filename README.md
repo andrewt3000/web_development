@@ -30,7 +30,7 @@ Keeping users on the latest version has been a challenge. cache busting is built
 [Reactjs](https://reactjs.org/docs/getting-started.html)    
 [create react app](https://github.com/facebook/create-react-app) - Used to create original react app. On this project we are using npm (rather than yarn or npx). CRA depends on react-scripts which should be updated. We have not and do not plan to "eject"    
 
-I prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html). I also prefer to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html)     
+I generally prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html) and to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html)     
 
 ### React componet libraries:  
 [antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. It is used by several chinese companies including alibaba, tencent and Baidu.   
