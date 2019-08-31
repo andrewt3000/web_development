@@ -82,6 +82,7 @@ Using a browser error logging service such as [sentry](https://sentry.io/) helps
 
 ### front end unit testing
 Jest (bundled with create react app) is test runner, assertion library, and mocking library.  
+[snapshot testing](https://jestjs.io/docs/en/snapshot-testing) is a feature that I use.  
 Jest expects tests to be in a folder named \_\_tests__ or to be named file_name.test.js  
 ```
 #to run tests
