@@ -79,8 +79,9 @@ history.push('/myroute')
 ### Browser error logging
 Using a browser error logging service such as [sentry](https://sentry.io/) helps alert to production problems.  
 
-### front end testing
+### front end unit testing
 Jest (bundled with create react app) is test runner, assertion library, and mocking library.  
+Jest expects tests to be in a folder named \_\_tests__ or to be named file_name.test.js  
 Enzyme is used for assert, manipulate, and traverse your React Components’ output.  
 
 ## Authentication and Authorization
@@ -96,7 +97,7 @@ I considered using identity as a service providers such as [auth0](https://auth0
 
 
 ### Node  
-I chose node because I am a full stack developer and prefer to work in javascript.  
+An advantage of node for full stack developers is using the same language on front and back end.  
 
 I prefer Express for routing.  
 Guide: [Routing](https://expressjs.com/en/guide/routing.html) [Using Middleware](http://expressjs.com/en/guide/using-middleware.html)  
