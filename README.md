@@ -18,7 +18,7 @@ ncu -u
 Alternatives: I have considered typescript and [flow](https://flow.org/)  
 
 ### Source Control
-Code is tracked using git.  
+Source code is versioned in [git](https://git-scm.com/).  
 [git reference](https://git-scm.com/docs)  
 [git book](https://git-scm.com/book/en/v2)  
 I am planning to do continuous integration. Pushing to master will publish.  
