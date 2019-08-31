@@ -34,7 +34,7 @@ I prefer to use functional rather than class [components](https://reactjs.org/do
 
 ### React componet libraries:  
 [antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. It is used by several chinese companies including alibaba, tencent and Baidu.   
-[styled components](https://www.styled-components.com/) - is popular react library for styling custom components. My top choice for any custom components.   
+[styled components](https://www.styled-components.com/) - is a popular react library for styling custom components.  
 
 Alternatives:  
 [react bootstrap](https://react-bootstrap.github.io/)  
