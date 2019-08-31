@@ -18,7 +18,7 @@ ncu -u
 ```
 
 ### Source Control
-Source code is versioned in [git](https://git-scm.com/).  
+Source code is versioned in [git](https://git-scm.com/) and hosted at [github](https://github.com/).  
 [git reference](https://git-scm.com/docs)  
 [git book](https://git-scm.com/book/en/v2)  
 I am planning to do continuous integration. Pushing to master will publish.  
