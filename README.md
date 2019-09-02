@@ -29,7 +29,9 @@ Keeping users on the latest version has been a challenge. Cache busting is built
 
 ### React  
 [Reactjs](https://reactjs.org/docs/getting-started.html)    
-[create react app](https://github.com/facebook/create-react-app) - Used to create original react app. On this project we are using npm (rather than yarn or npx). CRA depends on react-scripts which should be updated. We have not and do not plan to "eject"    
+[create react app](https://github.com/facebook/create-react-app) - Used to create original react app. CRA depends on react-scripts which should be [updated](https://create-react-app.dev/docs/updating-to-new-releases). We have not and do not plan to "eject"    
+
+I am using [npm](https://www.npmjs.com/) (rather than yarn or npx).  
 
 I generally prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html) and to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html)     
 
