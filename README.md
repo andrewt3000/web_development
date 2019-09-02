@@ -4,7 +4,7 @@ These are notes on several web apps that I have built and maintain. It discusses
 The apps consists of a [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) / [react](https://reactjs.org/) /  [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [Node](https://nodejs.org) / [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.   
 This app is targeted to desktop computers and not mobile.
 
-Alternatives: I have considered typescript (a superset of javascript) because of type checking support,  and [flow](https://flow.org/)   
+Alternatives: I have considered [typescript](https://www.typescriptlang.org/) (a superset of javascript) because of type checking support,  and [flow](https://flow.org/)   
 
 I typically use IDE [Visual Studio Code](https://code.visualstudio.com/)  
 
