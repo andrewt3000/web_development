@@ -132,4 +132,4 @@ I am using Azure blob storage for images. I am considering Azure App Services to
 
 A serverless option to consider is to use azure functions.
 
-Database is hosted on mongo db.  
+Database is hosted on [mongo db](https://cloud.mongodb.com).  
