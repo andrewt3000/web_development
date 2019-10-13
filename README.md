@@ -128,8 +128,15 @@ I am considering using [mongoose](https://mongoosejs.com/) for an ORM. One advan
 [Mongo Compass](https://www.mongodb.com/products/compass) - gui for mongo
 
 ### Deployment
-I am using Azure blob storage for images. I am considering Azure App Services to host the node app. I am considering using App services or blob storage for hosting the front end.  
+Azure blob storage for images.  
+Azure App Services to host the app. (node and front end)  
+Database is hosted on [mongo db atlas](https://cloud.mongodb.com).  
 
-A serverless option to consider is to use azure functions.
+I am considering using the following:  
+Azure functions - serverless option to replace node.  
+[Terraform](https://www.terraform.io/)  
+[Cloud Formation](https://aws.amazon.com/cloudformation/) S3, API Gateway / lambda etc.  
+[serverless](https://serverless.com/)   
 
-Database is hosted on [mongo db](https://cloud.mongodb.com).  
+Previously used [zeit now](https://zeit.co/)  
+
