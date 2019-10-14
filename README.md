@@ -141,7 +141,7 @@ Integrates with github etc.
 
 ### Cloud agnostic Frameworks under consideration  
 [serverless](https://serverless.com/) - cli (serverless) + yaml config file w/ routes (serverless.yml). supports aws, azure, google cloud etc.   
-[Terraform](https://www.terraform.io/) - cli. infrastructure as code. teraform configuration language. Cloud agnostic (aws/azure/google etc.)     
+[Terraform](https://www.terraform.io/) - cli. teraform configuration language. infrastructure as code i.e. much larger in scope than serverless. Cloud agnostic (aws/azure/google etc.)     
 
 
 
