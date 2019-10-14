@@ -127,16 +127,21 @@ I am using mongo db due to large number of records stored.
 I am considering using [mongoose](https://mongoosejs.com/) for an ORM. One advantage is versioning system that helps resolve update conflicts.    
 [Mongo Compass](https://www.mongodb.com/products/compass) - gui for mongo
 
-### Deployment
+### Current Deployment
 Azure blob storage for images.  
 Azure App Services to host the app. (node and front end)  
 Database is hosted on [mongo db atlas](https://cloud.mongodb.com).  
 
-I am considering a serverless architecture:  
-Azure functions - serverless option to replace node.  
-AWS [Cloud Formation](https://aws.amazon.com/cloudformation/) S3, API Gateway / lambda etc.  
-[Terraform](https://www.terraform.io/)  
-[serverless](https://serverless.com/)   
+### serverless architectures under consideration  
+Azure functions - can use http triggers and binding to do routing.  
+AWS [Cloud Formation](https://aws.amazon.com/cloudformation/) / API Gateway / lambda / Lambda authorizers.  
+[zeit now](https://zeit.co/) - Used previously.  cli (now), now.json config file, but routes default to file system layout.  
+host static site and serverless functions.  
+Integrates with github etc.    
 
-Previously used [zeit now](https://zeit.co/)  
+### Cloud agnostic Frameworks under consideration  
+[serverless](https://serverless.com/) - cli (serverless) + yaml config file w/ routes (serverless.yml). supports aws, azure, google cloud etc.   
+[Terraform](https://www.terraform.io/) - cli. infrastructure as code. teraform configuration language. Cloud agnostic (aws/azure/google etc.)     
+
+
 
