@@ -132,10 +132,10 @@ Azure blob storage for images.
 Azure App Services to host the app. (node and front end)  
 Database is hosted on [mongo db atlas](https://cloud.mongodb.com).  
 
-I am considering using the following:  
+I am considering a serverless architecture:  
 Azure functions - serverless option to replace node.  
+AWS [Cloud Formation](https://aws.amazon.com/cloudformation/) S3, API Gateway / lambda etc.  
 [Terraform](https://www.terraform.io/)  
-[Cloud Formation](https://aws.amazon.com/cloudformation/) S3, API Gateway / lambda etc.  
 [serverless](https://serverless.com/)   
 
 Previously used [zeit now](https://zeit.co/)  
