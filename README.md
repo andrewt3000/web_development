@@ -95,7 +95,7 @@ npm test
 Enzyme is used for assert, manipulate, and traverse your React Components’ output.  
 
 ## Authentication and Authorization
-I prefer using [jwt](https://jwt.io/) over server side state management because it consumes resources on the servers and it is easier to load balance accross multiple servers. 
+I prefer using [jwt](https://jwt.io/) over server side state management because it consumes less resources on the servers and it is easier to load balance accross multiple servers. 
 
 JWT has 3 parts: header, payload, and signature. Payload contains session fields such as user name, user privileges, company_id etc. 
 
