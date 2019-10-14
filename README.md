@@ -132,14 +132,15 @@ Azure blob storage for images.
 Azure App Services to host the app. (node and front end)  
 Database is hosted on [mongo db atlas](https://cloud.mongodb.com).  
 
-### serverless architectures under consideration  
+### Under Consideration  
+#### serverless architectures 
 Azure functions - can use http triggers and binding to do routing.  
 AWS [Cloud Formation](https://aws.amazon.com/cloudformation/) / API Gateway / lambda / Lambda authorizers.  
 [zeit now](https://zeit.co/) - Used previously.  cli (now), now.json config file, but routes default to file system layout.  
 host static site and serverless functions.  
 Integrates with github etc.    
 
-### Cloud agnostic Frameworks under consideration  
+#### Cloud agnostic Frameworks  
 [serverless](https://serverless.com/) - cli (serverless) + yaml config file w/ routes (serverless.yml). supports aws, azure, google cloud etc.   
 [Terraform](https://www.terraform.io/) - cli. teraform configuration language. infrastructure as code i.e. much larger in scope than serverless. Cloud agnostic (aws/azure/google etc.)     
 
