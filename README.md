@@ -132,6 +132,8 @@ Azure blob storage for images.
 Azure App Services to host the app. (node and front end)  
 Database is hosted on [mongo db atlas](https://cloud.mongodb.com).  
 
+The front end is served through node. This avoids cors issues because everything is served from the same domain. In dev environment, "npm start" starts web on port 3000, and node on port 4001, but there is a proxy for 4001 to 3000, which avoids cors issues in dev also. Ask Matt where is the proxy?    
+
 ### Under Consideration  
 #### serverless architectures 
 Azure functions - can use http triggers and binding to do routing.  
