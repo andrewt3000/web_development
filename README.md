@@ -132,7 +132,7 @@ Azure blob storage for images.
 Azure App Services to host the app. (node and front end)  
 Database is hosted on [mongo db atlas](https://cloud.mongodb.com).  
 
-The front end is served through node. This avoids cors issues because everything is served from the same domain. In dev environment, "npm start" starts web on port 3000, and node on port 4001, but there is a proxy for 4001 to 3000, which avoids cors issues in dev also. Ask Matt where is the proxy?    
+The front end is served through node. This avoids cors issues because everything is served from the same domain. In dev environment, "npm start" starts web on port 3000, and node on port 4001, but there is a proxy in web package.json to port 4001 , which avoids cors issues in dev also. [See Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development)   
 
 ### Under Consideration  
 #### serverless architectures 
