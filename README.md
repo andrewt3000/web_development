@@ -8,15 +8,6 @@ Alternatives: I have considered [typescript](https://www.typescriptlang.org/) (a
 
 I typically use IDE [Visual Studio Code](https://code.visualstudio.com/)  
 
-I use ncu to keep javascript packages up to date on front and back end.  
-```
-#command show what needs to be updated
-ncu 
-
-#updates the package.json file. 
-ncu -u 
-```
-
 ### Source Control
 Source code is versioned in [git](https://git-scm.com/) and hosted at [github](https://github.com/).  
 [git reference](https://git-scm.com/docs)  
@@ -27,6 +18,17 @@ My prefered work flow for a product that is live in production and a team is wor
 
 I use [semantic verisioning](https://semver.org/) on the app.   
 Keeping users on the latest version has been a challenge. Cache busting is built into the build process. However CRA defaults the app to be a [Service worker](https://developers.google.com/web/fundamentals/primers/service-workers/) which I believe is presenting problems. Currently users have to refresh the app, then close the browser to get the latest version.   
+
+### Updating packages
+I use ncu to keep javascript packages up to date on front and back end.  
+```
+#command show what needs to be updated
+ncu 
+
+#updates the package.json file. 
+ncu -u 
+```
+
 
 ### React  
 [Reactjs](https://reactjs.org/docs/getting-started.html)    
