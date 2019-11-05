@@ -5,7 +5,7 @@ pwd
 #list files and directories  
 ls 
 
-#change directory
+#change directory  
 cd
 
 #make directory
