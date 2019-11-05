@@ -8,5 +8,5 @@ ls
 #change directory  
 cd
 
-#make directory
+#make directory  
 mkdir
