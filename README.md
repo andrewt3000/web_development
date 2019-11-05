@@ -9,7 +9,7 @@ Alternatives: I have considered [typescript](https://www.typescriptlang.org/) (a
 I typically use IDE [Visual Studio Code](https://code.visualstudio.com/)  
 
 ### Command Line
-Many javascript libraries and tools use a command line interface. Examples include: git, npm, and create react app. Therefor knowledge of using a command line interface is critical.  
+Many javascript libraries and tools use a command line interface.  
 Basic notes on using [cli](cli.md)  
 
 ### Source Control
