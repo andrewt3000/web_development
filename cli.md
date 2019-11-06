@@ -13,6 +13,3 @@ cd <dir_name>
 #go up a directory.  
 cd ..  
 
-#make directory  
-mkdir
-
