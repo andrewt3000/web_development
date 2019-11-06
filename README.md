@@ -142,7 +142,7 @@ The front end is served through node. This avoids cors issues because everything
 
 ### Under Consideration  
 #### serverless architectures 
-Azure functions - can use http triggers and binding to do routing.  
+[Azure functions](azure_functions.md) - serverless functions that can use http triggers and binding to do routing.  
 AWS [Cloud Formation](https://aws.amazon.com/cloudformation/) / API Gateway / lambda / Lambda authorizers.  
 [zeit now](https://zeit.co/) - Used previously.  cli (now), now.json config file, but routes default to file system layout.  
 host static site and serverless functions.  
