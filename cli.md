@@ -1,4 +1,6 @@
-### Command line
+Many javascript libraries and tools use a command line interface. The command line enables you to navigate the file system (much like Mac Finder or Windows Explorer) and run programs from the appropriate directories.  
+
+### Command line Cheat Sheet
 #print working directory  
 pwd 
 
