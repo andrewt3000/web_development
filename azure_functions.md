@@ -10,4 +10,10 @@ func new
 
 #run functions locally
 func start 
+
+#publishing to azure
+func azure functionapp publish <app name>
+
 ```
+
+[Azure Functions Python developer guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-python#publishing-to-azure)
