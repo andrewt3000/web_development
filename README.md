@@ -133,6 +133,8 @@ I am using mongo db due to large number of records stored.
 I am considering using [mongoose](https://mongoosejs.com/) for an ORM. One advantage is versioning system that helps resolve update conflicts.    
 [Mongo Compass](https://www.mongodb.com/products/compass) - gui for mongo
 
+# Dev Ops
+
 ### Current Deployment
 Azure blob storage for images.  
 Azure App Services to host the app. (node and front end)  
@@ -143,13 +145,16 @@ The front end is served through node. This avoids cors issues because everything
 ### Under Consideration  
 #### serverless architectures 
 [Azure functions](azure_functions.md) - serverless functions that can use http triggers and binding to do routing.  
+
 AWS [Cloud Formation](https://aws.amazon.com/cloudformation/) / API Gateway / lambda / Lambda authorizers.  
+
 [zeit now](https://zeit.co/) - Used previously.  cli (now), now.json config file, but routes default to file system layout.  
 host static site and serverless functions.  
 Integrates with github etc.    
 
 #### Cloud agnostic Frameworks  
 [serverless](https://serverless.com/) - cli (serverless) + yaml config file w/ routes (serverless.yml). supports aws, azure, google cloud etc.   
+
 [Terraform](https://www.terraform.io/) - cli. teraform configuration language. infrastructure as code i.e. much larger in scope than serverless. Cloud agnostic (aws/azure/google etc.)     
 
 
