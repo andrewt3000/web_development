@@ -24,7 +24,7 @@ func start
 
 #publishing to azure
 #you must create app in azure before publishing
-func azure functionapp publish <app name>
+func azure functionapp publish <app name> --build-native-deps
 
 ```
 
