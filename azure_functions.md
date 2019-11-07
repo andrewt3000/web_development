@@ -5,6 +5,9 @@
 [Configure local setttings file](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#local-settings-file)  
 
 ```
+#create a new project
+func init MyFunctionProj
+
 #create a new function
 func new
 
