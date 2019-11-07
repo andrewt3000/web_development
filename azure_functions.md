@@ -1,6 +1,6 @@
 [Install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)  
 
-```
+```bash
 #login to azure
 az login
 
@@ -12,7 +12,7 @@ az login
 
 [Configure local setttings file](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#local-settings-file)  
 
-```
+```bash
 #create a new project
 func init MyFunctionProj
 
