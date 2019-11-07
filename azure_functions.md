@@ -1,3 +1,5 @@
+[Install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)  
+
 [Work with Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#v2)  
 
 [Install the Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#install-the-azure-functions-core-tools)  
@@ -15,6 +17,7 @@ func new
 func start 
 
 #publishing to azure
+#you must create app in azure before publishing
 func azure functionapp publish <app name>
 
 ```
