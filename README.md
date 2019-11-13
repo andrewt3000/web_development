@@ -144,6 +144,8 @@ The front end is served through node. This avoids cors issues because everything
 
 ### Under Consideration  
 #### serverless architectures 
+One issue I had with serverless was aws lambda was on an older version of node than what I was using. With Azure functions the routing (http triggers) and reading http parameters (binding) is a proprietary azure library, so you can't switch easily.  
+
 [Azure functions](azure_functions.md) - serverless functions that can use http triggers and binding to do routing.  
 
 AWS [Cloud Formation](https://aws.amazon.com/cloudformation/) / API Gateway / lambda / Lambda authorizers.  
