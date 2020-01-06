@@ -151,7 +151,7 @@ One issue I had with serverless was aws lambda was on an older version of node t
 AWS [Cloud Formation](https://aws.amazon.com/cloudformation/) / API Gateway / lambda / Lambda authorizers.  
 
 [zeit now](https://zeit.co/) - Used previously.  cli (now), now.json config file, but routes default to file system layout.  
-host static site and serverless functions.  
+host static site and [serverless functions](https://zeit.co/docs/v2/serverless-functions/introduction/) (use now api for routing instead of express etc.).  
 Integrates with github etc.    
 
 #### Cloud agnostic Frameworks  
