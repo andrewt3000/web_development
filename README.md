@@ -144,9 +144,9 @@ The front end is served through node. This avoids cors issues because everything
 
 ### Under Consideration  
 #### serverless architectures 
-One issue I had with serverless was aws lambda was on an older version of node than what I was using. With Azure functions the routing (http triggers) and reading http parameters (binding) is a proprietary azure library, so you can't switch easily.  
+The upside to serverless is scalability. The downside is propreitary apis and lack of control of the environment. For instance, an issue I had with serverless was aws lambda was on an older version of node than what I was using.   
 
-[Azure functions](azure_functions.md) - serverless functions that can use http triggers and binding to do routing.  
+[Azure functions](azure_functions.md) - serverless functions use http triggers and binding to do routing.  
 
 AWS [Cloud Formation](https://aws.amazon.com/cloudformation/) / API Gateway / lambda / Lambda authorizers.  
 
@@ -155,6 +155,7 @@ host static site and [serverless functions](https://zeit.co/docs/v2/serverless-f
 Integrates with github etc.    
 
 #### Cloud agnostic Frameworks  
+One solution to vendor lockin is to use another 3rd party.  
 [serverless](https://serverless.com/) - cli (serverless) + yaml config file w/ routes (serverless.yml). supports aws, azure, google cloud etc.   
 
 [Terraform](https://www.terraform.io/) - cli. teraform configuration language. infrastructure as code i.e. much larger in scope than serverless. Cloud agnostic (aws/azure/google etc.)     
