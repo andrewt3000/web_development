@@ -122,6 +122,8 @@ Node contains objects: express, request, response and router.
 Commonly used: app.use(), router.route(), req.params, req.body    
 
 Alternatives:  
+Express is designed for server side rendering, not rest apis.  
+[hapi](https://hapi.dev/) - node api that doesn't use middleware.  
 [graphql](https://graphql.org/) - I chose not to use graphql because we have more full stack developers rather than a front end team and a backend team.     
 
 Using serverless is an archticture that I am still considering and may move towards replacing express.  
