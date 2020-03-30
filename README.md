@@ -38,7 +38,7 @@ ncu -u
 [Reactjs](https://reactjs.org/docs/getting-started.html)    
 [create react app](https://github.com/facebook/create-react-app) - Used to create original react app. CRA depends on react-scripts which should be [updated](https://create-react-app.dev/docs/updating-to-new-releases). We have not and do not plan to "eject"    
 
-I am using [npm](https://www.npmjs.com/) (rather than yarn or npx).  
+I am using [npm](https://www.npmjs.com/) (rather than yarn).  
 
 I generally prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html) and to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html)     
 
@@ -99,6 +99,9 @@ npm test
 ```
 
 Enzyme is used for assert, manipulate, and traverse your React Components’ output.  
+
+## End to End Testing
+[cypress](https://www.cypress.io/)  
 
 ## Authentication and Authorization
 I prefer using [jwt](https://jwt.io/) over server side state management because it consumes less resources on the servers and it is easier to load balance accross multiple servers. 
