@@ -54,7 +54,7 @@ Alternatives:
 [semantic ui](https://semantic-ui.com/)  
 
 ### State Management   
-[mobx](https://mobx.js.org/intro/overview.html) - state managment. This was chosen over [redux](https://redux.js.org/) becuase it has less boilerplate.    
+[mobx](https://mobx.js.org/intro/overview.html) - state managment. This was chosen over [redux](https://redux.js.org/) becuase it has less boilerplate. Mobx is mutablle but notifies subscribers of changes.      
 
 Use inject when you need to access state variables. Use observer to react to state variables.  
 We are not using the decorators.  
