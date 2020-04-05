@@ -120,7 +120,8 @@ I considered using identity as a service providers such as [auth0](https://auth0
 ### Node  
 An advantage of node for full stack developers is using the same language on front and back end.  
 
-I prefer Express for routing.  
+I prefer Express for routing. 
+To get started use [Express application generator](https://expressjs.com/en/starter/generator.html)  
 Guide: [Routing](https://expressjs.com/en/guide/routing.html) [Using Middleware](http://expressjs.com/en/guide/using-middleware.html)  
 [4.X API](https://expressjs.com/en/api.html)  
 Node contains objects: express, request, response and router.  
