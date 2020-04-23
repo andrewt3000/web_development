@@ -6,11 +6,15 @@ The apps are targeted to desktop computers and not mobile, although in many case
 
 Alternatives: I have considered [typescript](https://www.typescriptlang.org/) (a superset of javascript) because of type checking support,  and [flow](https://flow.org/)   
 
-I use  [Visual Studio Code](https://code.visualstudio.com/)  
+### IDE
+Preference: 
+[Visual Studio Code](https://code.visualstudio.com/)  
+[vi](https://www.vim.org/)     
+
 
 ### Command Line
 Many javascript libraries and tools use a command line interface.  
-Basic notes on using [cli](cli.md)  
+[cli cheatsheet](cli.md)  
 
 ### Source Control
 Source code is versioned in [git](https://git-scm.com/) and hosted at [github](https://github.com/).  
