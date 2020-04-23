@@ -8,10 +8,10 @@ Alternatives:
 [typescript](https://www.typescriptlang.org/) (a superset of javascript) has type checking support.  
 [flow](https://flow.org/) - a static type checker.     
 
-### IDE
+### IDE, text editors
 Prefer: 
-[Visual Studio Code](https://code.visualstudio.com/)  
-[vi](https://www.vim.org/)     
+[Visual Studio Code](https://code.visualstudio.com/), [vi](https://www.vim.org/)     
+Alternative: [Atom](https://atom.io/), [emacs](https://www.gnu.org/software/emacs/)  
 
 
 ### Command Line
@@ -125,7 +125,7 @@ npm test
 
 [react testing library](https://testing-library.com/docs/react-testing-library/intro) is an alternative to enzyme for dom manipulation and traversal. Written by Kent C. Dodds.    
 
-## End to End Testing
+### End to End Testing
 [cypress](https://www.cypress.io/)  
 [puppeteer](https://pptr.dev/) Headless Chrome Node.js API  
 
