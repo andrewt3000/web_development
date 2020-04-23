@@ -151,7 +151,7 @@ Using serverless is an archticture that I am still considering and may move towa
 I use MS Sql Server on several projects that require a relational database.  
 [tediousjs](https://github.com/tediousjs/node-mssql) MS Sql node driver.  
 - [Sql Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) - MS Windows client.  
-- [SQLPro for MSSQL] mac client (room for improvement)  
+- [SQLPro for MSSQL](https://www.macsqlclient.com/) mac client (room for improvement)  
 
 ### Mongo DB
 I am using mongo db on some project due to large number of records stored.  
