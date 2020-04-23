@@ -31,6 +31,11 @@ I also plan to track an app version number in the package.json file and reflect 
 
 Keeping users on the latest version has been a challenge. Cache busting is built into the build process. However CRA defaults the app to be a [Service worker](https://developers.google.com/web/fundamentals/primers/service-workers/) which I believe is presenting problems. Currently users have to refresh the app, then close the browser to get the latest version.   
 
+#### Package manager
+prefer: [npm](https://www.npmjs.com/)  
+alternative: [yarn](https://yarnpkg.com/)
+
+
 ### Updating packages
 I use ncu to keep javascript packages up to date on front and back end.  
 ```
@@ -41,14 +46,9 @@ ncu
 ncu -u 
 ```
 
-
 ### React  
-[Reactjs](https://reactjs.org/docs/getting-started.html)    
+[Reactjs](https://reactjs.org/docs/getting-started.html) - A JavaScript library for building user interfaces      
 [create react app](https://github.com/facebook/create-react-app) - Used to create original react app. CRA depends on react-scripts which should be [updated](https://create-react-app.dev/docs/updating-to-new-releases). We have not and do not plan to "eject"    
-
-#### Package manager
-prefer: [npm](https://www.npmjs.com/)
-alternative: [yarn](https://yarnpkg.com/)
 
 I generally prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html) and to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html)     
 
