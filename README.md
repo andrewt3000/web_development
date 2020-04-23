@@ -17,9 +17,10 @@ Alternative: [Atom](https://atom.io/), [emacs](https://www.gnu.org/software/emac
 
 
 ### Command Line
-Many javascript libraries and tools use a [command line interface](https://en.wikipedia.org/wiki/Command-line_interface).  
-Examples of command line interfaces are: MacOS [terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)) and Windows [DOS](https://en.wikipedia.org/wiki/MS-DOS).  
-[cli cheatsheet](cli.md)  
+Many javascript libraries and tools use a [command line interface](https://en.wikipedia.org/wiki/Command-line_interface). [cli cheatsheet](cli.md)    
+- MacOS [terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)) 
+- Windows [DOS](https://en.wikipedia.org/wiki/MS-DOS).  
+
 
 ### Source Control
 Preferred: [git](https://git-scm.com/) - open source, distributed [version control](https://en.wikipedia.org/wiki/Version_control)     
