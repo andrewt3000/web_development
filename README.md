@@ -147,8 +147,14 @@ Express is designed for server side rendering, not rest apis.
 Using serverless is an archticture that I am still considering and may move towards replacing express.  
 [serverless](https://serverless.com/)   
 
+### MS Sql Server
+I use MS Sql Server on several projects that require a relational database.  
+[tediousjs](https://github.com/tediousjs/node-mssql) MS Sql node driver.  
+- [Sql Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) - MS Windows client.  
+- [SQLPro for MSSQL] mac client (room for improvement)  
+
 ### Mongo DB
-I am using mongo db due to large number of records stored.  
+I am using mongo db on some project due to large number of records stored.  
 [Mongo node driver](https://mongodb.github.io/node-mongodb-native/contents.html)  
 I am considering using [mongoose](https://mongoosejs.com/) for an ORM. One advantage is versioning system that helps resolve update conflicts.    
 [Mongo Compass](https://www.mongodb.com/products/compass) - gui for mongo
