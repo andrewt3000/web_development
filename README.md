@@ -15,7 +15,7 @@ Prefer:
 
 
 ### Command Line
-Many javascript libraries and tools use a command line interface.  
+Many javascript libraries and tools use a [command line interface](https://en.wikipedia.org/wiki/Command-line_interface).  
 [cli cheatsheet](cli.md)  
 
 ### Source Control
