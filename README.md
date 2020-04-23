@@ -1,5 +1,5 @@
 # Web Development
-These are notes on several web apps that I have built and maintain. It discusses libraries choosen and alternatives. It also gives example code and preferences among options within the libraries.   
+These are notes on several web apps that I have built and maintain. It discusses the tools I prefer and alternatives. It also gives example code and preferences among options within the libraries.   
 
 The apps consists of a [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) / [react](https://reactjs.org/) /  [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [Node](https://nodejs.org) / [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.   
 The apps are targeted to desktop computers and not mobile, although in many cases the apps are [responsive](https://en.wikipedia.org/wiki/Responsive_web_design) and could be easily adapted to mobile.
@@ -9,8 +9,7 @@ Alternatives:
 [flow](https://flow.org/) - a static type checker.     
 
 ### IDE, text editors
-Prefer: 
-[Visual Studio Code](https://code.visualstudio.com/), [vi](https://www.vim.org/)     
+Preferred: [Visual Studio Code](https://code.visualstudio.com/), [vi](https://www.vim.org/)     
 Alternative: [Atom](https://atom.io/), [emacs](https://www.gnu.org/software/emacs/)  
 
 
@@ -20,30 +19,25 @@ Examples of command line interfaces are: MacOS [terminal](https://en.wikipedia.o
 [cli cheatsheet](cli.md)  
 
 ### Source Control
-Prefer: [git](https://git-scm.com/) - open source, distributed [version control](https://en.wikipedia.org/wiki/Version_control)     
+Preferred: [git](https://git-scm.com/) - open source, distributed [version control](https://en.wikipedia.org/wiki/Version_control)     
 [command reference](https://git-scm.com/docs)  
 [git book](https://git-scm.com/book/en/v2)  
 
 My source control current work flow is pushing to master, pushes to live production. Devs work on feature branches. When the feature is complete it is pushed to a dev branch, and they do a pull requests. Manager authorizes the push to master/live after testing.   
 
 ### Source control hosting
-preferred:  
-[github](https://github.com/)  
-alternative:  
-[gitlab](https://about.gitlab.com/), [bitbucket](https://bitbucket.org/)  
+Preferred: [github](https://github.com/)  
+Alternatives: [gitlab](https://about.gitlab.com/), [bitbucket](https://bitbucket.org/)  
 
 ### App Versioning  
-Prefer: [semantic verisioning](https://semver.org/)   
+Preferred: [semantic verisioning](https://semver.org/)   
 I also plan to track an app version number in the package.json file and reflect that number to users to make sure they have the latest version. 
 
 Keeping users on the latest version has been a challenge. Cache busting is built into the build process. However CRA defaults the app to be a [Service worker](https://developers.google.com/web/fundamentals/primers/service-workers/) which I believe is presenting problems. Currently users have to refresh the app, then close the browser to get the latest version.   
 
 ### Package manager
-prefer: 
-[npm](https://www.npmjs.com/)   
-alternative:  
-[yarn](https://yarnpkg.com/)  
-
+Preferred: [npm](https://www.npmjs.com/)   
+Alternativs: [yarn](https://yarnpkg.com/)  
 
 ### Updating packages
 I use ncu to keep javascript packages up to date on front and back end.  
@@ -64,24 +58,24 @@ CRA depends on react-scripts which should be [updated](https://create-react-app.
 
 I generally prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html) and to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html)     
 
+Alternatives: [Angular](https://angularjs.org/), [Vue](https://vuejs.org/)  
+
 ### React componet libraries:  
 Preferred:  
 [antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. It is used by several chinese companies including alibaba, tencent and Baidu.   
 [styled components](https://www.styled-components.com/) - is a popular react library for styling custom components.  
 
 Alternatives:  
-[react bootstrap](https://react-bootstrap.github.io/)  
-[material UI](https://material-ui.com/)  
-[blueprint](https://blueprintjs.com/)  
-[element](https://element.eleme.io)  
-[semantic ui](https://semantic-ui.com/)  
+- [react bootstrap](https://react-bootstrap.github.io/)  
+- [material UI](https://material-ui.com/)  
+- [blueprint](https://blueprintjs.com/)  
+- [element](https://element.eleme.io)  
+- [semantic ui](https://semantic-ui.com/)  
 
 ### State Management   
-Prefer:  
-[mobx](https://mobx.js.org/intro/overview.html) - simple, scalable, state management.  
+Preferred: [mobx](https://mobx.js.org/intro/overview.html) - simple, scalable, state management.  
 
-Alternative:  
-[redux](https://redux.js.org/) has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367).   
+Alternative: [redux](https://redux.js.org/) has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367).   
 
 Use mobx inject when you need to access state variables(considered obsolete due to react context). Use observer to react to state variables.  
 We are not using the decorators.  
@@ -127,8 +121,8 @@ npm test
 [react testing library](https://testing-library.com/docs/react-testing-library/intro) is an alternative to enzyme for dom manipulation and traversal. Written by Kent C. Dodds.    
 
 ### End to End Testing
-[cypress](https://www.cypress.io/)  
-[puppeteer](https://pptr.dev/) Headless Chrome Node.js API  
+- [cypress](https://www.cypress.io/)  
+- [puppeteer](https://pptr.dev/) Headless Chrome Node.js API  
 
 # Server Side
 ### Node  
