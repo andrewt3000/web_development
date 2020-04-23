@@ -106,6 +106,7 @@ npm test
 
 ## End to End Testing
 [cypress](https://www.cypress.io/)  
+[puppeteer](https://pptr.dev/) Headless Chrome Node.js API  
 
 ## Authentication and Authorization
 I prefer using [jwt](https://jwt.io/) over server side state management because it consumes less resources on the servers and it is easier to load balance accross multiple servers. 
