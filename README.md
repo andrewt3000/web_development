@@ -7,7 +7,7 @@ The apps are targeted to desktop computers and not mobile, although in many case
 Alternatives: I have considered [typescript](https://www.typescriptlang.org/) (a superset of javascript) because of type checking support,  and [flow](https://flow.org/)   
 
 ### IDE
-Preference: 
+Prefer: 
 [Visual Studio Code](https://code.visualstudio.com/)  
 [vi](https://www.vim.org/)     
 
@@ -44,11 +44,14 @@ ncu -u
 [Reactjs](https://reactjs.org/docs/getting-started.html)    
 [create react app](https://github.com/facebook/create-react-app) - Used to create original react app. CRA depends on react-scripts which should be [updated](https://create-react-app.dev/docs/updating-to-new-releases). We have not and do not plan to "eject"    
 
-I am using [npm](https://www.npmjs.com/) (rather than yarn).  
+#### Package manager
+prefer: [npm](https://www.npmjs.com/)
+alternative: [yarn](https://yarnpkg.com/)
 
 I generally prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html) and to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html)     
 
 ### React componet libraries:  
+Preferred:  
 [antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. It is used by several chinese companies including alibaba, tencent and Baidu.   
 [styled components](https://www.styled-components.com/) - is a popular react library for styling custom components.  
 
@@ -60,9 +63,13 @@ Alternatives:
 [semantic ui](https://semantic-ui.com/)  
 
 ### State Management   
-[mobx](https://mobx.js.org/intro/overview.html) - state managment. This was chosen over [redux](https://redux.js.org/) becuase it has less boilerplate. Mobx is mutablle but notifies subscribers of changes.      
+Prefer:  
+[mobx](https://mobx.js.org/intro/overview.html) - simple, scalable, state management.  
 
-Use inject when you need to access state variables. Use observer to react to state variables.  
+Alternative:  
+[redux](https://redux.js.org/) has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367).   
+
+Use mobx inject when you need to access state variables(considered obsolete due to react context). Use observer to react to state variables.  
 We are not using the decorators.  
 
 ```javascript
