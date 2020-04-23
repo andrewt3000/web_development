@@ -19,11 +19,17 @@ Many javascript libraries and tools use a [command line interface](https://en.wi
 [cli cheatsheet](cli.md)  
 
 ### Source Control
-Source code is versioned in [git](https://git-scm.com/) and hosted at [github](https://github.com/).  
-[git command reference](https://git-scm.com/docs)  
+Prefer: [git](https://git-scm.com/) - open source, distributed [version control](https://en.wikipedia.org/wiki/Version_control)     
+[command reference](https://git-scm.com/docs)  
 [git book](https://git-scm.com/book/en/v2)  
 
-My prefered work flow is pushing to master, pushes to live production. We also have a dev branch. Devs work on feature branches and push the feature branches to dev and do pull requests to master.  
+My source control current work flow is pushing to master, pushes to live production. Devs work on feature branches. When the feature is complete it is pushed to a dev branch, and they do a pull requests. Manager authorizes the push to master/live after testing.   
+
+### Source control hosting
+preferred:  
+[github](https://github.com/)  
+alternative:  
+[gitlab](https://about.gitlab.com/) [bitbucket](https://bitbucket.org/)  
 
 ### App Versioning  
 I use [semantic verisioning](https://semver.org/) on the app.   
