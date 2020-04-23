@@ -55,6 +55,8 @@ ncu
 ncu -u 
 ```
 
+# Front end web development
+
 ### React  
 [Reactjs](https://reactjs.org/) ([docs](https://reactjs.org/docs/getting-started.html)) - A JavaScript library for building user interfaces.  
 [create react app](https://github.com/facebook/create-react-app) - cli to generate new react app.  
@@ -108,13 +110,10 @@ Use the history object to redirect to a route. This comes from createBrowserHist
 history.push('/myroute')
 ````
 
-### Socket io
-[socket.io](https://socket.io) is prefered for real time notifications to browser.  
-
 ### Browser error logging
 Using a browser error logging service such as [sentry](https://sentry.io/) helps alert to production problems.  
 
-### front end unit testing
+### Front end unit testing
 Jest (bundled with create react app) is test runner, assertion library, and mocking library.  
 [snapshot testing](https://jestjs.io/docs/en/snapshot-testing) is a feature that I use.  
 Jest expects tests to be in a folder named \_\_tests__ or to be named file_name.test.js  
@@ -131,18 +130,7 @@ npm test
 [cypress](https://www.cypress.io/)  
 [puppeteer](https://pptr.dev/) Headless Chrome Node.js API  
 
-## Authentication and Authorization
-I prefer using [jwt](https://jwt.io/) over server side state management because it consumes less resources on the servers and it is easier to load balance accross multiple servers. 
-
-JWT has 3 parts: header, payload, and signature. Payload contains session fields such as user name, user privileges, company_id etc. 
-
-If the user login is successful it returns a jwt token to the client. The token is stored in localStorage and have a function to add the jtw token to all ajax requests in authorization header as Bearer {token}. The node api has [middleware](http://expressjs.com/en/guide/using-middleware.html) that filter routes. If authenticated, add info to request and call next middleware. Otherwise, api responds with 401. 
-
-On the client side I wrap react router's Route object with logic to redirect if the user isn't logged in [Example](https://reacttraining.com/react-router/web/example/auth-workflow). I track if the user's login status in mobx. Client side authentication is for convenience, the pages without data are not secure assets.   
-
-I considered using identity as a service providers such as [auth0](https://auth0.com/), and [Amazon cognito](https://aws.amazon.com/cognito/) because you don't have to store and protect sensitive information including user's passwords, and your jwt secret key.  
-
-
+# Server Side
 ### Node  
 An advantage of node for full stack developers is using the same language on front and back end.  
 
@@ -166,6 +154,20 @@ I am using mongo db due to large number of records stored.
 [Mongo node driver](https://mongodb.github.io/node-mongodb-native/contents.html)  
 I am considering using [mongoose](https://mongoosejs.com/) for an ORM. One advantage is versioning system that helps resolve update conflicts.    
 [Mongo Compass](https://www.mongodb.com/products/compass) - gui for mongo
+
+
+## Authentication and Authorization
+I prefer using [jwt](https://jwt.io/) over server side state management because it consumes less resources on the servers and it is easier to load balance accross multiple servers. 
+
+JWT has 3 parts: header, payload, and signature. Payload contains session fields such as user name, user privileges, company_id etc. 
+
+If the user login is successful it returns a jwt token to the client. The token is stored in localStorage and have a function to add the jtw token to all ajax requests in authorization header as Bearer {token}. The node api has [middleware](http://expressjs.com/en/guide/using-middleware.html) that filter routes. If authenticated, add info to request and call next middleware. Otherwise, api responds with 401. 
+
+On the client side I wrap react router's Route object with logic to redirect if the user isn't logged in [Example](https://reacttraining.com/react-router/web/example/auth-workflow). I track if the user's login status in mobx. Client side authentication is for convenience, the pages without data are not secure assets.   
+
+I considered using identity as a service providers such as [auth0](https://auth0.com/), and [Amazon cognito](https://aws.amazon.com/cognito/) because you don't have to store and protect sensitive information including user's passwords, and your jwt secret key.  
+
+
 
 # Dev Ops
 
