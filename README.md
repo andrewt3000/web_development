@@ -100,7 +100,9 @@ Jest expects tests to be in a folder named \_\_tests__ or to be named file_name.
 npm test
 ```
 
-Enzyme is used for assert, manipulate, and traverse your React Components’ output.  
+[Enzyme](https://enzymejs.github.io/enzyme/) is used for assert, manipulate, and traverse your React Components’ output. It mimicks jQuery api.  
+
+[react testing library](https://testing-library.com/docs/react-testing-library/intro) is an alternative to enzyme for dom manipulation and traversal. Written by Kent C. Dodds.    
 
 ## End to End Testing
 [cypress](https://www.cypress.io/)  
@@ -122,7 +124,7 @@ An advantage of node for full stack developers is using the same language on fro
 
 I prefer Express for routing. 
 To get started use [Express application generator](https://expressjs.com/en/starter/generator.html)  
-Guide: [Routing](https://expressjs.com/en/guide/routing.html) [Using Middleware](http://expressjs.com/en/guide/using-middleware.html)  
+Guide: [Routing](https://expressjs.com/en/guide/routing.html) [Using Middleware](http://expressjs.com/en/guide/using-middleware.html)  Middleware, in the context of express, is code between receiving a request and producing a response.  
 [4.X API](https://expressjs.com/en/api.html)  
 Node contains objects: express, request, response and router.  
 Commonly used: app.use(), router.route(), req.params, req.body    
@@ -160,7 +162,7 @@ The upside to serverless is scalability. The downside is propreitary apis and la
 
 AWS [Cloud Formation](https://aws.amazon.com/cloudformation/) / API Gateway / lambda / Lambda authorizers.  
 
-[zeit now](https://zeit.co/) - Used previously.  cli (now), now.json config file, but routes default to file system layout.  
+[vercel (formerly zeit) now](https://vercel.com/home) - Used previously.  cli (now), now.json config file, but routes default to file system layout.  
 host static site and [serverless functions](https://zeit.co/docs/v2/serverless-functions/introduction/) (use now api for routing instead of express etc.).  
 Integrates with github etc.    
 
