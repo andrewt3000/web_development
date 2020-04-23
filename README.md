@@ -29,10 +29,10 @@ My source control current work flow is pushing to master, pushes to live product
 preferred:  
 [github](https://github.com/)  
 alternative:  
-[gitlab](https://about.gitlab.com/) [bitbucket](https://bitbucket.org/)  
+[gitlab](https://about.gitlab.com/), [bitbucket](https://bitbucket.org/)  
 
 ### App Versioning  
-I use [semantic verisioning](https://semver.org/) on the app.   
+Prefer: [semantic verisioning](https://semver.org/)   
 I also plan to track an app version number in the package.json file and reflect that number to users to make sure they have the latest version. 
 
 Keeping users on the latest version has been a challenge. Cache busting is built into the build process. However CRA defaults the app to be a [Service worker](https://developers.google.com/web/fundamentals/primers/service-workers/) which I believe is presenting problems. Currently users have to refresh the app, then close the browser to get the latest version.   
