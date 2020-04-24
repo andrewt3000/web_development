@@ -112,7 +112,7 @@ history.push('/myroute')
 Using a browser error logging service such as [sentry](https://sentry.io/) helps alert to production problems.  
 
 ### Front end unit testing
-Jest (bundled with create react app) is test runner, assertion library, and mocking library.  
+Jest - test runner, assertion library, and mocking library.  
 [snapshot testing](https://jestjs.io/docs/en/snapshot-testing) is a feature that I use.  
 Jest expects tests to be in a folder named \_\_tests__ or to be named file_name.test.js  
 ```
@@ -120,9 +120,9 @@ Jest expects tests to be in a folder named \_\_tests__ or to be named file_name.
 npm test
 ```
 
-[Enzyme](https://enzymejs.github.io/enzyme/) is used for assert, manipulate, and traverse your React Components’ output. It mimicks jQuery api.  
-
-[react testing library](https://testing-library.com/docs/react-testing-library/intro) is an alternative to enzyme for dom manipulation and traversal. Written by Kent C. Dodds.    
+#### Dom manipulation, and assertion libraries
+- [Enzyme](https://enzymejs.github.io/enzyme/) is used for assert, manipulate, and traverse your React Components’ output. It mimicks jQuery api.  
+- [react testing library](https://testing-library.com/docs/react-testing-library/intro) is an alternative to enzyme for dom manipulation and traversal. Written by Kent C. Dodds.    
 
 ### End to End Testing
 - [cypress](https://www.cypress.io/)  
