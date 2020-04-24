@@ -60,7 +60,7 @@ CRA depends on react-scripts which should be [updated](https://create-react-app.
 
 Preference: I generally prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html) and to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html)     
 
-Alternatives: [Angular](https://angularjs.org/), [Vue](https://vuejs.org/)  
+Alternatives: [Angular](https://angularjs.org/), [Vue](https://vuejs.org/) ([vuex](https://vuex.vuejs.org/) [nuxt](https://nuxtjs.org/))   
 
 ### React componet libraries:  
 Preferred:  
