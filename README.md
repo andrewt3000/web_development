@@ -42,7 +42,7 @@ Preferred: [npm](https://www.npmjs.com/)  - npm is a package manager and task ru
 Alternatives: [yarn](https://yarnpkg.com/)   
 
 ### Updating packages
-I use ncu to keep javascript packages up to date on front and back end.  
+best practice: keep javascript packages up to date on front and back end.  
 ```
 #command show what needs to be updated
 ncu 
@@ -111,7 +111,8 @@ Use the history object to redirect to a route. This comes from createBrowserHist
 history.push('/myroute')
 ````
 ### Data fetching
-[fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API#Concepts_and_usage) is a web api (natively supported in more recent browsers). In the case of older browsers it may require a [polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill).  
+[fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API#Concepts_and_usage) is a web api (natively supported in more recent browsers).  
+best practice: If supporting older browsers use a [polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill).  
 
 alternative: [axios](https://github.com/axios/axios)  
 
