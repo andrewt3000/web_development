@@ -39,7 +39,7 @@ Keeping users on the latest version has been a challenge. Cache busting is built
 
 ### Package manager
 Preferred: [npm](https://www.npmjs.com/)   
-Alternativs: [yarn](https://yarnpkg.com/)  
+Alternatives: [yarn](https://yarnpkg.com/)  
 
 ### Updating packages
 I use ncu to keep javascript packages up to date on front and back end.  
@@ -77,7 +77,9 @@ Alternatives:
 ### State Management   
 Preferred: [mobx](https://mobx.js.org/intro/overview.html) - simple, scalable, state management.  
 
-Alternative: [redux](https://redux.js.org/) has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367).   
+Alternatives:  
+- [redux](https://redux.js.org/) A Predictable State Container for JS Apps. Has immutable state. It has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367).   
+- [immer](https://immerjs.github.io/immer/docs/introduction) - work with immutable state in a more convenient way  
 
 Use mobx inject when you need to access state variables(considered obsolete due to react context). Use observer to react to state variables.  
 We are not using the decorators.  
