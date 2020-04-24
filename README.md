@@ -161,8 +161,9 @@ I am using mongo db on some project due to large number of records stored.
 I am considering using [mongoose](https://mongoosejs.com/) for an ORM. One advantage is versioning system that helps resolve update conflicts.    
 [Mongo Compass](https://www.mongodb.com/products/compass) - gui for mongo
 
+# Application Logic
 
-## Authentication and Authorization
+### Authentication and Authorization
 I prefer using [jwt](https://jwt.io/) over server side state management because it consumes less resources on the servers and it is easier to load balance accross multiple servers. 
 
 JWT has 3 parts: header, payload, and signature. Payload contains session fields such as user name, user privileges, company_id etc. 
