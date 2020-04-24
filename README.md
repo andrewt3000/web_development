@@ -55,6 +55,7 @@ ncu -u
 
 ### React  
 [Reactjs](https://reactjs.org/) ([docs](https://reactjs.org/docs/getting-started.html)) - A JavaScript library for building user interfaces.  
+[chrome extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)  
 [create react app](https://create-react-app.dev/) ([src](https://github.com/facebook/create-react-app)) ([docs](https://create-react-app.dev/docs/getting-started)) - cli to generate new react app.  
 CRA depends on react-scripts which should be [updated](https://create-react-app.dev/docs/updating-to-new-releases). We have not and do not plan to [eject](https://create-react-app.dev/docs/available-scripts#npm-run-eject)      
 
