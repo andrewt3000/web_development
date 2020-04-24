@@ -169,8 +169,10 @@ If the user login is successful it returns a jwt token to the client. The token 
 
 On the client side I wrap react router's Route object with logic to redirect if the user isn't logged in [Example](https://reacttraining.com/react-router/web/example/auth-workflow). I track if the user's login status in mobx. Client side authentication is for convenience, the pages without data are not secure assets.   
 
-I considered using identity as a service providers such as [auth0](https://auth0.com/), and [Amazon cognito](https://aws.amazon.com/cognito/) because you don't have to store and protect sensitive information including user's passwords, and your jwt secret key.  
-
+I considered using identity as a service providers because you don't have to store and protect sensitive information including user's passwords, and your jwt secret key.  
+- [auth0](https://auth0.com/)
+- [okta](https://www.okta.com/)  
+- [Amazon cognito](https://aws.amazon.com/cognito/)   
 
 
 # Dev Ops
