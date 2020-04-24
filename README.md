@@ -38,8 +38,8 @@ I also plan to track an app version number in the package.json file and reflect 
 Keeping users on the latest version has been a challenge. Cache busting is built into the build process. However CRA defaults the app to be a [Service worker](https://developers.google.com/web/fundamentals/primers/service-workers/) which I believe is presenting problems. Currently users have to refresh the app, then close the browser to get the latest version.   
 
 ### Package manager
-Preferred: [npm](https://www.npmjs.com/)   
-Alternatives: [yarn](https://yarnpkg.com/)  
+Preferred: [npm](https://www.npmjs.com/)  - npm is a package manager and task runner.  
+Alternatives: [yarn](https://yarnpkg.com/)   
 
 ### Updating packages
 I use ncu to keep javascript packages up to date on front and back end.  
@@ -58,7 +58,7 @@ ncu -u
 [create react app](https://github.com/facebook/create-react-app) - cli to generate new react app.  
 CRA depends on react-scripts which should be [updated](https://create-react-app.dev/docs/updating-to-new-releases). We have not and do not plan to "eject"    
 
-I generally prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html) and to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html)     
+Preference: I generally prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html) and to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html)     
 
 Alternatives: [Angular](https://angularjs.org/), [Vue](https://vuejs.org/)  
 
@@ -79,7 +79,8 @@ Preferred: [mobx](https://mobx.js.org/intro/overview.html) - simple, scalable, s
 
 Alternatives:  
 - [redux](https://redux.js.org/) A Predictable State Container for JS Apps. Has immutable state. It has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367).   
-- [immer](https://immerjs.github.io/immer/docs/introduction) - work with immutable state in a more convenient way  
+
+[immer](https://immerjs.github.io/immer/docs/introduction) - work with immutable state in a more convenient way. Can be used to simplify redux reducers.    
 
 Use mobx inject when you need to access state variables(considered obsolete due to react context). Use observer to react to state variables.  
 We are not using the decorators.  
@@ -139,13 +140,14 @@ Guide: [Routing](https://expressjs.com/en/guide/routing.html) [Using Middleware]
 Node contains objects: express, request, response and router.  
 Commonly used: app.use(), router.route(), req.params, req.body    
 
-Alternatives:  
-Express is designed for server side rendering, not rest apis.  
-[hapi](https://hapi.dev/) - node api that doesn't use middleware.  
-[graphql](https://graphql.org/) - I chose not to use graphql because we have more full stack developers rather than a front end team and a backend team.     
+Alternatives Node rest APIs:  
+- [hapi](https://hapi.dev/) - node api that doesn't use middleware. Express is designed for server side rendering, not rest apis.    
 
-Using serverless is an archticture that I am still considering and may move towards replacing express.  
-[serverless](https://serverless.com/)   
+- [graphql](https://graphql.org/) - is an alternative to rest apis. GraphQL is a specification for a typed query language similar to sql and runtime which incluces a client (eg. relay, apollo) and server. [Apollo](https://www.apollographql.com/) is a popular graphql implementation. [Relay](https://relay.dev/) is a popular graphql client.     
+- [serverless](https://serverless.com/) is a framework that can route to serverless cloud functions such as AWS lambda. Serverless cloud functions can be implemented in a variety of languages.     
+
+# Databases
+There are 2 classes of databases: relational (which typically use SQL) and NoSql which include Wide column stores, document stores, key-value stores, and graph databases.  
 
 ### MS Sql Server
 I use MS Sql Server on several projects that require a relational database.  
