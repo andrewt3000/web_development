@@ -80,7 +80,7 @@ Preferred: [mobx](https://mobx.js.org/intro/overview.html) - simple, scalable, s
 Alternatives:  
 - [redux](https://redux.js.org/) A Predictable State Container for JS Apps. Has immutable state. It has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367).   
 
-[immer](https://immerjs.github.io/immer/docs/introduction) - work with immutable state in a more convenient way. Can be used to simplify redux reducers.    
+Considering: [immer](https://immerjs.github.io/immer/docs/introduction) - work with immutable state in a more convenient way. Can be used to simplify redux or mobx reducers.    
 
 Use mobx inject when you need to access state variables(considered obsolete due to react context). Use observer to react to state variables.  
 We are not using the decorators.  
