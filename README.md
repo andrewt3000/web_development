@@ -110,6 +110,10 @@ Use the history object to redirect to a route. This comes from createBrowserHist
 ```javascript
 history.push('/myroute')
 ````
+### Data fetching
+[fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API#Concepts_and_usage) is a web api (natively supported in more recent browsers). In the case of older browsers it may require a [polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill).  
+
+alternative: [axios](https://github.com/axios/axios)  
 
 ### Browser error logging
 Using a browser error logging service such as [sentry](https://sentry.io/) helps alert to production problems.  
