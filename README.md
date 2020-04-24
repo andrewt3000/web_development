@@ -4,11 +4,9 @@ These are notes on several web apps that I have built and maintain. It discusses
 The apps consists of a [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) / [react](https://reactjs.org/) /  [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [Node](https://nodejs.org) / [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.   
 The apps are targeted to desktop computers and not mobile, although in many cases the apps are [responsive](https://en.wikipedia.org/wiki/Responsive_web_design) and could be easily adapted to mobile.
 
-### Programming Language
-Preferred: [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
-[flow](https://flow.org/) - a javascript static type checker.  
-Alternatives:  
+Language Alternatives:  
 [typescript](https://www.typescriptlang.org/) (a superset of javascript) has type checking support.  
+[flow](https://flow.org/) - a javascript static type checker.  
  
 
 ### IDE, text editors
