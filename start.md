@@ -9,7 +9,7 @@ Many javascript libraries and tools use a [command line interface](https://en.wi
 - Windows [DOS](https://en.wikipedia.org/wiki/MS-DOS).  
 - Windows PowerShell
 
-
+### Generate App
 ``` zsh
 #make project directory
 mkdir carl2
@@ -31,9 +31,10 @@ npm start
 
 ```
 
+### 
 By default npm starts web on port 3000, and node on port 4001. 
 
-Change web/package.json by adding line below. This avoids cors issues in dev. See [Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
+Change web/package.json by adding line below. This avoids [cors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  issues. See [Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
 
 ```
 "proxy": "http://localhost:3001",
