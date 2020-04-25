@@ -21,5 +21,20 @@ npx express-generator server
 rm -rf web/.git
 git init
 
+#start web app
+cd web
+npm start
+
+#In another shell
+cd server
+npm start
 
 ```
+
+By default npm starts web on port 3000, and node on port 4001. 
+
+Change web/package.json by adding line below. This avoids cors issues in dev. See [Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
+
+```
+"proxy": "http://localhost:3001",
+````
