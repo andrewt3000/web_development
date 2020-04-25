@@ -27,6 +27,7 @@ npm start
 
 #In another shell
 cd server
+npm install
 npm start
 
 ```
