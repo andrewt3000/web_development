@@ -18,6 +18,8 @@ Preferred: [git](https://git-scm.com/) - open source, distributed [version contr
 [command reference](https://git-scm.com/docs)  
 [git book](https://git-scm.com/book/en/v2)  
 
+git obsoletes other open source vcs such as rcs, cvs, and subversion.  
+
 My source control current work flow is pushing to master, pushes to live production. Devs work on feature branches. When the feature is complete it is pushed to a dev branch, and they do a pull requests. Manager authorizes the push to master/live after testing.   
 
 ### Source control hosting
@@ -29,8 +31,6 @@ Preferred: [semantic verisioning](https://semver.org/)
 I also plan to track an app version number in the package.json file and reflect that number to users to make sure they have the latest version. 
 
 Keeping users on the latest version has been a challenge. Cache busting is built into the build process. However CRA defaults the app to be a [Service worker](https://developers.google.com/web/fundamentals/primers/service-workers/) which I believe is presenting problems. Currently users have to refresh the app, then close the browser to get the latest version.   
-
-git obsoletes other open source vcs such as rcs, cvs, and subversion.  
 
 ### Package manager
 Preferred: [npm](https://www.npmjs.com/)  - npm is a package manager and task runner.  
