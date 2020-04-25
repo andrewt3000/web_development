@@ -61,8 +61,9 @@ Now start node with command
 npm run dev
 ```
 ### Create routes to first 2 screens
+[Install web react router](https://reacttraining.com/react-router/web/guides/quick-start).  
 ``` 
-npm install react-router
+npm install react-router-dom
 ```
 
 
