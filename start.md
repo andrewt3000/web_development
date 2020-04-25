@@ -32,11 +32,28 @@ npm start
 
 ```
 
-### 
-By default npm starts web on port 3000, and node on port 4001. 
-
-Change web/package.json by adding line below. This avoids [cors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  issues. See [Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
+### Run web and server on same port
+By default npm starts web on port 3000, and node on port 4001. Change web/package.json by adding line below. This avoids [cors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  issues. See [Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
 
 ```
 "proxy": "http://localhost:3001",
 ````
+
+### Configure nodemon
+nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.  
+
+Install nodemon  
+```
+npm -g install nodemon
+```
+
+Changer server/package.json to run nodemon in dev but not in production.  
+```
+"scripts": {
+    "precommit": "lint-staged",
+    "dev": "NODE_ENV=development nodemon index.js --ignore db/schema.js",
+    "start": "node index.js",
+    "test": "jest"
+  },
+```
+
