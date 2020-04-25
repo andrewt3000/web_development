@@ -18,7 +18,7 @@ Preferred: [git](https://git-scm.com/) - open source, distributed [version contr
 [command reference](https://git-scm.com/docs)  
 [git book](https://git-scm.com/book/en/v2)  
 
-git obsoletes other open source vcs alternatives such as rcs, cvs, and subversion.  
+Alternative: git obsoletes other open source vcs such as rcs, cvs, and subversion.  
 
 Best practice: Source control work flow with multiple developers and an architects is:  
 - Devs work on feature branches. 
