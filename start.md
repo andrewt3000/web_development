@@ -51,10 +51,8 @@ npm -g install nodemon
 Changer server/package.json to run nodemon in dev but not in production.  
 ```
 "scripts": {
-    "precommit": "lint-staged",
     "dev": "nodemon ./bin/www",
     "start": "node ./bin/www",
-    "test": "jest"
   },
 ```
 
