@@ -51,9 +51,9 @@ Changer server/package.json to run nodemon in dev but not in production.
 ```
 "scripts": {
     "precommit": "lint-staged",
-    "dev": "NODE_ENV=development nodemon index.js --ignore db/schema.js",
-    "start": "node index.js",
-    "test": "jest"
+    "dev": "NODE_ENV=development nodemon ./bin/www",
+    "start": "node ./bin/www",
+    "test": "jest"   
   },
 ```
 
