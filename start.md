@@ -7,7 +7,7 @@ Many javascript libraries and tools use a [command line interface](https://en.wi
 [basic cli commands](cli.md)    
 - MacOS [terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)) 
 - Windows [DOS](https://en.wikipedia.org/wiki/MS-DOS).  
-
+- Windows PowerShell
 
 
 ``` zsh
