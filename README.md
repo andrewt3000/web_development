@@ -14,8 +14,7 @@ Preferred: [Visual Studio Code](https://code.visualstudio.com/), [vi](https://ww
 Alternative: [Atom](https://atom.io/), [emacs](https://www.gnu.org/software/emacs/)  
 
 ### Source Control
-Preferred: [git](https://git-scm.com/) - open source, distributed [version control](https://en.wikipedia.org/wiki/Version_control)     
-[command reference](https://git-scm.com/docs)  
+Preferred: [git](https://git-scm.com/) ([command ref](https://git-scm.com/docs)  ) - open source, distributed [version control](https://en.wikipedia.org/wiki/Version_control)     
 [git book](https://git-scm.com/book/en/v2)  
 
 Alternative: git obsoletes other open source vcs such as rcs, cvs, and subversion.  
