@@ -60,3 +60,9 @@ Now start node with command
 ```
 npm run dev
 ```
+### Create routes to first 2 screens
+``` 
+npm install react-router
+```
+
+
