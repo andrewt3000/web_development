@@ -18,9 +18,14 @@ Preferred: [git](https://git-scm.com/) - open source, distributed [version contr
 [command reference](https://git-scm.com/docs)  
 [git book](https://git-scm.com/book/en/v2)  
 
-git obsoletes other open source vcs such as rcs, cvs, and subversion.  
+git obsoletes other open source vcs alternatives such as rcs, cvs, and subversion.  
 
-My source control current work flow is pushing to master, pushes to live production. Devs work on feature branches. When the feature is complete it is pushed to a dev branch, and they do a pull requests. Manager authorizes the push to master/live after testing.   
+Best practice: Source control work flow with multiple developers and an architects is:  
+- Devs work on feature branches. 
+- When the feature is complete the feature is merged and pushed to a dev branch, and they do a pull requests. 
+- Architect/manager approves PR after testing.   
+- Pushing to master automatically deploys to live production. 
+
 
 ### Source control hosting
 Preferred: [github](https://github.com/)  
