@@ -1,6 +1,6 @@
 ## How to start building an app
 
-Download Visual Studio Code, and node.  
+Download [Visual Studio Code](https://code.visualstudio.com/download), and [node js](https://nodejs.org/en/download/).  
 
 ### Command Line
 Many javascript libraries and tools use a [command line interface](https://en.wikipedia.org/wiki/Command-line_interface). [cli cheatsheet](cli.md)    
@@ -13,7 +13,7 @@ Many javascript libraries and tools use a [command line interface](https://en.wi
 #make project directory
 mkdir carl2
 cd carl2
-npx create-react-app web
+npx create-react-app web --template redux
 npx express-generator server 
 
 #put whole project in git
