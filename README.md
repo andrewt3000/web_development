@@ -159,8 +159,10 @@ Alternatives Node rest APIs:
 # Databases
 There are 2 classes of databases: relational (which typically use SQL) and NoSql which include Wide column stores, document stores, key-value stores, and graph databases.  
 
+best practice: [database normalization](https://en.wikipedia.org/wiki/Database_normalization)  
+
 ### MS Sql Server
-I use MS Sql Server on several projects that require a relational database.  
+I use MS Sql Server on several projects are suited to relational databases.   
 [tediousjs](https://github.com/tediousjs/node-mssql) MS Sql node driver.  
 - [Sql Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) - MS Windows client.  
 - [SQLPro for MSSQL](https://www.macsqlclient.com/) mac client (room for improvement)  
