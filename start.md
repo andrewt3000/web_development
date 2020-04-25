@@ -14,7 +14,7 @@ Many javascript libraries and tools use a [command line interface](https://en.wi
 #make project directory
 mkdir carl2
 cd carl2
-npx create-react-app web --template redux
+npx create-react-app web
 npx express-generator server 
 
 #put whole project in git
@@ -32,8 +32,8 @@ npm start
 
 ```
 
-### Run web and server on same port
-By default the react and node generators start both process on port 3000. I change node to run on 3001 (modify , and proxy node to port 3000. This avoids [cors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  issues. See [Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
+### Problem: web and server run on same port
+By default the react and node generators start both process on port 3000. I change node to run on 3001 (modify , and proxy node to port 3000). Proxying avoids [cors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  issues. See [Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
 
 Change web/package.json to proxy node.  
 ```
