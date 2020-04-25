@@ -58,3 +58,7 @@ Changer server/package.json to run nodemon in dev but not in production.
   },
 ```
 
+Now start node with command
+```
+npm run dev
+```
