@@ -40,7 +40,7 @@ By default npm starts web on port 3000, and node on port 4001. Change web/packag
 ````
 
 ### Configure nodemon
-nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.  
+[nodemon](https://nodemon.io/) is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.  
 
 Install nodemon  
 ```
