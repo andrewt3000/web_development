@@ -2,7 +2,7 @@
 These are notes on several web apps that I have built and maintain. It discusses the tools I am using and alternatives. It also gives example code and preferences among options within the libraries.   
 
 The apps consists of a [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) / [react](https://reactjs.org/) /  [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [Node](https://nodejs.org) / [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.   
-The apps are targeted to desktop computers and not mobile, although they are mostly [responsive](https://en.wikipedia.org/wiki/Responsive_web_design).
+
 
 Language Alternatives:  
 [typescript](https://www.typescriptlang.org/) (a superset of javascript) has type checking support.  
@@ -57,13 +57,15 @@ Preference: I generally prefer to use functional rather than class [components](
 Alternatives: [Angular](https://angularjs.org/), [Vue](https://vuejs.org/) ([vuex](https://vuex.vuejs.org/) [nuxt](https://nuxtjs.org/))   
 
 ### React componet libraries:  
+Most of my apps are targeted to desktop computers and not mobile, although they are mostly [responsive](https://en.wikipedia.org/wiki/Responsive_web_design).  
+
 Preferred:  
 [antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. It is used by several chinese companies including alibaba, tencent and Baidu.   
 [styled components](https://www.styled-components.com/) - is a popular react library for styling custom components.  
 
 Alternatives:  
 - [react bootstrap](https://react-bootstrap.github.io/)  
-- [material UI](https://material-ui.com/)  
+- [material UI](https://material-ui.com/) - created by google  
 - [blueprint](https://blueprintjs.com/)  
 - [element](https://element.eleme.io)  
 - [semantic ui](https://semantic-ui.com/)  
