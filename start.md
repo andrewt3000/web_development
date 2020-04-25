@@ -33,8 +33,9 @@ npm start
 ```
 
 ### Run web and server on same port
-By default npm starts web on port 3000, and node on port 4001. Change web/package.json by adding line below. This avoids [cors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  issues. See [Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
+By default the react and node generators start both process on port 3000. I change node to run on 3001 (modify , and proxy node to port 3000. This avoids [cors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  issues. See [Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
 
+Change web/package.json to proxy node.  
 ```
 "proxy": "http://localhost:3001",
 ````
@@ -51,9 +52,9 @@ Changer server/package.json to run nodemon in dev but not in production.
 ```
 "scripts": {
     "precommit": "lint-staged",
-    "dev": "NODE_ENV=development nodemon ./bin/www",
+    "dev": "nodemon ./bin/www",
     "start": "node ./bin/www",
-    "test": "jest"   
+    "test": "jest"
   },
 ```
 
