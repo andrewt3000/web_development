@@ -20,16 +20,17 @@ Preferred: [git](https://git-scm.com/) - open source, distributed [version contr
 
 Alternative: git obsoletes other open source vcs such as rcs, cvs, and subversion.  
 
-Best practice: Source control work flow with multiple developers and an architects is:  
-- Devs work on feature branches. 
-- When the feature is complete the feature is merged and pushed to a dev branch, and they do a pull requests. 
-- Architect/manager approves PR after testing.   
-- Pushing to master automatically deploys to live production. 
-
-
 ### Source control hosting
 Preferred: [github](https://github.com/)  
 Alternatives: [gitlab](https://about.gitlab.com/), [bitbucket](https://bitbucket.org/)  
+
+### Version control workflow
+Best practice: Source control work flow with multiple developers and an architects is:  
+- Devs work on feature branches. 
+- When the feature is complete devs merged and push to a dev branch, and they do a PR ([pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)) 
+- Architect/manager approves PR after testing.   
+- Pushing to master automatically deploys to live production. 
+
 
 ### App Versioning  
 Preferred: [semantic verisioning](https://semver.org/)   
