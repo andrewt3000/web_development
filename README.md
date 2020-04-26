@@ -79,6 +79,7 @@ Alternatives:
 
 ### State Management   
 Preferred: [mobx](https://mobx.js.org/intro/overview.html) - simple, scalable, state management.  
+[mobx-react](https://mobx-react.js.org/)  
 
 Alternatives:  
 - [redux](https://redux.js.org/) A Predictable State Container for JS Apps. Has immutable state. It has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367). Redux is  commonly used with [Redux toolkit](https://redux-toolkit.js.org/) and [React-Redux](https://react-redux.js.org/) bindings. Typically use involves [thunks](https://github.com/reduxjs/redux-thunk#redux-thunk) or [sagas](https://redux-saga.js.org/) for [middleware](https://redux.js.org/advanced/middleware).  
@@ -86,8 +87,12 @@ Alternatives:
 
 Considering: [immer](https://immerjs.github.io/immer/docs/introduction) - work with immutable state in a more convenient way. Can be used to simplify redux or mobx reducers.    
 
-Use mobx inject when you need to access state variables(considered obsolete due to react context). Use observer to react to state variables.  
-We are not using the decorators.  
+The [gist of mobx](https://mobx.js.org/intro/overview.html) is:
+1. Define state and make it Observable.  
+2. Create a view that responds to changes in the State.   
+3. Modify the State  
+Best practice: Currently using inject when you need to access state variables via props (going forward [reconsider due to changes](https://mobx-react.js.org/recipes-inject)).  
+Best practice: Have considered using the decorators, but not currently using them due to not being [stable supported language feature](https://mobx.js.org/best/decorators.html).  
 
 ```javascript
 import { inject, observer } from "mobx-react"
@@ -97,6 +102,7 @@ export default inject("appState")(observer(CameraSelect))
 
 ### React Router
 [react router](https://reacttraining.com/react-router/web/guides/philosophy) is a declarative react routing framework.
+
 
 There is a page that routes urls to react components. Use the Link object to link to urls.   
 ```javascript
