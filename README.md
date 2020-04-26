@@ -38,7 +38,7 @@ I also plan to track an app version number in the package.json file and reflect 
 Keeping users on the latest version has been a challenge. Cache busting is built into the build process. However CRA defaults the app to be a [Service worker](https://developers.google.com/web/fundamentals/primers/service-workers/) which I believe is presenting problems. Currently users have to refresh the app, then close the browser to get the latest version.   
 
 ### Package manager
-Preferred: [npm](https://www.npmjs.com/)  - npm is a package manager and task runner.  
+Preferred: [npm](https://www.npmjs.com/)  - npm is a cli package manager and task runner. They also host a public package repository.    
 Alternatives: [yarn](https://yarnpkg.com/)   
 
 ### Updating packages
