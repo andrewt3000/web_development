@@ -96,7 +96,7 @@ export default inject("appState")(observer(CameraSelect))
 ```
 
 ### React Router
-[react router](https://reacttraining.com/react-router/web/guides/philosophy)  App uses BrowserRouter which uses history api.
+[react router](https://reacttraining.com/react-router/web/guides/philosophy) is a declarative react routing framework.
 
 There is a page that routes urls to react components. Use the Link object to link to urls.   
 ```javascript
