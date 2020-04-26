@@ -39,7 +39,7 @@ Keeping users on the latest version has been a challenge. Cache busting is built
 
 ### Package manager
 Preferred: [npm](https://www.npmjs.com/)  - npm is a cli package manager and task runner. They also host a public package repository.    
-Alternatives: [yarn](https://yarnpkg.com/)   
+Alternatives: [yarn](https://yarnpkg.com/)  
 
 ### Updating packages
 best practice: keep javascript packages up to date on front and back end.  
