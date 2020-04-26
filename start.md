@@ -12,8 +12,8 @@ Many javascript libraries and tools use a [command line interface](https://en.wi
 ### Generate App
 ``` zsh
 #make project directory
-mkdir carl2
-cd carl2
+mkdir userManager
+cd userManager
 npx create-react-app web
 npx express-generator server 
 
@@ -25,7 +25,7 @@ git init
 cd web
 npm start
 
-#In another shell
+#start node server
 cd server
 npm install
 npm start
