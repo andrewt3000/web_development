@@ -60,10 +60,12 @@ Now start node with command
 ```
 npm run dev
 ```
-### Create routes to first 2 screens
+
+Check that the front and back end work by pulling them up in the browser.  
+
+### Create routes to first screens
 [Install web react router](https://reacttraining.com/react-router/web/guides/quick-start).  
 ``` 
 npm install react-router-dom
 ```
-
-
+Delete the react boiler plate and copy/paste the [quick start](https://reacttraining.com/react-router/web/guides/quick-start).  
