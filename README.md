@@ -166,7 +166,7 @@ Alternatives Node rest APIs:
 # Databases
 There are 2 classes of databases: relational (which typically use SQL) and NoSql which include Wide column stores, document stores, key-value stores, and graph databases.  
 
-best practice: [database normalization](https://en.wikipedia.org/wiki/Database_normalization)  
+best practice for relatioal databases: [database normalization](https://en.wikipedia.org/wiki/Database_normalization)  
 
 ### MS Sql Server
 I use MS Sql Server on several projects are suited to relational databases.   
