@@ -174,6 +174,7 @@ I use MS Sql Server on several projects are suited to relational databases.
 [tediousjs](https://github.com/tediousjs/node-mssql) MS Sql node driver.  
 - [Sql Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) - MS Windows client.  
 - [SQLPro for MSSQL](https://www.macsqlclient.com/) mac client (room for improvement)  
+- [Red Gate Sql Compare](https://www.red-gate.com/products/sql-development/sql-compare/) tool for migrating schema to production environments.   
 
 ### Mongo DB
 I am using mongo db on some project due to large number of records stored.  
