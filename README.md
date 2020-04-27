@@ -1,5 +1,5 @@
 # Web Development
-These are notes on several web apps that I have built and maintain. It lists tools, alternatives, and opinions.   
+These are notes for building web apps. It list preferred tools/frameworks, and alternatives plus opinions about best practices and trade offs.   
 
 The apps consists of a [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) / [react](https://reactjs.org/) /  [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [Node](https://nodejs.org) / [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.   
 
