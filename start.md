@@ -69,3 +69,6 @@ Check that the front and back end work by pulling them up in the browser.
 npm install react-router-dom
 ```
 Delete the react boiler plate and copy/paste the [quick start](https://reacttraining.com/react-router/web/guides/quick-start).  
+- change the title in manifest.json (search the project)
+- Create Login Screen  
+
