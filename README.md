@@ -147,10 +147,11 @@ npm test
 
 # Server Side
 ### Node  
-An advantage of node for full stack developers is using the same language on front and back end.  
+[node](https://nodejs.org) - javascript runtime built on chrome v8 javascript engine.  
+[nvm node version manager] - tool to easily switch versions of node.  
 
-I prefer Express for routing. 
-To get started use [Express application generator](https://expressjs.com/en/starter/generator.html)  
+[Express](https://expressjs.com/) library for node routing. 
+[Express application generator](https://expressjs.com/en/starter/generator.html) - tool to generate node express   
 Guide: [Routing](https://expressjs.com/en/guide/routing.html) [Using Middleware](http://expressjs.com/en/guide/using-middleware.html)  Middleware, in the context of express, is code between receiving a request and producing a response.  
 [4.X API](https://expressjs.com/en/api.html)  
 Node contains objects: express, request, response and router.  
