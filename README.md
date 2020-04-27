@@ -150,7 +150,7 @@ npm test
 [node](https://nodejs.org) - javascript runtime built on chrome v8 javascript engine. Node is frequently run as an [http server](https://nodejs.org/en/docs/guides/getting-started-guide/).     
 [nvm node version manager](https://github.com/nvm-sh/nvm) - tool to switch versions of node.  
 
-[Express](https://expressjs.com/) node library for node routing. 
+[Express](https://expressjs.com/) node library for routing http requests.  
 [Express application generator](https://expressjs.com/en/starter/generator.html) - tool to generate node express   
 Guide: [Routing](https://expressjs.com/en/guide/routing.html) [Using Middleware](http://expressjs.com/en/guide/using-middleware.html)  Middleware, in the context of express, is code between receiving a request and producing a response.  
 [4.X API](https://expressjs.com/en/api.html)  
