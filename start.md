@@ -33,18 +33,24 @@ npm start
 ```
 
 ### Problem: Express generator installs jade which is out of date
-run ncu and upgrade to latest packages.  
+run ncu in server and upgrade to latest packages.  
 remove jade because it's obsolete and a view engine is not need for a rest api.  
 ```
 npm uninstall jade
 ```
-remove the views folder and these lines from app.js
+remove the views folder and these lines from app.js. 
 ```javascript
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  next(createError(404));
+});
 ```
-change index.js to not call view engine.   
+in app.js change res.render() to res.send() call for handling 500 errors to not use view engine. (near bottom)  
+in server/routes/index.js change res.render to res.send()
 
 ### Problem: web and server run on same port
 By default the react and node generators start both process on [port](https://en.wikipedia.org/wiki/Port_(computer_networking)) 3000.  
