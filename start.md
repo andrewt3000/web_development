@@ -1,6 +1,6 @@
 ## How to start building an app
 
-Download [Visual Studio Code](https://code.visualstudio.com/download), and [node js](https://nodejs.org/en/download/).  
+Download and install [Visual Studio Code](https://code.visualstudio.com/download), and [node js](https://nodejs.org/en/download/).  
 
 ### Command Line
 Many javascript libraries and tools use a [command line interface](https://en.wikipedia.org/wiki/Command-line_interface).  
