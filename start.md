@@ -44,6 +44,7 @@ remove the views folder and these lines from app.js
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 ```
+change index.js to not call view engine.   
 
 ### Problem: web and server run on same port
 By default the react and node generators start both process on [port](https://en.wikipedia.org/wiki/Port_(computer_networking)) 3000. I change node to run on 3001 (modify , and proxy node to port 3000). Proxying avoids [cors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  issues. See [Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
