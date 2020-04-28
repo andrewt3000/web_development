@@ -34,7 +34,16 @@ npm start
 
 ### Problem: Express generator installs jade which is out of date
 run ncu and upgrade to latest packages.  
-[uninstall jade, install pug](https://stackoverflow.com/questions/58466180/express-4-0-0-generates-deprecated-dependencies-and-vulnerabilities)  
+remove jade because it's obsolete and a view engine is not need for a rest api.  
+```
+npm uninstall jade
+```
+remove the views folder and these lines from app.js
+```javascript
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+```
 
 ### Problem: web and server run on same port
 By default the react and node generators start both process on [port](https://en.wikipedia.org/wiki/Port_(computer_networking)) 3000. I change node to run on 3001 (modify , and proxy node to port 3000). Proxying avoids [cors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  issues. See [Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
