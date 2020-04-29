@@ -217,6 +217,8 @@ In production, the front end is served through node. This avoids cors issues bec
 
 In dev, "npm start" starts web on port 3000, and node on port 4001. There is a proxy in web package.json to port 4001 , which avoids cors issues in dev also. [See Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development)   
 
+In the past, I have hosted node using [pm2](https://pm2.keymetrics.io/) and used [nginx](https://www.nginx.com/) for web server on linux amazon aws ec2 instances.  
+
 ### Under Consideration  
 #### serverless architectures 
 The upside to serverless is scalability. The downside is propreitary apis and lack of control of the environment. For instance, an issue I had with serverless was aws lambda was on an older version of node than what I was using.   
