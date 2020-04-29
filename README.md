@@ -220,13 +220,17 @@ In dev, "npm start" starts web on port 3000, and node on port 4001. There is a p
 In the past, I have hosted node using [pm2](https://pm2.keymetrics.io/) and used [nginx](https://www.nginx.com/) for web server on linux amazon aws ec2 instances.  
 
 ### Under Consideration  
-#### serverless architectures 
+#### Proprietary serverless architectures 
 The upside to serverless is scalability. The downside is propreitary apis and lack of control of the environment. For instance, an issue I had with serverless was aws lambda was on an older version of node than what I was using.   
 
+##### Azure 
 [Azure functions](azure_functions.md) - serverless functions use http triggers and binding to do routing.  
 
-AWS [Cloud Formation](https://aws.amazon.com/cloudformation/) / API Gateway / lambda / Lambda authorizers.  
+##### AWS serverless stack
+- API Gateway / [Lambda authorizers](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html)    
+- Lambda functions
 
+##### Vercel (formerly zeit)  
 [vercel (formerly zeit) now](https://vercel.com/home) - Used previously.  cli (now), now.json config file, but routes default to file system layout.  
 host static site and [serverless functions](https://zeit.co/docs/v2/serverless-functions/introduction/) (use now api for routing instead of express etc.).  
 Integrates with github etc.    
