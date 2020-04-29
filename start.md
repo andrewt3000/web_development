@@ -94,3 +94,8 @@ Delete the react boiler plate and copy/paste the [quick start](https://reacttrai
 - change the title in web/public/index.html to User Manager
 - create routes to 2 screens: root is login screen, /users is user list.    
 
+### Configure Node to connect to database
+Consider implications of putting a real password in source control, especially if it's open source project.  
+Password are often put in config file not in source control or in an environment variable.  
+Password can also be encrypted for security however then you have to secure the encryption keys.  
+
