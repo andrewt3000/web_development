@@ -48,7 +48,7 @@ Preferred: [npm](https://www.npmjs.com/)  - npm is a cli package manager and tas
 Alternatives: [yarn](https://yarnpkg.com/)  
 
 ### Updating packages
-best practice: keep javascript packages up to date on front and back end.  
+Best practice: Periodically (weekly) update javascript packages on front and back end. This is important for security reasons, but can challenging when libraries change and break your project. After upgrading run tests.    
 ```
 #command show what needs to be updated
 ncu 
