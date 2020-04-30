@@ -113,12 +113,6 @@ The [gist of mobx](https://mobx.js.org/intro/overview.html) is:
 Best practice: Currently using mobx-react inject when you need to access state variables via props (going forward [reconsider due to changes](https://mobx-react.js.org/recipes-inject)).  
 Best practice: Have considered using the decorators, but not currently using them due to not being [stable supported language feature](https://mobx.js.org/best/decorators.html).  
 
-```javascript
-import { inject, observer } from "mobx-react"
-props.appState.cameraID
-export default inject("appState")(observer(CameraSelect))
-```
-
 ### React Router
 [react router](https://reacttraining.com/react-router/web/guides/philosophy) is a declarative react routing framework.
 
