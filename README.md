@@ -41,7 +41,8 @@ Best practice: Source control work flow with multiple developers and an architec
 Preferred: [semantic verisioning](https://semver.org/)   
 I also plan to track an app version number in the package.json file and reflect that number to users to make sure they have the latest version. 
 
-Keeping users on the latest version has been a challenge. Cache busting is built into the build process. However CRA defaults the app to be a [Service worker](https://developers.google.com/web/fundamentals/primers/service-workers/) which I believe is presenting problems. Currently users have to refresh the app, then close the browser to get the latest version.   
+Keeping users on the latest version can be a challenge. Currently, on some apps, users have to refresh the app, then close the browser to get the latest version.   
+I need to look into Cache busting. Also look at CRA defaults around [Service workers](https://developers.google.com/web/fundamentals/primers/service-workers/). 
 
 ### Package manager
 Preferred: [npm](https://www.npmjs.com/)  - npm is a cli package manager and task runner. npm hosts a public package repository.    
