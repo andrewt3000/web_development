@@ -97,7 +97,10 @@ Preferred: [mobx](https://mobx.js.org/intro/overview.html) - simple, scalable, s
 Alternatives:  
 - [redux](https://redux.js.org/) A Predictable State Container for JS Apps. Has immutable state. It has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367). Redux is  commonly used with [Redux toolkit](https://redux-toolkit.js.org/) and [React-Redux](https://react-redux.js.org/) bindings. Typically use involves [thunks](https://github.com/reduxjs/redux-thunk#redux-thunk) or [sagas](https://redux-saga.js.org/) for [middleware](https://redux.js.org/advanced/middleware).  
 [redux chrome extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)  
-[redux cra template](https://github.com/reduxjs/cra-template-redux) npx create-react-app project_name --template redux  
+[redux cra template](https://github.com/reduxjs/cra-template-redux) 
+```
+npx create-react-app project_name --template redux  
+```
 
 Considering: [immer](https://immerjs.github.io/immer/docs/introduction) - work with immutable state in a more convenient way. Can be used to simplify redux or mobx reducers.    
 
