@@ -69,12 +69,11 @@ Preference: I generally prefer to use functional rather than class [components](
 
 Alternatives: [Angular](https://angularjs.org/), [Vue](https://vuejs.org/) ([vuex](https://vuex.vuejs.org/) [nuxt](https://nuxtjs.org/))   
 
-### React componet libraries:  
+### React component libraries:  
 Most of my apps are targeted to desktop computers and not mobile, although they are mostly [responsive](https://en.wikipedia.org/wiki/Responsive_web_design).  
 
 Preferred:  
 [antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. It is used by several chinese companies including alibaba, tencent and Baidu.   
-[styled components](https://www.styled-components.com/) - is a popular react library for styling custom components.  
 
 Alternatives:  
 - [react bootstrap](https://react-bootstrap.github.io/)  
@@ -82,6 +81,12 @@ Alternatives:
 - [blueprint](https://blueprintjs.com/)  
 - [element](https://element.eleme.io)  
 - [semantic ui](https://semantic-ui.com/)  
+
+### Custom styling
+I typically use [standard](https://www.w3.org/Style/CSS/Overview.en.html)  [css](https://developer.mozilla.org/en-US/docs/Web/CSS). I prefer using [css grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) for layout. Typically in a configuration such as [holy grail layout](https://alligator.io/css/css-grid-holy-grail-layout/).  
+Alternatives:  
+[styled components](https://www.styled-components.com/) - is a popular react library for styling custom components.  
+
 
 ### State Management   
 Preferred: [mobx](https://mobx.js.org/intro/overview.html) - simple, scalable, state management.  
