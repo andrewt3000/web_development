@@ -1,7 +1,8 @@
 # Web Development
-These are notes for building web apps. I consult this document when starting a new app and it's useful for other apps that I am working on or maintaining. It list preferred tools/frameworks, and alternatives plus opinions about best practices and trade offs.   
+These are notes for building web apps. I consult this document when starting a new app and maintaining existing apps. It list preferred tools/frameworks, and alternatives plus opinions about best practices and trade offs.   
 
-The apps consists of a [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) / [react](https://reactjs.org/) /  [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [Node](https://nodejs.org) / [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.   
+What stack should I choose?  
+Prefered: [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) / [react](https://reactjs.org/) /  [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [Node](https://nodejs.org) / [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.   
 
 
 Language Alternatives:  
