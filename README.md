@@ -11,7 +11,7 @@ Language Alternatives:
 
 ### IDE, text editors
 Preferred: [Visual Studio Code](https://code.visualstudio.com/), [vi](https://www.vim.org/)     
-VS Code has support for [emmet](https://emmet.io/) in [jsx](https://stackoverflow.com/questions/56311467/configure-emmet-for-jsx-in-vscode)   
+VS Code has support for [emmet](https://emmet.io/) in [jsx](https://stackoverflow.com/questions/56311467/configure-emmet-for-jsx-in-vscode) and [code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)    
 
 Alternative: [Atom](https://atom.io/), [emacs](https://www.gnu.org/software/emacs/)  
 
