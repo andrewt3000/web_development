@@ -199,13 +199,15 @@ I am considering using [mongoose](https://mongoosejs.com/) for an ORM. One advan
 ### Authentication and Authorization
 For user authentication and authorization I typically use a [jwt](https://jwt.io/) token to protect the rest api.  
 
-JWT has 3 parts: header, payload, and signature. The payload contains claims which are typically user authorization data.  
+JWT has 3 parts: header, payload, and signature.  
 
 Here is how I typicaly use jwt tokens to authenticate each rest api call. 
-- If the user login is successful (user submits valid username and password) the server returns a jwt token to the client. User authorization information such as user id or group id can be encrypted in the token payload.   
+- If the user login is successful (user submits valid username and password) the server signs and returns a jwt token to the client. User authorization claims such as user id or group id can be encrypted in the token payload.   
 - On the client, the token can optionally be stored in localStorage to extend the login beyond the browser session.  
-- Authenticated api calls are sent through a library function to add the jtw token to all ajax requests in the authorization header using Bearer {token} scheme. 
-- The node api has [middleware](http://expressjs.com/en/guide/using-middleware.html) that filter routes to protected data calls. If the request doesn't has a valid authenticated token, the api responds with unauthorized (http error 401). If the token is valid the request for data is continued. User authorization data from the token payload can be trusted and used to authorize or filter database queries based on permission.    
+- On the client, authenticated api calls are sent through a library function to add the jtw token to all ajax requests in the authorization header using Bearer {token} scheme. 
+- The node api has [middleware](http://expressjs.com/en/guide/using-middleware.html) that filter routes to protected data calls. If the request doesn't has a valid authenticated token, the api responds with unauthorized (http error 401). If the token is valid the request for data is continued. User authorization data from the token payload can be trusted and used to authorize or filter database queries based on permission.  
+
+Here is [documentation](https://github.com/auth0/node-jsonwebtoken) for signing and verifying jwt tokens in node using [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) library.   
 
 On the client side wrap react router's Route object with logic to redirect if the user isn't logged in [Example](https://reacttraining.com/react-router/web/example/auth-workflow). The user's login status, user name, etc. can be stored in a global store. Client side authentication is for convenience, the pages without data are typically not secure assets.   
 
@@ -214,7 +216,8 @@ Trade off: the jwt tokens have an expiration. The pro of longer expirations is c
 Best practice: When storing passwords in the database, [hash the passwords](https://auth0.com/blog/hashing-passwords-one-way-road-to-security/).  
 
 Alternatives: 3rd party service    
-Pro: not storing and protecting sensitive information including user's passwords, and jwt secret key. Presumably timely updates for vulnerabilities.     
+Trade off: Most projects will benefit from outsourcing their security because the 3rd party can dedicate more resource to making sure the process is secure. For instance, if there is a vulnerability, presumably they would patch it very quickly.  
+Pro: not storing and protecting sensitive information including user's passwords, and jwt secret key. 
 Con: dependence on 3rd party and possible changes. (They can go down, go out of business, get bought out, change their pricing, change their api)     
 - [auth0](https://auth0.com/)
 - [okta](https://www.okta.com/)  
