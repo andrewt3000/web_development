@@ -118,19 +118,10 @@ Best practice: Have considered using the decorators, but not currently using the
 
 ### React Router
 [react router](https://reacttraining.com/react-router/web/guides/philosophy) is a declarative react routing framework.
+React router supports [nested](https://reacttraining.com/react-router/web/example/nesting) routing.   
+React router supports a DOM [history](https://reacttraining.com/react-router/web/api/history) which enables the browser back button even though it's used in single page applications.  
 
-
-There is a page that routes urls to react components. Use the Link object to link to urls.   
-```javascript
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-<Route path="/image" exact component={Image} />
-<Link to="/camera">Cameras</Link>
-
-//to read route parameters
-props.match.params.myParam
-```
-
-Use the history object to redirect to a route. This comes from createBrowserHistory.  
+Use the history object to redirect to a route.  
 ```javascript
 history.push('/myroute')
 ````
