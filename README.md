@@ -31,18 +31,21 @@ Preferred: [github](https://github.com/)
 Alternatives: [gitlab](https://about.gitlab.com/), [bitbucket](https://bitbucket.org/)  
 
 ### Version control workflow
-Best practice: Source control work flow with multiple developers and an architects is:  
+Version control work flow is a function of the size and organization of your team as well as the stage of your project. If you are working alone on a project that hasn't been deployed, I would probably just push to master.  
+
+This is a reasonable work flow with multiple developers and an architects where the project is live.    
 - Devs work on feature branches. 
 - When the feature is complete devs merged and push to a dev branch, and they do a PR ([pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)) 
-- Architect/manager approves PR after testing.   
-- Pushing to master automatically deploys to live production. 
+- Architect/manager tests, inspects and approves the PR.   
+- Pushing to master automatically deploys to production. 
 
+This can get much more complicated, especially if you have testing team.  
 
 ### App Versioning  
 Preferred: [semantic verisioning](https://semver.org/)   
 I also plan to track an app version number in the package.json file and reflect that number to users to make sure they have the latest version. 
 
-Keeping users on the latest version can be a challenge. Currently, on some apps, users have to refresh the app, then close the browser to get the latest version.   
+How do I keep users on the most recent version? Currently, on some apps, users have to refresh the app, then close the browser to get the latest version.   
 I need to look into Cache busting. Also look at CRA defaults around [Service workers](https://developers.google.com/web/fundamentals/primers/service-workers/). 
 
 ### Package manager
@@ -78,7 +81,7 @@ Preferred:
 [antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. It is used by several chinese companies including alibaba, tencent and Baidu.   
 
 Alternatives:  
-- [react bootstrap](https://react-bootstrap.github.io/)  
+- [react bootstrap](https://react-bootstrap.github.io/) - created by twitter.   
 - [material UI](https://material-ui.com/) - created by google  
 - [blueprint](https://blueprintjs.com/)  
 - [element](https://element.eleme.io)  
@@ -202,7 +205,7 @@ For user authentication and authorization I typically use a [jwt](https://jwt.io
 JWT has 3 parts: header, payload, and signature.  
 
 Here is how I typicaly use jwt tokens to authenticate each rest api call. 
-- If the user login is successful (user submits valid username and password) the server signs and returns a jwt token to the client. User authorization claims such as user id or group id can be encrypted in the token payload.   
+- If the user login is successful (user submits valid username and password) the server signs and returns a jwt token to the client. User authorization claims such as user id or group id are encrypted in the token payload.   
 - On the client, the token can optionally be stored in localStorage to extend the login beyond the browser session.  
 - On the client, authenticated api calls are sent through a library function to add the jtw token to all ajax requests in the authorization header using Bearer {token} scheme. 
 - The node api has [middleware](http://expressjs.com/en/guide/using-middleware.html) that filter routes to protected data calls. If the request doesn't has a valid authenticated token, the api responds with unauthorized (http error 401). If the token is valid the request for data is continued. User authorization data from the token payload can be trusted and used to authorize or filter database queries based on permission.  
@@ -211,7 +214,7 @@ Here is [documentation](https://github.com/auth0/node-jsonwebtoken) for signing 
 
 On the client side wrap react router's Route object with logic to redirect if the user isn't logged in [Example](https://reacttraining.com/react-router/web/example/auth-workflow). The user's login status, user name, etc. can be stored in a global store. Client side authentication is for convenience, the pages without data are typically not secure assets.   
 
-Trade off: the jwt tokens have an expiration. The pro of longer expirations is convenince for users. The con is security.   
+Trade off: the jwt tokens have an expiration. The pro of longer expirations is convenience for users. The con is longer sessions are less secure.   
 
 Best practice: When storing passwords in the database, [hash the passwords](https://auth0.com/blog/hashing-passwords-one-way-road-to-security/).  
 
