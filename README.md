@@ -197,15 +197,22 @@ I am considering using [mongoose](https://mongoosejs.com/) for an ORM. One advan
 # Application Logic
 
 ### Authentication and Authorization
-I prefer using [jwt](https://jwt.io/) over server side state management because it consumes less resources on the servers and it is easier to load balance accross multiple servers. 
+For user authentication and authorization I typically use a [jwt](https://jwt.io/) token to protect the rest api.  
 
-JWT has 3 parts: header, payload, and signature. Payload contains session fields such as user name, user privileges, company_id etc. 
+JWT has 3 parts: header, payload, and signature. The payload contains claims which are typically user authorization data.  
 
-If the user login is successful it returns a jwt token to the client. The token is stored in localStorage and have a function to add the jtw token to all ajax requests in authorization header as Bearer {token}. The node api has [middleware](http://expressjs.com/en/guide/using-middleware.html) that filter routes. If authenticated, add info to request and call next middleware. Otherwise, api responds with 401. 
+Here is how I typicaly use jwt tokens to authenticate each rest api call. 
+- If the user login is successful (user submits valid username and password) the server returns a jwt token to the client. User authorization information such as user id or group id can be encrypted in the token payload.   
+- On the client, the token can optionally be stored in localStorage to extend the login beyond the browser session.  
+- Authenticated api calls are sent through a library function to add the jtw token to all ajax requests in the authorization header using Bearer {token} scheme. 
+- The node api has [middleware](http://expressjs.com/en/guide/using-middleware.html) that filter routes to protected data calls. If the request doesn't has a valid authenticated token, the api responds with unauthorized (http error 401). If the token is valid the request for data is continued. User authorization data from the token payload can be trusted and used to authorize or filter database queries based on permission.    
 
-On the client side I wrap react router's Route object with logic to redirect if the user isn't logged in [Example](https://reacttraining.com/react-router/web/example/auth-workflow). I track if the user's login status in mobx. Client side authentication is for convenience, the pages without data are not secure assets.   
+On the client side wrap react router's Route object with logic to redirect if the user isn't logged in [Example](https://reacttraining.com/react-router/web/example/auth-workflow). The user's login status, user name, etc. can be stored in a global store. Client side authentication is for convenience, the pages without data are typically not secure assets.   
 
-I considered using identity as a service providers because you don't have to store and protect sensitive information including user's passwords, and your jwt secret key.  
+Best practice: When storing in your database, [hash the passwords](https://auth0.com/blog/hashing-passwords-one-way-road-to-security/).  
+
+Alternatives:  
+Pro: you don't have to store and protect sensitive information including user's passwords, and jwt secret key.   
 - [auth0](https://auth0.com/)
 - [okta](https://www.okta.com/)  
 - [Amazon cognito](https://aws.amazon.com/cognito/)   
