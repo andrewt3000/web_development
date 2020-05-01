@@ -213,7 +213,7 @@ Trade off: the jwt tokens have an expiration. The pro of longer expirations is c
 
 Best practice: When storing passwords in the database, [hash the passwords](https://auth0.com/blog/hashing-passwords-one-way-road-to-security/).  
 
-Alternatives:  
+Alternatives: 3rd party service    
 Pro: not storing and protecting sensitive information including user's passwords, and jwt secret key. Presumably timely updates for vulnerabilities.     
 Con: dependence on 3rd party and possible changes. (They can go down, go out of business, get bought out, change their pricing, change their api)     
 - [auth0](https://auth0.com/)
