@@ -41,7 +41,7 @@ remove jade because it's obsolete and a view engine is not need for a rest api.
 ``` zsh
 npm uninstall jade
 ```
-remove the views and public folders because we are building a rest api, not serving web pages.  
+remove the views and public folders and custom 404 page because we are building a rest api, not serving web pages.  
 remove these lines from app.js. 
 ```javascript
 // view engine setup
