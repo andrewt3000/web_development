@@ -1,5 +1,5 @@
 ## How to start building a MERN web app
-I am going to build a simple web app with login screen and a crud screen.  
+How to build a simple web app with login screen and a crud screen.  
 
 
 Download and install [Visual Studio Code](https://code.visualstudio.com/download), and [node js](https://nodejs.org/en/download/).  
