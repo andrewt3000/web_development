@@ -113,9 +113,11 @@ Check that the front and back end work by pulling them up in the browser.
 ``` 
 npm install react-router-dom
 ```
-Delete the react boiler plate and copy/paste the [quick start](https://reacttraining.com/react-router/web/guides/quick-start).  
 - change the title in web/public/index.html to User Manager
-- create routes to 2 screens: root is login screen, /users is user list.    
+- Delete the CRA  boiler plate and create a simple menu and routes to 2 pages (login and users).   
+[quick start](https://reacttraining.com/react-router/web/guides/quick-start)  
+- Create Login Screen
+- Create Crud Screen for user table.  
 
 ### Configure Node to connect to database
 Consider implications of putting a real password in source control, especially if it's open source project.  
