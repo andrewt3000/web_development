@@ -35,7 +35,7 @@ npm start
 ### Problem: Express generator installs jade which is out of date
 run ncu in server and upgrade to latest packages.  
 remove jade because it's obsolete and a view engine is not need for a rest api.  
-```
+``` zsh
 npm uninstall jade
 ```
 remove the views folder and these lines from app.js. 
@@ -54,13 +54,29 @@ in server/routes/index.js change res.render to res.send()
 
 ### Problem: web and server run on same port
 By default the react and node generators start both process on [port](https://en.wikipedia.org/wiki/Port_(computer_networking)) 3000.  
-- Change node to run on 3001 
-- proxy node to port 3001 to port 3000. Proxying avoids [cors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  issues. See [Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
+First, change node to run on another port (eg. 3001)  
+Then you have 2 options:  
+Option 1: Proxy node to port 3001 to port 3000. Proxying avoids [cors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  issues. See [Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
 
 Change web/package.json to proxy.  
-```
+```javascript
 "proxy": "http://localhost:3001",
 ````
+Option 2: setup cors. 
+- Install node cors library, and add middleware to routes. [Example](https://expressjs.com/en/resources/middleware/cors.html)  
+``` zsh
+npm install cors
+```
+
+``` javascript
+var cors = require('cors')
+var corsOptions = {
+  origin: 'http://localhost:3000',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+app.all("/*",  cors(corsOptions))
+```
+
 
 ### Configure nodemon
 [nodemon](https://nodemon.io/) is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.  
@@ -79,7 +95,7 @@ Changer server/package.json to run nodemon in dev but not in production.
 ```
 
 Now start node with command
-```
+``` zsh
 npm run dev
 ```
 
