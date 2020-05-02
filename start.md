@@ -13,11 +13,12 @@ Many javascript libraries and tools use a [command line interface](https://en.wi
 
 ### Generate App
 ``` zsh
-#make project directory
+#make project directory. typically project name is domain.
 mkdir userManager
 cd userManager
-npx create-react-app web
-npx express-generator server 
+#typically the names are the subdomain.
+npx create-react-app www
+npx express-generator api 
 
 #put whole project in git
 rm -rf web/.git
