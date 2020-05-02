@@ -1,4 +1,6 @@
-## How to start building an app
+## How to start building a MERN web app
+I am going to build a simple web app with login screen and a crud screen.  
+
 
 Download and install [Visual Studio Code](https://code.visualstudio.com/download), and [node js](https://nodejs.org/en/download/).  
 
@@ -38,7 +40,8 @@ remove jade because it's obsolete and a view engine is not need for a rest api.
 ``` zsh
 npm uninstall jade
 ```
-remove the views folder and these lines from app.js. 
+remove the views and public folders because we are building a rest api, not serving web pages.  
+remove these lines from app.js. 
 ```javascript
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -50,7 +53,7 @@ app.use(function(req, res, next) {
 });
 ```
 in app.js change res.render() to res.send() call for handling 500 errors to not use view engine. (near bottom)  
-in server/routes/index.js change res.render to res.send()
+in server/routes/index.js change res.render to res.send()  
 
 ### Problem: web and server run on same port
 By default the react and node generators start both process on [port](https://en.wikipedia.org/wiki/Port_(computer_networking)) 3000.  
@@ -63,7 +66,7 @@ Change web/package.json to proxy.
 "proxy": "http://localhost:3001",
 ````
 Option 2: setup cors. 
-- Install node cors library, and add middleware to routes. [Example](https://expressjs.com/en/resources/middleware/cors.html)  
+- Install node cors library, and add middleware to routes. [Example](https://expressjs.com/en/resources/middleware/cors.html) See [wikipedia "simple example"](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) for high level explanation of cors. 
 ``` zsh
 npm install cors
 ```
@@ -77,6 +80,9 @@ var corsOptions = {
 app.all("/*",  cors(corsOptions))
 ```
 
+This is the preferred way to do it, but you will have to add the url of the web sites for production.  
+
+Also change the method that calls your api to go to the node port. This will also have to configured differently for live.   
 
 ### Configure nodemon
 [nodemon](https://nodemon.io/) is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.  
