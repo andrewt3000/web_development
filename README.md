@@ -46,7 +46,8 @@ Preferred: [semantic verisioning](https://semver.org/)
 I also plan to track an app version number in the package.json file and reflect that number to users to make sure they have the latest version. 
 
 How do I keep users on the most recent version? Currently, on some apps, users have to refresh the app, then close the browser to get the latest version.   
-I need to look into Cache busting. Also look at CRA defaults around [Service workers](https://developers.google.com/web/fundamentals/primers/service-workers/). 
+Webpack Cache busting should help users get the latest version.  
+CRA 2 defaults apps to not be [Service workers](https://developers.google.com/web/fundamentals/primers/service-workers/) which may be related to problems updating apps in the past. 
 
 ### Package manager
 Preferred: [npm](https://www.npmjs.com/)  - npm is a cli package manager and task runner. npm hosts a public package repository.    
