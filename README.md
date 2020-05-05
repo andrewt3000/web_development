@@ -221,14 +221,17 @@ Con: dependence on 3rd party and possible changes. (They can go down, go out of 
 
 # Dev Ops
 
-### Current Deployment
+### Current Prefered Deployment
 Azure blob storage for images.  
-Azure App Services to host the app. (node and front end)  
+Azure blob storage for front end.  
+Azure App Services to host the app.  
 Database is hosted on [mongo db atlas](https://cloud.mongodb.com).  
 
-In production, the front end is served through node. This avoids cors issues because everything is served from the same domain.  
+Using azure pipelines to deploy when posting to master. (see azure-pipelines.yaml)   
+Currently github app installed under: github: Settings -> Integrations -> Azure pipelines -> Configure.    
 
-In dev, "npm start" starts web on port 3000, and node on port 4001. There is a proxy in web package.json to port 4001 , which avoids cors issues in dev also. [See Create React app documentation](https://create-react-app.dev/docs/proxying-api-requests-in-development)   
+###### Previous project deployments
+In production, on some old projects, the front end is served through node. This avoids cors issues because everything is served from the same domain.  
 
 In the past, I have hosted node using [pm2](https://pm2.keymetrics.io/) and used [nginx](https://www.nginx.com/) for web server on linux amazon aws ec2 instances.  
 
