@@ -25,11 +25,11 @@ rm -rf web/.git
 git init
 
 #start web app
-cd web
+cd app
 npm start
 
 #start node server
-cd server
+cd api
 npm install
 npm start
 
