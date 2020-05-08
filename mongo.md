@@ -11,3 +11,5 @@ mongo shell commands has [crud commands](https://docs.mongodb.com/manual/crud/) 
 the mongo driver apis are similar but slightly different from mongo shell commands.  
 [mongo node driver](https://mongodb.github.io/node-mongodb-native/contents.html)   
 [pymongo](https://pymongo.readthedocs.io/)    
+
+A key design trade off in mongo is choosing between [embedded documents versus references](https://docs.mongodb.com/manual/core/data-modeling-introduction/).
