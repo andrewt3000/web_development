@@ -1,5 +1,6 @@
 ### Mongo db
 
+Mongo is a document database.  
 Mongo database contain collections. (analagous to sql tables)  
 collections contain documents. documents are records (analagout to sql rows)    
 mongo documents are also similar to json.  
