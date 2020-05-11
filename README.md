@@ -198,13 +198,13 @@ JWT has 3 parts: header, payload, and signature.
 
 Here is how I typicaly use jwt tokens to authenticate each rest api call. 
 - If the user login is successful (user submits valid username and password) the server signs and returns a jwt token to the client. User authorization claims such as user id or group id are encrypted in the token payload.   
-- On the client, the token can optionally be stored in localStorage to extend the login beyond the browser session.  
+- On the client, the token can optionally be stored in localStorage to extend the login beyond the browser session. It can also be stored in  sessionStorage or localStorage so the single page app data doesn't get removed on a user refresh.  
+- On the client side wrap react router's Route object with logic to redirect if the user isn't logged in [Example](https://reacttraining.com/react-router/web/example/auth-workflow). The user's login status, user name, etc. can be stored in a global store. Client side authentication is for convenience, the pages without data are typically not secure assets. Also if the store is empty check localStorage or sessionStorage to restore login infomation after a user refresh.      
 - On the client, authenticated api calls are sent through a library function to add the jtw token to all ajax requests in the authorization header using Bearer {token} scheme. 
 - The node api has [middleware](http://expressjs.com/en/guide/using-middleware.html) that filter routes to protected data calls. If the request doesn't has a valid authenticated token, the api responds with unauthorized (http error 401). If the token is valid the request for data is continued. User authorization data from the token payload can be trusted and used to authorize or filter database queries based on permission.  
 
 Here is [documentation](https://github.com/auth0/node-jsonwebtoken) for signing and verifying jwt tokens in node using [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) library.   
 
-On the client side wrap react router's Route object with logic to redirect if the user isn't logged in [Example](https://reacttraining.com/react-router/web/example/auth-workflow). The user's login status, user name, etc. can be stored in a global store. Client side authentication is for convenience, the pages without data are typically not secure assets.   
 
 Trade off: the jwt tokens have an expiration. The pro of longer expirations is convenience for users. The con is longer sessions are less secure.   
 
