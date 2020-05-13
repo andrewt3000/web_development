@@ -218,6 +218,11 @@ Con: dependence on 3rd party and possible changes. (They can go down, go out of 
 - [okta](https://www.okta.com/)  
 - [Amazon cognito](https://aws.amazon.com/cognito/)   
 
+### Transactional email services
+- [sendgrid](https://sendgrid.com/)
+- [mailgun](https://www.mailgun.com/)  
+- [mailchimp](https://mailchimp.com/help/about-transactional-email/) mandrill api    
+- [Amazon AWS SES](https://aws.amazon.com/ses/)  
 
 # Dev Ops
 
