@@ -219,7 +219,7 @@ Con: dependence on 3rd party and possible changes. (They can go down, go out of 
 - [Amazon cognito](https://aws.amazon.com/cognito/)   
 
 ### Transactional email services
-- [sendgrid](https://sendgrid.com/)
+- Twilio [sendgrid](https://sendgrid.com/)
 - [mailgun](https://www.mailgun.com/)  
 - [mailchimp](https://mailchimp.com/help/about-transactional-email/) mandrill api    
 - [Amazon AWS SES](https://aws.amazon.com/ses/)  
