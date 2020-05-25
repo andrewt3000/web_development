@@ -6,7 +6,11 @@ Redux is a predictable state container for JS apps.
 
 1. Single source of truth
 2. State is read-only  
-3. Changes are made with pure functions
+The only way to change the state is to emit an action, an object describing what happened.  
+3. Changes are made with pure functions  
+To specify how the state tree is transformed by actions, you write pure reducers.
+
+
 
 Redux is  commonly used with [Redux toolkit](https://redux-toolkit.js.org/) and [React-Redux](https://react-redux.js.org/) bindings.  
 Redux typically use involves [thunks](https://github.com/reduxjs/redux-thunk#redux-thunk) or [sagas](https://redux-saga.js.org/) for [middleware](https://redux.js.org/advanced/middleware) for asynchronous calls such as fetching data.  
