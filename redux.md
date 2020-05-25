@@ -1,0 +1,16 @@
+## Redux cheatsheet
+
+Redux is a predictable state container for JS apps.  
+
+[The 3 principles of Redux](https://redux.js.org/introduction/three-principles) 
+
+1. Single source of truth
+2. State is read-only  
+3. Changes are made with pure functions
+
+Redux is  commonly used with [Redux toolkit](https://redux-toolkit.js.org/) and [React-Redux](https://react-redux.js.org/) bindings. Typically use involves [thunks](https://github.com/reduxjs/redux-thunk#redux-thunk) or [sagas](https://redux-saga.js.org/) for [middleware](https://redux.js.org/advanced/middleware).  
+[redux chrome extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)  
+[redux cra template](https://github.com/reduxjs/cra-template-redux) 
+```
+npx create-react-app project_name --template redux  
+```
