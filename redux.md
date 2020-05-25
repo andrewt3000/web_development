@@ -22,3 +22,10 @@ npx create-react-app project_name --template redux
 ```
 
 [redux chrome extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)  
+
+
+```javascript
+import { useSelector, useDispatch } from 'react-redux';
+
+```
+
