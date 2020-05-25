@@ -5,6 +5,7 @@ Redux is a predictable state container for JS apps.
 [The 3 principles of Redux](https://redux.js.org/introduction/three-principles) 
 
 1. Single source of truth
+The global state of your application is stored in an object tree within a single store.  
 2. State is read-only  
 The only way to change the state is to emit an action, an object describing what happened.  
 3. Changes are made with pure functions  
