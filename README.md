@@ -20,6 +20,9 @@ Alternative: [Atom](https://atom.io/), [emacs](https://www.gnu.org/software/emac
 [prettier](https://prettier.io/) code formatter  
 [eslint](https://eslint.org/) code linter   
 
+### Security
+[OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/?gclid=CjwKCAjwkun1BRAIEiwA2mJRWbtTVQAVFpjgH-7mVohQ9xsPWonwgg_fRQdbR6tXf764TQmWuqke_hoCe_4QAvD_BwE)  
+
 ### Source Control
 Preferred: [git](https://git-scm.com/) ([command ref](https://git-scm.com/docs)  ) - open source, distributed [version control](https://en.wikipedia.org/wiki/Version_control)     
 [git book](https://git-scm.com/book/en/v2)  
