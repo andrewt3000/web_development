@@ -240,7 +240,7 @@ In the past, I have hosted node using [pm2](https://pm2.keymetrics.io/) and used
 
 ### Under Consideration  
 #### Proprietary serverless architectures 
-The upside to serverless is scalability. The downside is propreitary apis and lack of control of the environment. For instance, an issue I had with serverless was aws lambda was on an older version of node than what I was using.   
+The upside to serverless is scalability and paying based on what you use. The downside is propreitary apis and lack of control of the environment. For instance, an issue I had with serverless was aws lambda was on an older version of node than what I was using.   
 
 ##### Azure 
 [Azure functions](azure_functions.md) - serverless functions use http triggers and binding to do routing.  
