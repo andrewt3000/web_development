@@ -238,9 +238,8 @@ In production, on some old projects, the front end is served through node. This 
 
 In the past, I have hosted node using [pm2](https://pm2.keymetrics.io/) and used [nginx](https://www.nginx.com/) for web server on linux amazon aws ec2 instances.  
 
-### Under Consideration  
-#### Proprietary serverless architectures 
-The upside to serverless is scalability and paying based on what you use. The downside is propreitary apis and lack of control of the environment. For instance, an issue I had with serverless was aws lambda was on an older version of node than what I was using.   
+### Serverless
+The upside to serverless is scalability and paying only for what you use. The downside is propreitary apis and lack of control of the environment. For instance, I had an issue with aws lambda because it only supporting an older version of node.   
 
 ##### Azure 
 [Azure functions](azure_functions.md) - serverless functions use http triggers and binding to do routing.  
