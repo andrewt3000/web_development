@@ -219,6 +219,7 @@ When writing a rest API use standard http repsonses.
 Return response code 401 if client isn't authenticated.  
 Return response code 403 is client is authenticated but doesn't have permission.  
 Return response code 400 if client sends an invalid request such as missing parameters.  
+Return response code 503 if a service is unavaialble such as a database.  
 Return response code 500 if there is an unexpected server error.  
 Retrun response coe 200 for success if server completed request as expected.  
 
