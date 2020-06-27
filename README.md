@@ -216,7 +216,7 @@ Con: dependence on 3rd party and possible changes. (They can go down, go out of 
 
 ### Rest API best practices
 When writing a rest API use standard http repsonses.  
-Return response code 401 if client isn't authenticated.
+Return response code 401 if client isn't authenticated.  
 Return response code 403 is client is authenticated but doesn't have permission.  
 Return response code 400 if client sends an invalid request such as missing parameters.  
 Return response code 500 if there is an unexpected server error.  
