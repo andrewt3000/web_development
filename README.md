@@ -188,7 +188,8 @@ I am considering using [mongoose](https://mongoosejs.com/) for an ORM. One advan
 For user authentication and authorization of the rest api I typically use [jwt](https://jwt.io/) (JSON web token), an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)).  
 
 Here is how I typicaly use jwt to authenticate each rest api call. 
-- When the user signs up or changes their password, the password is stored in the database as a one way [hash](https://auth0.com/blog/hashing-passwords-one-way-road-to-security/).   
+- When the user signs up or changes their password, the password is stored in the database as a one way [hash](https://auth0.com/blog/hashing-passwords-one-way-road-to-security/). It is a best practice to enforce a password policy with minimum complexity requirements.  
+- I typically require an email address during account creation for password recovery.  
 - When the user attempts to login by submiting username and password, the password is hashed and compared to the stored password in the database. If the login information matches, the server signs and returns a jwt token to the client. User authorization claims such as user id or group id are encrypted in the token payload.   
 - On the browser client, store the token in sessionStorage or localStorage so the single page app data doesn't lose authtenticaion information if there is a  browser refresh. sessionStorage is chosen when you want logins to persist over multiple browser sessions.  
 - On the client side wrap react router's Route object with logic to redirect if the user isn't logged in [Example](https://reacttraining.com/react-router/web/example/auth-workflow). The user's login status, user name, etc. can be stored in a global store. Client side authentication is for convenience, the pages without data are typically not secure assets. Also if the store is empty check localStorage or sessionStorage to restore login infomation after a user refresh.      
@@ -200,10 +201,8 @@ Here is [documentation](https://github.com/auth0/node-jsonwebtoken) for signing 
 Trade off: the jwt tokens have an expiration. The pro of longer expirations is convenience for users. The con is longer sessions are less secure.   
 
 
-Alternatives: 3rd party service    
-Trade off: Most projects will benefit from outsourcing their security because the 3rd party can dedicate more resource to making sure the process is secure. For instance, if there is a vulnerability, presumably they would patch it very quickly.  
-Pro: not storing and protecting sensitive information including user's passwords, and jwt secret key. 
-Con: dependence on 3rd party and possible changes. (They can go down, go out of business, get bought out, change their pricing, change their api)     
+#### Alternatives: 3rd party service    
+Most projects will benefit from outsourcing their security because the 3rd party can dedicate more resource to making sure the process is secure. For instance, if a [vulnerability](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/) is discovered, presumably they would patch it very quickly.  Their is less code to write and maintain by not storing and protecting sensitive information including user's passwords, and jwt secret key. They also typically handle, change password, forgot password, social logins, and user management functions. The con is dependence on a 3rd party has risks. Their service can go down and you are powerless to resolve the problem perhaps before an important demo. They can go out of business, get bought out, or change their pricing. They can change their api and force you to change your code on their time schedule. They still run the risk of being compromised.  
 - [auth0](https://auth0.com/)
 - [okta](https://www.okta.com/)  
 - [Amazon cognito](https://aws.amazon.com/cognito/)   
@@ -224,7 +223,7 @@ I make a distinction between two types of errors: user errors and system errors.
 
 I typically return system errors as 500 errors to the client, and return user errors as 200 with an error message. http is an application level protocol, so it may also be appropriate to return 500 for user errors. More importantly, is to be consistent on a project so you can distinguish the system errors from user errors.     
 Using a browser error logging service such as [sentry](https://sentry.io/) helps alert to production problems on the client side.  
-On the server side, you can grep system logs.  
+On the server side, you can search system logs.  
 
 
 ### Security
