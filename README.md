@@ -128,9 +128,6 @@ best practice: If supporting older browsers use a [polyfill](https://developer.m
 
 alternative: [axios](https://github.com/axios/axios)  
 
-### Browser error logging
-Using a browser error logging service such as [sentry](https://sentry.io/) helps alert to production problems.  
-
 ### Front end unit testing
 Jest - test runner, assertion library, and mocking library.  
 [snapshot testing](https://jestjs.io/docs/en/snapshot-testing) is a feature that I use.  
@@ -214,12 +211,21 @@ Con: dependence on 3rd party and possible changes. (They can go down, go out of 
 
 ### Rest API best practices
 When writing a rest API use standard http repsonses.  
+Return response code 200 for success if server completed request as expected.  
+Return response code 400 if client sends an invalid request such as missing parameters.  
 Return response code 401 if client isn't authenticated.  
 Return response code 403 is client is authenticated but doesn't have permission.  
-Return response code 400 if client sends an invalid request such as missing parameters.  
+Return response code 404 is client request a route that doesn't exist.  
+Return response code 500 if there is a server error.  
 Return response code 503 if a service is unavaialble such as a database.  
-Return response code 500 if there is an unexpected server error.  
-Retrun response coe 200 for success if server completed request as expected.  
+
+### Error handling
+I make a distinction between two types of errors: user errors and system errors. System errors are typically unexpected errors, they need to be logged with the stack trace, and notify a programming manager. They often require code to be modified to handle the errors more gracefully. User error needs to notify the user how to correct the problem or prevented from making it in the first place. Typically, this type of error doesn't require a change to code but if it's gotten consistently it may represent a UX problem.    
+
+I typically return system errors as 500 errors to the client, and return user errors as 200 with an error message. http is an application level protocol, so it may also be appropriate to return 500 for user errors. More importantly, is to be consistent on a project so you can distinguish the system errors from user errors.     
+Using a browser error logging service such as [sentry](https://sentry.io/) helps alert to production problems on the client side.  
+On the server side, you can grep system logs.  
+
 
 ### Security
 [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/?gclid=CjwKCAjwkun1BRAIEiwA2mJRWbtTVQAVFpjgH-7mVohQ9xsPWonwgg_fRQdbR6tXf764TQmWuqke_hoCe_4QAvD_BwE)  
