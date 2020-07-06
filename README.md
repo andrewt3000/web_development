@@ -148,7 +148,7 @@ npm test
 # Server Side
 ### Node  
 [node](https://nodejs.org) - javascript runtime built on chrome v8 javascript engine. Node is frequently run as an [http server](https://nodejs.org/en/docs/guides/getting-started-guide/).     
-[nvm node version manager](https://github.com/nvm-sh/nvm) - tool to switch versions of node.  
+[n](https://github.com/tj/n) - tool to switch versions of node.  
 
 [Express](https://expressjs.com/) node library for routing http requests.  
 [Express application generator](https://expressjs.com/en/starter/generator.html) - tool to generate node express   
