@@ -48,7 +48,7 @@ This is a reasonable work flow with multiple developers and an architects where 
 - Architect/manager tests, inspects and approves the PR.   
 - Pushing to master automatically deploys to production. 
 
-This can get much more complicated, especially if you have testing team.  
+This can get more complicated, for instance, if you have testing team.  
 
 ### App Versioning  
 Preferred: [semantic verisioning](https://semver.org/)   
