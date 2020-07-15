@@ -27,6 +27,7 @@ Alternative: [Atom](https://atom.io/), [emacs](https://www.gnu.org/software/emac
 ### Coding standards
 [prettier](https://prettier.io/) code formatter  
 [eslint](https://eslint.org/) code linter   
+variables are in camelCase.  
 
 ### Source Control
 Preferred: [git](https://git-scm.com/) ([command ref](https://git-scm.com/docs)  ) - open source, distributed [version control](https://en.wikipedia.org/wiki/Version_control)     
@@ -176,6 +177,8 @@ Alternatives server APIs:
 There are 2 classes of databases: relational (which typically use SQL) and NoSql which include Wide column stores, document stores, key-value stores, and graph databases.  
 
 Best practice for relational databases: [database normalization](https://en.wikipedia.org/wiki/Database_normalization)  
+
+Naming convention: table or document names are singular.  
 
 ### MS Sql Server
 I use MS Sql Server on several projects are suited to relational databases.   
