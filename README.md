@@ -1,6 +1,14 @@
 # Web Development
 These are notes for building web apps. I consult this document when starting a new app and maintaining existing apps. It list preferred tools/frameworks, and alternatives plus opinions about best practices and trade offs.   
 
+[Dev tools]()  
+[Front end web development](https://github.com/andrewt3000/web_development/blob/master/README.md#front-end-web-development)  
+[Server Side](https://github.com/andrewt3000/web_development#server-side)  
+[Database](https://github.com/andrewt3000/web_development#databases)  
+[Application Logic](https://github.com/andrewt3000/web_development#application-logic)  
+[Dev Ops](https://github.com/andrewt3000/web_development#dev-ops)  
+
+# Dev Tools
 What stack should I choose?  
 Prefered: [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) / [react](https://reactjs.org/) /  [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [Node](https://nodejs.org) / [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end. I have used mongodb and sql server on most recent projects.    
 
