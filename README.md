@@ -45,8 +45,8 @@ Version control work flow is a function of the size and organization of your tea
 This is a reasonable work flow with multiple developers and an architects where the project is live.    
 - Devs work on feature branches. 
 - When the feature is complete devs merged and push to a dev branch, and they do a PR ([pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)) 
-- Architect/manager tests, inspects and approves the PR.   
-- Pushing to master automatically deploys to production. 
+- Architect tests, inspects and approves the PR.   
+- Architect Pushes to master which automatically deploys to production through continous deployment process. 
 
 This can get more complicated, for instance, if you have testing team.  
 
