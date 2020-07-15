@@ -185,7 +185,8 @@ I am considering using [mongoose](https://mongoosejs.com/) for an ORM. One advan
 # Application Logic
 
 ### Authentication and Authorization
-For user authentication and authorization of the rest api I typically use [jwt](https://jwt.io/) (JSON web token), an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)).  
+For user authentication and authorization of the rest api I typically use [jwt](https://jwt.io/) (JSON web token), an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)). One advantage is that you can avoid storing state on the server which makes it simpler to do load balancing.    
+Alternative: cookies and server side session state.  
 
 Here is how I typicaly use jwt to authenticate each rest api call. 
 - When the user signs up or changes their password, the password is stored in the database as a one way [hash](https://auth0.com/blog/hashing-passwords-one-way-road-to-security/). It is a best practice to enforce a password policy with minimum complexity requirements.  
