@@ -203,7 +203,7 @@ Here is how I typicaly use jwt to authenticate each rest api call.
 - When the user signs up or changes their password, the password is stored in the database as a one way [hash](https://auth0.com/blog/hashing-passwords-one-way-road-to-security/).  
 Best practice: store hashed passwords rather than cleartext passwords.  
 Best practice: enforce a password policy with minimum complexity requirements (example minimum number of characters).  
-- I typically require an email address during account creation for password recovery.  
+- Require an email address during account creation for password recovery. Validate the user's email address.    
 - When the user attempts to login by submiting username and password, the password is hashed and compared to the stored password in the database. If the login information matches, the server signs and returns a jwt token to the client. User authorization claims such as user id or group id are encrypted in the token payload.   
 - On the browser client, store the token in sessionStorage or localStorage so the single page app data doesn't lose authtenticaion information if there is a  browser refresh. sessionStorage is chosen when you want logins to persist over multiple browser sessions.  
 - On the client side wrap react router's Route object with logic to redirect if the user isn't logged in [Example](https://reacttraining.com/react-router/web/example/auth-workflow). The user's login status, user name, etc. can be stored in a global store. Client side authentication is for convenience, the pages without data are typically not secure assets. Also if the store is empty check localStorage or sessionStorage to restore login infomation after a user refresh.      
