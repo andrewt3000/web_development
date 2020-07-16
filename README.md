@@ -2,7 +2,7 @@
 These are notes for building web apps. I consult this document when starting a new app and maintaining existing apps. It list preferred tools/frameworks, and alternatives plus opinions about best practices and trade offs.   
 
 [Dev tools]()  
-[Front end web development](https://github.com/andrewt3000/web_development/blob/master/README.md#front-end-web-development)  
+[Front End](https://github.com/andrewt3000/web_development/blob/master/README.md#front-end-web-development)  
 [Server Side](https://github.com/andrewt3000/web_development#server-side)  
 [Database](https://github.com/andrewt3000/web_development#databases)  
 [Application Logic](https://github.com/andrewt3000/web_development#application-logic)  
@@ -73,7 +73,7 @@ ncu
 ncu -u 
 ```
 
-# Front end web development
+# Front End
 
 ### React  
 [Reactjs](https://reactjs.org/) ([src](https://github.com/facebook/react)) ([docs](https://reactjs.org/docs/getting-started.html)) - A JavaScript library for building user interfaces.  
