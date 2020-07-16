@@ -200,7 +200,9 @@ For user authentication and authorization of the rest api I typically use [jwt](
 Alternative: cookies and server side session state.  
 
 Here is how I typicaly use jwt to authenticate each rest api call. 
-- When the user signs up or changes their password, the password is stored in the database as a one way [hash](https://auth0.com/blog/hashing-passwords-one-way-road-to-security/). It is a best practice to enforce a password policy with minimum complexity requirements.  
+- When the user signs up or changes their password, the password is stored in the database as a one way [hash](https://auth0.com/blog/hashing-passwords-one-way-road-to-security/).  
+Best practice: store hashed passwords rather than cleartext passwords.  
+Best practice: enforce a password policy with minimum complexity requirements (example minimum number of characters).  
 - I typically require an email address during account creation for password recovery.  
 - When the user attempts to login by submiting username and password, the password is hashed and compared to the stored password in the database. If the login information matches, the server signs and returns a jwt token to the client. User authorization claims such as user id or group id are encrypted in the token payload.   
 - On the browser client, store the token in sessionStorage or localStorage so the single page app data doesn't lose authtenticaion information if there is a  browser refresh. sessionStorage is chosen when you want logins to persist over multiple browser sessions.  
