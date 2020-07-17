@@ -253,11 +253,12 @@ On the server side, you can search system logs.
 # Dev Ops
 
 ### Old School: hosting on a computer
-In production, on some old projects, the front end is served through node. This avoids cors issues because everything is served from the same domain.  
+Manage node using [pm2](https://pm2.keymetrics.io/)    
+[nginx](https://www.nginx.com/) web server to server front end   
 
-Host node using [pm2](https://pm2.keymetrics.io/) and used [nginx](https://www.nginx.com/) for web server on linux amazon aws ec2 instances.  
+On some projects, the front end is served through node. This avoids cors issues because everything is served from the same domain.  
 
-### Current Prefered Deployment: hosting on container service
+### Current Project Deployments: hosting on container service
 Azure blob storage for images.  
 Azure blob storage and cdn for front end.  
 Azure App Services to host the app.  
@@ -266,7 +267,7 @@ Database is hosted on [mongo db atlas](https://cloud.mongodb.com).
 Using azure pipelines to deploy when posting to master (continuous deployment). (see azure-pipelines.yaml)   
 Currently github app installed under: github: Settings -> Integrations -> Azure pipelines -> Configure.    
 
-### Future: Serverless?
+### Future: Serverless
 The upside to serverless is scalability and paying only for what you use. The downside is propreitary apis and lack of control of the environment. For instance, I had an issue with aws lambda because it only supporting an older version of node.   
 
 ##### Azure 
