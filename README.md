@@ -263,7 +263,7 @@ Front end file hosting [Azure blob storage](https://azure.microsoft.com/en-us/se
 Server side node hosting [Azure App Services](https://azure.microsoft.com/en-us/services/app-service/)  
 Database hosting: [Azure Sql](https://azure.microsoft.com/en-us/services/sql-database/),  [mongo db atlas](https://cloud.mongodb.com)  
 
-Using azure pipelines (part of [azure devops](https://dev.azure.com/)) to deploy when posting to master (continuous deployment). (using config file azure-pipelines.yaml)   
+Using azure pipelines (part of [azure devops](https://dev.azure.com/)) for continuous deployment. (using config file azure-pipelines.yaml)   
 [yaml](https://en.wikipedia.org/wiki/YAML) is a data-serialization language typically used for config files. It's a superset of json. It uses python style indentions.   
 
 
