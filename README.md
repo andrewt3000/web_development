@@ -258,14 +258,15 @@ Manage node using [pm2](https://pm2.keymetrics.io/)
 
 On some projects, the front end is served through node. This avoids cors issues because everything is served from the same domain.  
 
-### Current Project Deployments: hosting on container service
+### Current Deployments: hosting on a container service
 Azure blob storage for images.  
 Azure blob storage and cdn for front end.  
 Azure App Services to host the app.  
 Database is hosted on [mongo db atlas](https://cloud.mongodb.com).  
 
 Using azure pipelines to deploy when posting to master (continuous deployment). (see azure-pipelines.yaml)   
-Currently github app installed under: github: Settings -> Integrations -> Azure pipelines -> Configure.    
+[yaml](https://en.wikipedia.org/wiki/YAML) is a data-serialization language typically used for config files. It's a superset of json. It uses python style indentions.   
+
 
 ### Future: Serverless
 The upside to serverless is scalability and paying only for what you use. The downside is propreitary apis and lack of control of the environment. For instance, I had an issue with aws lambda because it only supporting an older version of node.   
