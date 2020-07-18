@@ -259,12 +259,11 @@ Manage node using [pm2](https://pm2.keymetrics.io/)
 On some projects, the front end is served through node. This avoids cors issues because everything is served from the same domain.  
 
 ### Current Deployments: hosting on a container service
-Azure blob storage for images.  
-Azure blob storage and cdn for front end.  
-Azure App Services to host the app.  
-Database is hosted on [mongo db atlas](https://cloud.mongodb.com).  
+Front end file hosting [Azure blob storage](https://azure.microsoft.com/en-us/services/storage/blobs/), [Azure cdn](https://azure.microsoft.com/en-us/services/cdn/)    
+Server side node hosting [Azure App Services](https://azure.microsoft.com/en-us/services/app-service/)  
+Database hosting: [Azure Sql](https://azure.microsoft.com/en-us/services/sql-database/),  [mongo db atlas](https://cloud.mongodb.com)  
 
-Using azure pipelines to deploy when posting to master (continuous deployment). (see azure-pipelines.yaml)   
+Using azure pipelines (part of [azure devops](https://dev.azure.com/)) to deploy when posting to master (continuous deployment). (using config file azure-pipelines.yaml)   
 [yaml](https://en.wikipedia.org/wiki/YAML) is a data-serialization language typically used for config files. It's a superset of json. It uses python style indentions.   
 
 
