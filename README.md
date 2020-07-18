@@ -255,13 +255,16 @@ On the server side, you can search system logs.
 ### Old School: hosting on a computer
 Manage node using [pm2](https://pm2.keymetrics.io/)    
 [nginx](https://www.nginx.com/) web server to server front end   
+Typically on Amazon aws [ec2](https://aws.amazon.com/ec2/) instances.  
 
 On some projects, the front end is served through node. This avoids cors issues because everything is served from the same domain.  
 
 ### Current Deployments: hosting on a container service
-Front end file hosting [Azure blob storage](https://azure.microsoft.com/en-us/services/storage/blobs/), [Azure cdn](https://azure.microsoft.com/en-us/services/cdn/)    
-Server side node hosting [Azure App Services](https://azure.microsoft.com/en-us/services/app-service/)  
-Database hosting: [Azure Sql](https://azure.microsoft.com/en-us/services/sql-database/),  [mongo db atlas](https://cloud.mongodb.com)  
+| service | Azure | Amazon | Other | 
+|---|---|---|----|
+| Front end file hosting | [Azure blob storage](https://azure.microsoft.com/en-us/services/storage/blobs/), [Azure cdn](https://azure.microsoft.com/en-us/services/cdn/) | S3 |   
+| Node hosting | [Azure App Services](https://azure.microsoft.com/en-us/services/app-service/) | elastic beanstalk |  
+| Database hosting | [Azure Sql](https://azure.microsoft.com/en-us/services/sql-database/) | RDS |  [mongo db atlas](https://cloud.mongodb.com)|  
 
 Using azure pipelines (part of [azure devops](https://dev.azure.com/)) for continuous deployment. (using config file azure-pipelines.yaml)   
 [yaml](https://en.wikipedia.org/wiki/YAML) is a data-serialization language typically used for config files. It's a superset of json. It uses python style indentions.   
