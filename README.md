@@ -266,8 +266,9 @@ On some projects, the front end is served through node. This avoids cors issues 
 | Node hosting | [Azure App Services](https://azure.microsoft.com/en-us/services/app-service/) | elastic beanstalk |  
 | Database hosting | [Azure Sql](https://azure.microsoft.com/en-us/services/sql-database/) | RDS |  [mongo db atlas](https://cloud.mongodb.com)|  
 
-Using azure pipelines (part of [azure devops](https://dev.azure.com/)) for continuous deployment. (using config file azure-pipelines.yaml)   
-[yaml](https://en.wikipedia.org/wiki/YAML) is a data-serialization language typically used for config files. It's a superset of json. It uses python style indentions.   
+Using azure yaml pipelines (part of [azure devops](https://dev.azure.com/)) for continuous deployment.  
+Azure pipelines [key concepts](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops): stages, jobs, steps define deployment in config file (azure-pipelines.yaml).   
+[yaml](https://en.wikipedia.org/wiki/YAML) is a data-serialization language typically used for config files. It's a superset of json.  
 
 
 ### Future: Serverless
