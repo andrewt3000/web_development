@@ -92,8 +92,9 @@ Preferred:
 [antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. It is used by several chinese companies including alibaba, tencent and Baidu.   
 
 Alternatives:  
-- [react bootstrap](https://react-bootstrap.github.io/) - created by twitter.   
+- [react bootstrap](https://react-bootstrap.github.io/) - originally created by twitter.   
 - [material UI](https://material-ui.com/) - created by google  
+- [chakra](https://chakra-ui.com/)  
 - [blueprint](https://blueprintjs.com/)  
 - [element](https://element.eleme.io)  
 - [semantic ui](https://semantic-ui.com/)  
