@@ -139,7 +139,7 @@ best practice: If supporting older browsers use a [polyfill](https://developer.m
 alternative: [axios](https://github.com/axios/axios)  
 
 ### Front end unit testing
-Jest - test runner, assertion library, and mocking library.  
+Jest - ([docs](https://jestjs.io/docs/en/getting-started)) test runner, assertion library, and mocking library.  
 [snapshot testing](https://jestjs.io/docs/en/snapshot-testing) is a feature that I use.  
 Jest expects tests to be in a folder named \_\_tests__ or to be named file_name.test.js  
 ```
