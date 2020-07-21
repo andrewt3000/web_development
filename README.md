@@ -273,19 +273,21 @@ Azure pipelines [key concepts](https://docs.microsoft.com/en-us/azure/devops/pip
 
 
 ### Future: Serverless
-The upside to serverless is scalability and paying only for what you use. The downside is propreitary apis and lack of control of the environment. For instance, I had an issue with aws lambda because it only supporting an older version of node.   
+The upside to serverless is simple scalability and paying only for what you use. The downside is propreitary routing apis and lack of control of the environment. For instance, I had an issue with aws lambda because it only supporting an older version of node.   
 
 | MS Azure | Amazon AWS | Vercel |  
 |---|---|----|  
 |[Azure functions](https://azure.microsoft.com/en-us/services/functions/) | [Lambda functions](https://aws.amazon.com/lambda/) | [Serverless functions](https://vercel.com/docs/v2/serverless-functions/introduction) |  
 | http triggers and binding |  [API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) / [Lambda authorizers](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html) | |   
  
+An early problem for adoption of serverless was running the environment locally for development. Azure function development is now [integrated into VS Code](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp) through a plugin.  
+
 
 #### Cloud agnostic Frameworks  
 One solution to vendor lockin is to use another 3rd party.  
 [serverless](https://serverless.com/) - cli (serverless) + yaml config file w/ routes (serverless.yml). supports aws, azure, google cloud etc.   
 
-[Terraform](https://www.terraform.io/) - cli. teraform configuration language. infrastructure as code i.e. much larger in scope than serverless. Cloud agnostic (aws/azure/google etc.)     
+[Terraform](https://www.terraform.io/) - teraform configuration language enables infrastructure as code. Cloud agnostic (aws/azure/google etc.) Terraform is used for creating an environment on demand rather than for simply deploying web apps.  
 
 
 
