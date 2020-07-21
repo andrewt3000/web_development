@@ -260,11 +260,12 @@ Typically on Amazon aws [ec2](https://aws.amazon.com/ec2/) instances.
 On some projects, the front end is served through node. This avoids cors issues because everything is served from the same domain.  
 
 ### Current Deployments: hosting on a container service
-| service | Azure | Amazon | Other | 
+| service | MS Azure | Amazon AWS | Other | 
 |---|---|---|----|
 | Front end file hosting | [Azure blob storage](https://azure.microsoft.com/en-us/services/storage/blobs/), [Azure cdn](https://azure.microsoft.com/en-us/services/cdn/) | S3 |   
 | Node hosting | [Azure App Services](https://azure.microsoft.com/en-us/services/app-service/) | elastic beanstalk |  
 | Database hosting | [Azure Sql](https://azure.microsoft.com/en-us/services/sql-database/) | RDS |  [mongo db atlas](https://cloud.mongodb.com)|  
+| Continuous deployment | Azure Devops Pipelines | CodePipeline | |
 
 Using azure yaml pipelines (part of [azure devops](https://dev.azure.com/)) for continuous deployment.  
 Azure pipelines [key concepts](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops): stages, jobs, steps define deployment in config file (azure-pipelines.yaml).   
@@ -274,17 +275,11 @@ Azure pipelines [key concepts](https://docs.microsoft.com/en-us/azure/devops/pip
 ### Future: Serverless
 The upside to serverless is scalability and paying only for what you use. The downside is propreitary apis and lack of control of the environment. For instance, I had an issue with aws lambda because it only supporting an older version of node.   
 
-##### Azure 
-[Azure functions](azure_functions.md) - serverless functions use http triggers and binding to do routing.  
-
-##### AWS serverless stack
-- API Gateway / [Lambda authorizers](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html)    
-- Lambda functions
-
-##### Vercel (formerly zeit)  
-[vercel (formerly zeit) now](https://vercel.com/home) - Used previously.  cli (now), now.json config file, but routes default to file system layout.  
-host static site and [serverless functions](https://zeit.co/docs/v2/serverless-functions/introduction/) (use now api for routing instead of express etc.).  
-Integrates with github etc.    
+| MS Azure | Amazon AWS | Vercel |  
+|---|---|----|  
+|[Azure functions](https://azure.microsoft.com/en-us/services/functions/) | [Lambda functions](https://aws.amazon.com/lambda/) | [Serverless functions](https://vercel.com/docs/v2/serverless-functions/introduction) |  
+| http triggers and binding |  [API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) / [Lambda authorizers](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html) | |   
+ 
 
 #### Cloud agnostic Frameworks  
 One solution to vendor lockin is to use another 3rd party.  
