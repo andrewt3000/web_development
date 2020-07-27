@@ -256,15 +256,17 @@ On the server side, you can search system logs.
 
 ### Old School: hosting on a computer
 Manage node using [pm2](https://pm2.keymetrics.io/)    
-[nginx](https://www.nginx.com/) web server to server front end   
-Typically on Amazon aws [ec2](https://aws.amazon.com/ec2/) instances.  
+[nginx](https://www.nginx.com/) web server to server front end, and [reverse proxy to node](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
+).    
+Typically on Amazon aws [ec2](https://aws.amazon.com/ec2/) Linux instances.  
+Typially use ssh and scp for setup and deployment. Use crontab for background jobs.  
 
 On some projects, the front end is served through node. This avoids cors issues because everything is served from the same domain.  
 
 ### Current Deployments: hosting on a container service
 | service | MS Azure | Amazon AWS | Other | 
 |---|---|---|----|
-| Front end file hosting | [Azure blob storage](https://azure.microsoft.com/en-us/services/storage/blobs/), [Azure cdn](https://azure.microsoft.com/en-us/services/cdn/) | S3, CloudFront |   
+| Front end file hosting | [Azure blob storage](https://azure.microsoft.com/en-us/services/storage/blobs/), [Azure cdn](https://azure.microsoft.com/en-us/services/cdn/) | S3, CloudFront | cloudflare? |   
 | Node hosting | [Azure App Services](https://azure.microsoft.com/en-us/services/app-service/) | elastic beanstalk |  
 | Database hosting | [Azure Sql](https://azure.microsoft.com/en-us/services/sql-database/) | RDS |  [mongo db atlas](https://cloud.mongodb.com)|  
 | Continuous deployment | Azure Devops Pipelines | CodePipeline | |
