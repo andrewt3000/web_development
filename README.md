@@ -16,7 +16,8 @@ Prefered: [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) 
 Language Alternatives:  
 [typescript](https://www.typescriptlang.org/) (a superset of javascript) has type checking support.  
 [flow](https://flow.org/) - a javascript static type checker.  
- 
+
+Prefered: async/await methods in try/catch blocks are prefered. Promises are the next preference. Callback hell is avoided if possible.  
 
 ### IDE, text editors
 Preferred: [Visual Studio Code](https://code.visualstudio.com/), [vi](https://www.vim.org/)     
