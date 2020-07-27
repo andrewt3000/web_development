@@ -264,7 +264,7 @@ On some projects, the front end is served through node. This avoids cors issues 
 ### Current Deployments: hosting on a container service
 | service | MS Azure | Amazon AWS | Other | 
 |---|---|---|----|
-| Front end file hosting | [Azure blob storage](https://azure.microsoft.com/en-us/services/storage/blobs/), [Azure cdn](https://azure.microsoft.com/en-us/services/cdn/) | S3 |   
+| Front end file hosting | [Azure blob storage](https://azure.microsoft.com/en-us/services/storage/blobs/), [Azure cdn](https://azure.microsoft.com/en-us/services/cdn/) | S3, CloudFront |   
 | Node hosting | [Azure App Services](https://azure.microsoft.com/en-us/services/app-service/) | elastic beanstalk |  
 | Database hosting | [Azure Sql](https://azure.microsoft.com/en-us/services/sql-database/) | RDS |  [mongo db atlas](https://cloud.mongodb.com)|  
 | Continuous deployment | Azure Devops Pipelines | CodePipeline | |
@@ -273,6 +273,9 @@ Using azure yaml pipelines (part of [azure devops](https://dev.azure.com/)) for 
 Azure pipelines [key concepts](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops): stages, jobs, steps define deployment in config file (azure-pipelines.yaml).   
 [yaml](https://en.wikipedia.org/wiki/YAML) is a data-serialization language typically used for config files. It's a superset of json.  
 
+Linux support at azure as of 7/2020:  
+Azure File Copy task is [not supported on Linux.](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-file-copy?view=azure-devops)   
+Azure WebJobs (background tasks) is not supported for [App Service on Linux](https://docs.microsoft.com/en-us/azure/app-service/webjobs-create). 
 
 ### Future: Serverless
 The upside to serverless is simple scalability and paying only for what you use. The downside is propreitary routing apis and lack of control of the environment. For instance, I had an issue with aws lambda because it only supporting an older version of node.   
