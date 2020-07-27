@@ -275,6 +275,8 @@ Using azure yaml pipelines (part of [azure devops](https://dev.azure.com/)) for 
 Azure pipelines [key concepts](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops): stages, jobs, steps define deployment in config file (azure-pipelines.yaml).   
 [yaml](https://en.wikipedia.org/wiki/YAML) is a data-serialization language typically used for config files. It's a superset of json.  
 
+Azure cdn needs to be purged after changes. Allows rules such as [redirecting http to https requests](https://docs.microsoft.com/en-us/azure/cdn/cdn-standard-rules-engine).
+
 Linux support at azure as of 7/2020:  
 Azure File Copy task is [not supported on Linux.](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-file-copy?view=azure-devops)   
 Azure WebJobs (background tasks) is not supported for [App Service on Linux](https://docs.microsoft.com/en-us/azure/app-service/webjobs-create). 
