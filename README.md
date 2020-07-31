@@ -261,7 +261,7 @@ Manage node using [pm2](https://pm2.keymetrics.io/)
 Typically on Amazon aws [ec2](https://aws.amazon.com/ec2/) Linux instances.  
 Typially use ssh and scp for setup and deployment. Use crontab for background jobs.  
 
-On some projects, the front end is served through node. This avoids cors issues because everything is served from the same domain.  
+A simpler way is to server the front end through node. This avoids cors issues because everything is served from the same domain. You can also put a catch all route in node to serve the root of the spa.    
 
 ### Current Deployments: hosting on a container service
 | service | MS Azure | Amazon AWS | Other | 
