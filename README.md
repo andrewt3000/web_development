@@ -89,11 +89,14 @@ Alternatives: [Angular](https://angularjs.org/), [Vue](https://vuejs.org/) ([vue
 Most of my apps are targeted to desktop computers and not mobile, although they are mostly [responsive](https://en.wikipedia.org/wiki/Responsive_web_design).  
 
 Preferred:  
-[antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. It is used by several chinese companies including alibaba, tencent and Baidu.   
+[antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. 
+- Pro: Antd is used by several chinese companies including alibaba, tencent and Baidu.   
+- Pro: Antd has a desktop oriented Table component that has scrolling features, based on [rc-table](https://github.com/react-component/table)  
+- Con: I don't like the typography (probably due to Chinese influence and their different character set). There is not as much emphasis on responsive design as other packages.  
 
 Alternatives:  
-- [react bootstrap](https://react-bootstrap.github.io/) - originally created by twitter.   
-- [material UI](https://material-ui.com/) - created by google  
+- [react bootstrap](https://react-bootstrap.github.io/) - originally [bootstrap](https://getbootstrap.com/) was created by twitter.   
+- [material UI](https://material-ui.com/) - originally created by google  
 - [chakra](https://chakra-ui.com/)  
 - [blueprint](https://blueprintjs.com/)  
 - [element](https://element.eleme.io)  
