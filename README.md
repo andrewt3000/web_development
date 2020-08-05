@@ -103,9 +103,10 @@ Alternatives:
 - [semantic ui](https://semantic-ui.com/)  
 
 ### Custom styling
-I typically use [standard](https://www.w3.org/Style/CSS/Overview.en.html)  [css](https://developer.mozilla.org/en-US/docs/Web/CSS). I prefer using [css grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) for layout such as [holy grail layout](https://alligator.io/css/css-grid-holy-grail-layout/). I prefer [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) for laying out items in rows or columns. I typically avoid css preprocessors such as sass and less. Currently investigating [tailwind](https://tailwindcss.com/)      
+I typically use [standard](https://www.w3.org/Style/CSS/Overview.en.html)  [css](https://developer.mozilla.org/en-US/docs/Web/CSS). I prefer using [css grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) for layout such as [holy grail layout](https://alligator.io/css/css-grid-holy-grail-layout/). I prefer [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) for laying out items in rows or columns. I often use media queries to make responsive styles. I typically avoid css preprocessors such as sass and less.  
 Alternatives:  
 [styled components](https://www.styled-components.com/) - is a popular react library for styling custom components.  
+[tailwind css](https://tailwindcss.com/) - utility first css framework for rapidly building custom designs.    
 
 
 ### State Management   
