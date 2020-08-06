@@ -105,7 +105,7 @@ Alternatives:
 ### Custom styling
 I typically use [standard](https://www.w3.org/Style/CSS/Overview.en.html)  [css](https://developer.mozilla.org/en-US/docs/Web/CSS). I prefer using [css grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) for layout such as [holy grail layout](https://alligator.io/css/css-grid-holy-grail-layout/). I prefer [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) for laying out items in rows or columns. I often use media queries to make responsive styles. I typically avoid css preprocessors such as sass and less. I rarely use float, [clear](https://www.w3schools.com/howto/howto_css_clearfix.asp), etc. anymore.   
 Alternatives:  
-[styled components](https://www.styled-components.com/) - popular react library for styling custom components.  
+[styled components](https://www.styled-components.com/) - popular react library for styling custom components. Uses actual css, and [tagged templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates)     
 [tailwind css](https://tailwindcss.com/) - utility first css framework for rapidly building custom designs.    
 
 
