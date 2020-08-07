@@ -266,23 +266,23 @@ Typially use ssh and scp for setup and deployment. Use crontab for background jo
 
 A simpler way is to server the front end through node. This avoids cors issues because everything is served from the same domain. You can also put a catch all route in node to serve the root of the spa.    
 
-### Current Deployments: hosting on a container service
+### Current: CDN / application container
 | service | MS Azure | Amazon AWS | Other | 
 |---|---|---|----|
-| Front end file hosting | [Azure blob storage](https://azure.microsoft.com/en-us/services/storage/blobs/), [Azure cdn](https://azure.microsoft.com/en-us/services/cdn/) | S3, CloudFront | cloudflare? |   
+| Front end file hosting | [Azure blob storage](https://azure.microsoft.com/en-us/services/storage/blobs/), [Azure cdn](https://azure.microsoft.com/en-us/services/cdn/) | S3, CloudFront | cloudflare |   
 | Node hosting | [Azure App Services](https://azure.microsoft.com/en-us/services/app-service/) | elastic beanstalk |  
 | Database hosting | [Azure Sql](https://azure.microsoft.com/en-us/services/sql-database/) | RDS |  [mongo db atlas](https://cloud.mongodb.com)|  
 | Continuous deployment | Azure Devops Pipelines | CodePipeline | [Jenkins](https://www.jenkins.io/) |
 
+
+#### CI/CD azure notes
 Using azure yaml pipelines (part of [azure devops](https://dev.azure.com/)) for continuous deployment.  
 Azure pipelines [key concepts](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops): stages, jobs, steps define deployment in config file (azure-pipelines.yaml).   
 [yaml](https://en.wikipedia.org/wiki/YAML) is a data-serialization language typically used for config files. It's a superset of json.  
 
+#### Azure CDN Notes
 Azure cdn needs to be purged after changes. Allows rules such as [redirecting http to https requests](https://docs.microsoft.com/en-us/azure/cdn/cdn-standard-rules-engine). Another potential rule is to add a URL rewrite to deep links in the single page app.    
 
-Linux support at azure as of 7/2020:  
-Azure File Copy task is [not supported on Linux.](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-file-copy?view=azure-devops)   
-Azure WebJobs (background tasks) is not supported for [App Service on Linux](https://docs.microsoft.com/en-us/azure/app-service/webjobs-create). 
 
 ### Future: Serverless
 The upside to serverless is simple scalability and paying only for what you use. The downside is propreitary routing apis and lack of control of the environment. For instance, I had an issue with aws lambda because it only supporting an older version of node.   
