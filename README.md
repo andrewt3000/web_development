@@ -259,12 +259,12 @@ On the server side, you can search system logs.
 
 ### Old School: hosting on a computer
 Manage node using [pm2](https://pm2.keymetrics.io/)    
-[nginx](https://www.nginx.com/) web server to server front end, and [reverse proxy to node](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
+[nginx](https://www.nginx.com/) web server to serve front end, and [reverse proxy to node](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
 ).    
 Typically on Amazon aws [ec2](https://aws.amazon.com/ec2/) Linux instances.  
 Typially use ssh and scp for setup and deployment. Use crontab for background jobs.  
 
-A simpler way is to server the front end through node. This avoids cors issues because everything is served from the same domain. You can also put a catch all route in node to serve the root of the spa.    
+One simple optopm is to serve the front end through node. This avoids cors issues because everything is served from the same domain. You can also put a catch all route in node to serve the root of the spa.    
 
 ### Current: CDN / application container
 | service | MS Azure | Amazon AWS | Other | 
