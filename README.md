@@ -284,7 +284,7 @@ Azure pipelines [key concepts](https://docs.microsoft.com/en-us/azure/devops/pip
 Azure cdn needs to be purged after changes. Allows rules such as [redirecting http to https requests](https://docs.microsoft.com/en-us/azure/cdn/cdn-standard-rules-engine). Another potential rule is to add a URL rewrite to deep links in the single page app.    
 
 
-### Future: Serverless
+### Future: Serverless functions
 The upside to serverless is simple scalability and paying only for what you use. The downside is propreitary routing apis and lack of control of the environment. For instance, I had an issue with aws lambda because it only supporting an older version of node.   
 
 | MS Azure | Amazon AWS | Vercel |  
@@ -294,6 +294,7 @@ The upside to serverless is simple scalability and paying only for what you use.
  
 An early problem for adoption of serverless was running the environment locally for development. Azure function development is now [integrated into VS Code](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp) through a plugin.  
 
+Alternative: serverless containers such as kubernetes. [comparison of serverless containers and functions](https://www.simplethread.com/serverless-im-a-big-kid-now/)  
 
 #### Cloud agnostic Frameworks  
 One solution to vendor lockin is to use another 3rd party.  
