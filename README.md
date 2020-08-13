@@ -285,7 +285,14 @@ Azure cdn needs to be purged after changes. Allows rules such as [redirecting ht
 
 
 ### Future: Serverless functions
-The upside to serverless is simple scalability and paying only for what you use. The downside is propreitary routing apis and lack of control of the environment. For instance, I had an issue with aws lambda because it only supporting an older version of node.   
+Pros: 
+- simple scalability  
+- paying only for what you use
+Cons:
+- propreitary routing apis 
+- lack of control of the environment. (For instance, in the past I had an issue with aws lambda because it only supporting an older version of node)   
+
+The stateless nature of serverless functions is what makes them easily scalable, but it's not clear how to handle any shared state such as database connection pooling.  
 
 | MS Azure | Amazon AWS | Vercel |  
 |---|---|----|  
