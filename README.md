@@ -292,7 +292,7 @@ Cons:
 - propreitary routing apis 
 - lack of control of the environment. (For instance, in the past I had an issue with aws lambda because it only supporting an older version of node)   
 
-The stateless nature of serverless functions is what makes them easily scalable, but it's not clear how to handle any shared state such as database connection pooling.  
+The stateless nature of serverless functions is what makes them easily scalable, but it requires special consideration to handle any shared state such as database connection pooling.  
 
 | MS Azure | Amazon AWS | Vercel |  
 |---|---|----|  
