@@ -287,8 +287,8 @@ Azure cdn needs to be purged after changes. Allows rules such as [redirecting ht
 ### Future: Serverless functions
 Pros: 
 - simple scalability  
-- paying only for what you use
-Cons:
+- paying only for what you use  
+Cons:  
 - propreitary routing apis 
 - lack of control of the environment. (For instance, in the past I had an issue with aws lambda because it only supporting an older version of node)   
 
