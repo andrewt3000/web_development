@@ -84,6 +84,7 @@ CRA depends on react-scripts which should be [updated](https://create-react-app.
 Preference: I generally prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html) and to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html)     
 
 Alternatives: [Angular](https://angularjs.org/), [Vue](https://vuejs.org/) ([vuex](https://vuex.vuejs.org/) [nuxt](https://nuxtjs.org/))   
+I prefer react because of it's [one-way binding](https://reactjs.org/docs/thinking-in-react.html) rather than two-way binding which is supported in angular and vue. I also prefer using javascript inline rather than directives for control such as ngFor, ngIf (angular) or v-for, v-if (vue).   
 
 ### React component libraries:  
 Most of my apps are targeted to desktop computers and not mobile, although they are mostly [responsive](https://en.wikipedia.org/wiki/Responsive_web_design).  
