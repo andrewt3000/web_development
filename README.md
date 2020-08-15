@@ -1,5 +1,5 @@
 # Web Development
-These are notes for building web apps. I consult this document when starting a new app and maintaining existing apps. It list preferred tools/frameworks, and alternatives plus opinions about best practices and trade offs.   
+These are notes for building web apps. It refelects my thinking on preferred tools/frameworks, and emerging alternatives plus opinions about best practices and trade offs.   
 
 [Dev tools](#dev-tools)  
 [Front End](https://github.com/andrewt3000/web_development/blob/master/README.md#front-end)  
