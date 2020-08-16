@@ -276,26 +276,20 @@ One simple optopm is to serve the front end through node. This avoids cors issue
 | Database hosting | [Azure Sql](https://azure.microsoft.com/en-us/services/sql-database/) | RDS |  [mongo db atlas](https://cloud.mongodb.com)|  
 | Continuous deployment | Azure Devops Pipelines | CodePipeline | [Jenkins](https://www.jenkins.io/) |
 
-Many cdns such as [vercel](https://vercel.com/) will default to publishing when you push to master, redirecting to https and rewriting urls to create deep links.  
-
-#### CI/CD azure notes
-Using azure yaml pipelines (part of [azure devops](https://dev.azure.com/)) for continuous deployment.  
-Azure pipelines [key concepts](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops): stages, jobs, steps define deployment in config file (azure-pipelines.yaml).   
-[yaml](https://en.wikipedia.org/wiki/YAML) is a data-serialization language typically used for config files. It's a superset of json.  
-
-#### Azure CDN Notes
-Azure cdn needs to be purged after changes. Allows rules such as [redirecting http to https requests](https://docs.microsoft.com/en-us/azure/cdn/cdn-standard-rules-engine). Another potential rule is to add a URL rewrite to deep links in the single page app.    
+Many cdns such as [vercel](https://vercel.com/) will default sensibly for react apps. For example it will publish when you push to master, redirecting to https and rewriting urls to create deep links.  Where as using azure will require you to specify each step.  Using azure yaml pipelines (part of [azure devops](https://dev.azure.com/)) specify each step for continuous deployment (specify the push to master trigger to build deployment, specify the build command etc.).  Azure cdn needs to be purged after changes.  Deploying a spa will require Azure cdn rules such as [redirecting http to https requests](https://docs.microsoft.com/en-us/azure/cdn/cdn-standard-rules-engine) and add a URL rewrite to deep links in the single page app.    
 
 
 ### Future: Serverless functions
+Serverless function execute indepently. That has pros and cons.  
 Pros: 
 - simple horizontal scalability  
 - paying only for what you use  
 
 Cons:  
-- propreitary routing apis 
-- lack of control of the environment. (For instance, in the past I had an issue with aws lambda because it only supporting an older version of node)   
-- depending on the implementation you may have no way to maintain any shared state such as database connection pooling.  
+- There are varying levels of support for cross-cutting concerns or middleware for serverless functions. Examples include propreitary routing apis, authentication, cors, error logging etc.  
+- There are varying levels of support for maintain shared state such as database connection pooling.  
+- lack of control of the environment. (For instance, in the past I had an issue with aws lambda because it only supporting an older version of node). This is true of    
+
 
 
 | MS Azure | Amazon AWS | Vercel |  
