@@ -276,6 +276,7 @@ One simple optopm is to serve the front end through node. This avoids cors issue
 | Database hosting | [Azure Sql](https://azure.microsoft.com/en-us/services/sql-database/) | RDS |  [mongo db atlas](https://cloud.mongodb.com)|  
 | Continuous deployment | Azure Devops Pipelines | CodePipeline | [Jenkins](https://www.jenkins.io/) |
 
+Many cdns such as [vercel](https://vercel.com/) will default to publishing when you push to master, redirecting to https and rewriting urls to create deep links.  
 
 #### CI/CD azure notes
 Using azure yaml pipelines (part of [azure devops](https://dev.azure.com/)) for continuous deployment.  
@@ -288,20 +289,21 @@ Azure cdn needs to be purged after changes. Allows rules such as [redirecting ht
 
 ### Future: Serverless functions
 Pros: 
-- simple scalability  
+- simple horizontal scalability  
 - paying only for what you use  
+
 Cons:  
 - propreitary routing apis 
 - lack of control of the environment. (For instance, in the past I had an issue with aws lambda because it only supporting an older version of node)   
+- depending on the implementation you may have no way to maintain any shared state such as database connection pooling.  
 
-The stateless nature of serverless functions is what makes them easily scalable, but it requires special consideration to handle any shared state such as database connection pooling.  
 
 | MS Azure | Amazon AWS | Vercel |  
 |---|---|----|  
 |[Azure functions](https://azure.microsoft.com/en-us/services/functions/) | [Lambda functions](https://aws.amazon.com/lambda/) | [Serverless functions](https://vercel.com/docs/v2/serverless-functions/introduction) |  
 | http triggers and binding |  [API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) / [Lambda authorizers](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html) | |   
  
-An early problem for adoption of serverless was running the environment locally for development. Azure function development is now [integrated into VS Code](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp) through a plugin.  
+An early problem for adoption of serverless was running the environment locally for development. Most providers have a local dev enfironment  now. Azure function development is now [integrated into VS Code](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp) through a plugin.  
 
 Alternative: serverless containers such as kubernetes. [comparison of serverless containers and functions](https://www.simplethread.com/serverless-im-a-big-kid-now/)  
 
