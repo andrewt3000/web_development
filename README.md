@@ -285,13 +285,13 @@ Many cdns such as [vercel](https://vercel.com/) will default sensibly for react 
 
 
 ### Future: Serverless functions
-Serverless function execute indepently. That has pros and cons.  
+Serverless function execute independently. That has pros and cons.  
 Pros: 
-- simple horizontal scalability  
-- paying only for what you use  
+- fine grain, horizontal scalability  
+- pay only for what you use which is typically measured in function executions and execution time   
 
 Cons:  
-- There are varying levels of support for cross-cutting concerns or middleware for serverless functions. Examples include propreitary routing apis, authentication, cors, error logging etc.  
+- There are varying levels of support for cross-cutting concerns for serverless functions. For instance, all platfroms have proprietary routing apis. Examples also include functionality typically implemented in node middleware such as authentication, cors, error logging etc.  
 - There are varying levels of support for maintaining shared state such as database connection pooling.  
 
 
