@@ -259,14 +259,19 @@ On the server side, you can search system logs.
 
 # Dev Ops
 
-### Old School: hosting on a computer
+### Old School: hosting on a server 
 Manage node using [pm2](https://pm2.keymetrics.io/)    
 [nginx](https://www.nginx.com/) web server to serve front end, and [reverse proxy to node](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
 ).    
-Typically on Amazon aws [ec2](https://aws.amazon.com/ec2/) Linux instances.  
-Typially use ssh and scp for setup and deployment. Use crontab for background jobs.  
+You can rack your own servers or deploy on virtual instances such as Amazon aws [ec2](https://aws.amazon.com/ec2/).  
+Typially use ssh for setup. Use crontab for background jobs.  
 
-One simple optopm is to serve the front end through node. This avoids cors issues because everything is served from the same domain. You can also put a catch all route in node to serve the root of the spa.    
+One simple option is to serve the front end through node. This avoids cors setup because everything is served from the same domain. You can also put a catch all route in node to serve the root of the spa.    
+
+Pro:  
+- Total control of the environment. For instance, in the past, I had an issue with aws lambda because it only supporting an older version of node.  
+- No proprietary lock in    
+
 
 ### Current: CDN / application container
 | service | MS Azure | Amazon AWS | Other | 
@@ -287,9 +292,7 @@ Pros:
 
 Cons:  
 - There are varying levels of support for cross-cutting concerns or middleware for serverless functions. Examples include propreitary routing apis, authentication, cors, error logging etc.  
-- There are varying levels of support for maintain shared state such as database connection pooling.  
-- lack of control of the environment. (For instance, in the past I had an issue with aws lambda because it only supporting an older version of node). This is true of    
-
+- There are varying levels of support for maintaining shared state such as database connection pooling.  
 
 
 | MS Azure | Amazon AWS | Vercel |  
@@ -297,7 +300,7 @@ Cons:
 |[Azure functions](https://azure.microsoft.com/en-us/services/functions/) | [Lambda functions](https://aws.amazon.com/lambda/) | [Serverless functions](https://vercel.com/docs/v2/serverless-functions/introduction) |  
 | http triggers and binding |  [API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) / [Lambda authorizers](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html) | |   
  
-An early problem for adoption of serverless was running the environment locally for development. Most providers have a local dev enfironment  now. Azure function development is now [integrated into VS Code](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp) through a plugin.  
+An early problem for adoption of serverless was running the environment locally for development. Most providers have a local dev enfironment now. Azure function development is now [integrated into VS Code](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp) through a plugin.  
 
 Alternative: serverless containers such as kubernetes. [comparison of serverless containers and functions](https://www.simplethread.com/serverless-im-a-big-kid-now/)  
 
