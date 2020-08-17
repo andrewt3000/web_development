@@ -16,6 +16,8 @@ Language Alternatives:
 [typescript](https://www.typescriptlang.org/) (a superset of javascript) has type checking support.  
 [flow](https://flow.org/) - a javascript static type checker.  
 
+Prefered: I prefer using javascript on the front end because it's native to the browser. I prefer node on the backend because as full stack dev I prefer to work in the same lanuage as it increases fluency.  
+
 Prefered: async/await methods in try/catch blocks are prefered. Promises are the next preference. Callback hell is avoided if possible.  
 
 ### IDE, text editors
