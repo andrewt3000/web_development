@@ -271,7 +271,7 @@ Typially use ssh for setup. Use crontab for background jobs.
 One simple option is to serve the front end through node. This avoids cors setup because everything is served from the same domain. You can also put a catch all route in node to serve the root of the spa.    
 
 Pro:  
-- Total control of the environment. For instance, in the past, I had an issue with aws lambda because it only supporting an older version of node.  
+- More control of the environment. For instance, you can run any version of node you want (an older version for a legacy app or a cutting edge version to take advantage of new features).   
 - No proprietary lock in    
 
 
