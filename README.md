@@ -266,7 +266,7 @@ Manage node using [pm2](https://pm2.keymetrics.io/)
 [nginx](https://www.nginx.com/) web server to serve front end, and [reverse proxy to node](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
 ).    
 You can rack your own servers or deploy on virtual instances such as Amazon aws [ec2](https://aws.amazon.com/ec2/).  
-Typially use ssh for setup. Use crontab for background jobs.  
+Typially use ssh for setup and use crontab for background jobs.  
 
 One simple option is to serve the front end through node. This avoids cors setup because everything is served from the same domain. You can also put a catch all route in node to serve the root of the spa.    
 
