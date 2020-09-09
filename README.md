@@ -2,11 +2,12 @@
 These are notes for building web apps. It refelects my thinking on preferred tools/frameworks, and emerging alternatives plus opinions about best practices and trade offs.   
 
 [Dev tools](#dev-tools)  
-[Front End](https://github.com/andrewt3000/web_development/blob/master/README.md#front-end)  
-[Server Side](https://github.com/andrewt3000/web_development#server-side)  
-[Database](https://github.com/andrewt3000/web_development#databases)  
-[Application Logic](https://github.com/andrewt3000/web_development#application-logic)  
-[Dev Ops](https://github.com/andrewt3000/web_development#dev-ops)  
+[Project management](#project-management)  
+[Front End](#front-end)  
+[Server Side](#server-side)  
+[Database](#databases)  
+[Application Logic](#application-logic)  
+[Dev Ops](#dev-ops)  
 
 # Dev Tools 
 Prefered Stack: [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) / [react](https://reactjs.org/) /  [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [Node](https://nodejs.org) / [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end. I have used mongodb and sql server on most recent projects.    
@@ -43,7 +44,7 @@ Preferred: [github](https://github.com/)
 Alternatives: [gitlab](https://about.gitlab.com/), [bitbucket](https://bitbucket.org/)  
 
 ### Version control workflow
-Version control work flow is a function of the size and organization of your team as well as the stage of your project. If you are working alone on a project that hasn't been deployed, I would probably just push to master.  
+Version control work flow is a function of the size and organization of your team as well as the stage of your project.  
 
 This is a reasonable work flow with multiple developers and an architects where the project is live.    
 - Devs work on feature branches. 
@@ -74,6 +75,14 @@ ncu
 #updates the package.json file. 
 ncu -u 
 ```
+# Project management
+[Agile manifesto](https://agilemanifesto.org/)  
+
+[Asana](https://app.asana.com/)  
+[Jira](https://www.atlassian.com/software/jira)  
+[basecamp](https://basecamp.com/)  
+[pivotal tracker](https://www.pivotaltracker.com/)  
+[trello](https://trello.com/) - kanban style list making  
 
 # Front End
 
