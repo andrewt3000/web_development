@@ -1,5 +1,5 @@
 # Web Development
-These are notes for building web apps. It refelects my thinking on preferred tools/frameworks, and emerging alternatives plus opinions about best practices and trade offs.   
+This document contains tools, and opinions about building web apps.   
 
 [Dev tools](#dev-tools)  
 [Project management](#project-management)  
