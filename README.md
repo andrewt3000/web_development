@@ -78,9 +78,10 @@ ncu -u
 # Project management
 [Agile manifesto](https://agilemanifesto.org/)  
 
+### Project management software
 [Asana](https://app.asana.com/)  
-[Jira](https://www.atlassian.com/software/jira)  
-[basecamp](https://basecamp.com/)  
+[Atlassian Jira](https://www.atlassian.com/software/jira)  
+[basecamp](https://basecamp.com/)    
 [pivotal tracker](https://www.pivotaltracker.com/)  
 [trello](https://trello.com/) - kanban style list making  
 
