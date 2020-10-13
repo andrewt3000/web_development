@@ -123,7 +123,7 @@ Alternatives:
 
 
 ### State Management   
-I typically use a state store for non-trivial projects. One reason is to avoid excessive [lifting of state](https://reactjs.org/docs/lifting-state-up.html) and prop drilling.   
+I typically use a state store for non-trivial projects. One reason is to avoid excessive [lifting of state](https://reactjs.org/docs/lifting-state-up.html) and prop drilling. Another reason to use a state store is middleware can simplify some tasks such as logging or [undo](https://redux.js.org/recipes/implementing-undo-history) functinality.     
 Preferred: [mobx](https://mobx.js.org/intro/overview.html) - simple, scalable, state management.  
 [mobx-react](https://mobx-react.js.org/)  
 [mobx chrome extension](https://chrome.google.com/webstore/detail/mobx-developer-tools/pfgnfdagidkfgccljigdamigbcnndkod?hl=en)  
