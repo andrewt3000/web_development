@@ -255,8 +255,13 @@ Return response code 503 if a service is unavaialble such as a database.
 I make a distinction between two types of errors: user errors and system errors. System errors are typically unexpected errors, they need to be logged with the stack trace, and notify a programming manager. They often require code to be modified to handle the errors more gracefully. User error needs to notify the user how to correct the problem or prevented from making it in the first place. Typically, this type of error doesn't require a change to code but if it's gotten consistently it may represent a UX problem.    
 
 I typically return system errors as 500 errors to the client, and return user errors as 200 with an error message. http is an application level protocol, so it may also be appropriate to return 500 for user errors. More importantly, is to be consistent on a project so you can distinguish the system errors from user errors.     
+### Error logging and notification
 Using a browser error logging service such as [sentry](https://sentry.io/) helps alert to production problems on the client side.  
-On the server side, you can search system logs.  
+On the server side, you can search (grep) system logs. There are also many server side error logging and notification services.
+
+[splunk](https://www.splunk.com/)  
+[data dog](https://www.datadoghq.com/)  
+
 
 
 ### Security
@@ -303,7 +308,7 @@ Pros:
 - pay only for what you use which is typically measured in function executions and execution time   
 
 Cons:  
-- There are varying levels of support for cross-cutting concerns for serverless functions. For instance, all platfroms have proprietary routing apis. Examples also include functionality typically implemented in node middleware such as authentication, cors, error logging etc.  
+- There are varying levels of support for cross-cutting concerns for serverless functions. For instance, all platfroms have proprietary routing apis. Examples also include functionality typically implemented in middleware such as authentication, cors, error logging etc.  
 - There are varying levels of support for maintaining shared state such as database connection pooling.  
 
 
