@@ -219,8 +219,8 @@ I am considering using [mongoose](https://mongoosejs.com/) for an ORM. One advan
 # Application Logic
 
 ### Authentication and Authorization
-For user authentication and authorization of the rest api I typically use [jwt](https://jwt.io/) (JSON web token), an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)). One advantage is that you can avoid storing state on the server which makes it simpler to do load balancing.    
-Alternative: cookies and server side session state. Using cookies for a web api may be vulnerable to [CSRF](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)    
+For user authentication and authorization of the rest api I typically use [jwt](https://jwt.io/) (JSON web token), an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)).  
+Alternative: Early in web development sites typically used cookies and server side session state. One advantage of jtw is that you can avoid storing state on the server which makes it simpler to do load balancing.  
 
 Here is how I typicaly use jwt to authenticate each rest api call. 
 - When the user signs up or changes their password, the password is stored in the database as a one way [hash](https://auth0.com/blog/hashing-passwords-one-way-road-to-security/).  
@@ -237,7 +237,10 @@ Here is [documentation](https://github.com/auth0/node-jsonwebtoken) for signing 
 
 Trade off: the jwt tokens have an expiration. The pro of longer expirations is convenience for users. The con is longer sessions are less secure.   
 
-Optionally, you can implement [refresh tokens](https://auth0.com/learn/refresh-tokens/) for additional security features.  
+You can implement [refresh tokens](https://auth0.com/learn/refresh-tokens/) or 2 form authentication for additional security.  
+
+Consider security [authentication risks](https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication).  
+Also consider more genreal security risk such as session hijacking, xss, and csrf. [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/)  
 
 #### Alternatives: 3rd party service    
 Projects may benefit from outsourcing their authentication security because the 3rd party can dedicate more resource to making sure the process is secure. For instance, if a [vulnerability](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/) is discovered, presumably they would patch it very quickly.  There is less code to write and maintain by not storing and protecting sensitive information including user's passwords, and jwt secret key. They also typically handle, change password, forgot password, social logins, and user management functions. The con is dependence on a 3rd party has risks. Their service can go down and you are powerless to resolve the problem perhaps before an important demo. They can go out of business, get bought out, or change their pricing. They can change their api and force you to change your code on their time schedule. They still run the risk of being compromised.  
@@ -268,10 +271,6 @@ On the server side, you can search (grep) system logs. There are also many serve
 [splunk](https://www.splunk.com/)  
 [data dog](https://www.datadoghq.com/)  
 
-
-
-### Security
-[OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/?gclid=CjwKCAjwkun1BRAIEiwA2mJRWbtTVQAVFpjgH-7mVohQ9xsPWonwgg_fRQdbR6tXf764TQmWuqke_hoCe_4QAvD_BwE)  
 
 
 ### Transactional email services
