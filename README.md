@@ -240,11 +240,12 @@ Trade off: the jwt tokens have an expiration. The pro of longer expirations is c
 Optionally, you can implement [refresh tokens](https://auth0.com/learn/refresh-tokens/) for additional security features.  
 
 #### Alternatives: 3rd party service    
-Most projects will benefit from outsourcing their security because the 3rd party can dedicate more resource to making sure the process is secure. For instance, if a [vulnerability](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/) is discovered, presumably they would patch it very quickly.  There is less code to write and maintain by not storing and protecting sensitive information including user's passwords, and jwt secret key. They also typically handle, change password, forgot password, social logins, and user management functions. The con is dependence on a 3rd party has risks. Their service can go down and you are powerless to resolve the problem perhaps before an important demo. They can go out of business, get bought out, or change their pricing. They can change their api and force you to change your code on their time schedule. They still run the risk of being compromised.  
-- [auth0](https://auth0.com/)
-- [okta](https://www.okta.com/)  
+Projects may benefit from outsourcing their authentication security because the 3rd party can dedicate more resource to making sure the process is secure. For instance, if a [vulnerability](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/) is discovered, presumably they would patch it very quickly.  There is less code to write and maintain by not storing and protecting sensitive information including user's passwords, and jwt secret key. They also typically handle, change password, forgot password, social logins, and user management functions. The con is dependence on a 3rd party has risks. Their service can go down and you are powerless to resolve the problem perhaps before an important demo. They can go out of business, get bought out, or change their pricing. They can change their api and force you to change your code on their time schedule. They still run the risk of being compromised.  
+- [okta](https://www.okta.com/) / [auth0](https://auth0.com/)
+- [Azure AD](https://azure.microsoft.com/en-us/services/active-directory/)  
 - [Amazon cognito](https://aws.amazon.com/cognito/)   
-
+- Firebase has builtin authentication, but is integrated with the firebase ecosystem.   
+- [fusion auth](https://fusionauth.io/)  
 
 ### Rest API best practices
 When writing a rest API use standard http repsonses.  
