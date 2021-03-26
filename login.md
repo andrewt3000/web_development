@@ -7,21 +7,17 @@ When a user signs up (or changes their password) the password is stored in the d
 There are many cryptographic hash algorithms but I recomend using a hash algorithm designed for passwords such as [bcrypt](https://github.com/kelektiv/node.bcrypt.js). It is also a best practice to use a salt and select an appropriate cost factor for the hash algorithm.  
 
 #### JWT  
-If the username and hashed passwords match, the server signs and returns a [jwt](https://jwt.io/) (JSON web token)([RFC 7519](https://tools.ietf.org/html/rfc7519)) to the client. The jwt payload contains user authorization claims such as user id or group id.  
-Here is [documentation](https://github.com/auth0/node-jsonwebtoken) for signing and verifying jwt tokens in node using [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) library.   
+If the username and hashed passwords match, the server [digitally signs](https://en.wikipedia.org/wiki/Digital_signature) and returns a [jwt](https://jwt.io/) (JSON web token)([RFC 7519](https://tools.ietf.org/html/rfc7519)) to the client. The jwt payload contains user authorization claims such as user id or customer id.  
 Trade off: jwt tokens have an expiration. The pro of longer expirations is convenience for users. The con is longer sessions are less secure.   
 
 #### JWT secret
-Generate a secure, random jwt secret. I typically use the default algorithm HS256 with a key length of at least 32 characters. I often generate a jwt secret using openssl. The trade off with jwt secret length is performance versus security. For instance, HS512 algorith with 172 byte secret would be very secure.  
+Generate a secure, random jwt secret. I typically use [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) and it's default algorithm, HS256, with a key length of at least 32 characters. I typically generate a random jwt secret using openssl. The trade off with jwt secret length is performance versus security. For instance, HS512 algorith with 172 byte secret would be very secure.  
 ```
 openssl rand -base64 172 | tr -d '\n'
 ```
-Store the jwt secret securely for instance in an environment varialbe. Don't put the jwt secret in the source code. If the jwt secret is compromised change it. 
-
+Store the jwt secret securely. I typically store it in an environment varialbe. Don't put the jwt secret in the source code. If the jwt secret is compromised change it. 
 
 After a successful login, on the browser client, store the token in sessionStorage or localStorage so the single page app data doesn't lose authtenticaion information if there is a  browser refresh. sessionStorage is chosen when you want logins to persist over multiple browser sessions.  
-
-Alternative: Early in web development sites typically used cookies and server side session state. One advantage of jtw is that you can avoid storing state on the server which makes your app more scalable because it stores less data on the server and it's simpler to do load balancing because requests can be routed to any api server machine.  
 
 #### Client side authentication
 - On the client side wrap react router's Route object with logic to redirect if the user isn't logged in [Example](https://reacttraining.com/react-router/web/example/auth-workflow). The user's login status, user name, etc. can be stored in a global store or Context. Client side authentication is for convenience, the pages without data are typically not secure assets. Also if the store is empty check localStorage or sessionStorage to restore login infomation after a user refresh.      
