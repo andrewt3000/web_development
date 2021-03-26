@@ -1,4 +1,7 @@
-### Authentication and Authorization
+### Login
+This article explains how to build your own login system for a single page app with a rest api.  
+
+
 For user authentication and authorization of the rest api I typically use [jwt](https://jwt.io/) (JSON web token), an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)).  
 Alternative: Early in web development sites typically used cookies and server side session state. One advantage of jtw is that you can avoid storing state on the server which makes your app more scalable because it stores less data on the server and it's simpler to do load balancing.  
 Best Practice: generate a secure jwt secret to sign jwt tokens. Store the jwt secret securely. For instance, don't put the jwt secret in the source code. Consider storing it in an environment variable.  
