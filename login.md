@@ -9,12 +9,12 @@ Best Practice: Use an appropriate cost factor for the hash algorithm.
 Best Practice: Add a salt to the hasing process.  
 
 #### JWT  
-- If the username and hashed passwords match, the server signs and returns a [jwt](https://jwt.io/) (JSON web token)([RFC 7519](https://tools.ietf.org/html/rfc7519)) to the client. User authorization claims such as user id or group id are encrypted in the token payload.  
+- If the username and hashed passwords match, the server signs and returns a [jwt](https://jwt.io/) (JSON web token)([RFC 7519](https://tools.ietf.org/html/rfc7519)) to the client. The jwt payload contains user authorization claims such as user id or group id.  
 Here is [documentation](https://github.com/auth0/node-jsonwebtoken) for signing and verifying jwt tokens in node using [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) library.   
 Trade off: jwt tokens have an expiration. The pro of longer expirations is convenience for users. The con is longer sessions are less secure.   
 
 #### JWT secret
-Generate a secure, random jwt secret to sign jwt tokens.  
+Generate a secure, random jwt secret. I typically use the default algorithm HS256 with a key length of at least 32 characters. I often generate a jwt secret using openssl. The trade off with jwt secret length is performance versus security. For instance, HS512 algorith with 172 byte secret would be very secure.  
 ```
 openssl rand -base64 172 | tr -d '\n'
 ```
