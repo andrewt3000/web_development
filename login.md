@@ -40,10 +40,10 @@ The node api has [middleware](http://expressjs.com/en/guide/using-middleware.htm
 Also consider more general security risk such as session hijacking, xss, and csrf. [OWASP Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/)  
 
 #### 3rd party service    
-Projects may benefit from outsourcing their authentication security because the 3rd party can dedicate more resource to making sure the process is secure. For instance, if a vulnerability is discovered, presumably they would patch it quickly.  Using third parties shifts the risk to the third party to maintain sensitive information including user's passwords, and jwt secret key. Third parties also typically handle, change password, password resets, social logins, and user management functions. The trade off is dependence on a 3rd party has risks and loss of control.  Third parties can have service disruptions, be compromised, go out of business, get bought out, change their pricing or change their api all with uncertain notice.   
+Projects may benefit from outsourcing their authentication security. Security is an arms race and it requires ongoing vigilance to maintain security. Often a service dedicated to login security will have more resources dedicated to maintaining security. For instance, if a vulnerability is discovered, presumably they would patch it quickly.  Using third parties shifts the risk to the third party to maintain sensitive information including user's passwords, and jwt secret key. Third parties also typically handle, change password, password resets, social logins, and user management functions. The trade off is dependence on a 3rd party has risks and loss of control.  Third parties can have service disruptions, be compromised, go out of business, get bought out, change their pricing or change their api all with uncertain notice.   
 
 - [okta](https://www.okta.com/) / [auth0](https://auth0.com/)
 - [Azure AD](https://azure.microsoft.com/en-us/services/active-directory/)  
 - [Amazon cognito](https://aws.amazon.com/cognito/)   
-- Firebase has builtin authentication, but is integrated with the firebase ecosystem.   
+- [Firebase](https://firebase.google.com/) has integrated authentication within the firebase ecosystem.   
 - [fusion auth](https://fusionauth.io/)  
