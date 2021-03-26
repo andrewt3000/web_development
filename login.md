@@ -7,7 +7,7 @@ When a user signs up (or changes their password) the password is stored in the d
 There are many cryptographic hash algorithms but I recomend using a hash algorithm designed for passwords such as [bcrypt](https://github.com/kelektiv/node.bcrypt.js). It is also a best practice to use a salt and select an [appropriate cost factor](https://auth0.com/blog/hashing-in-action-understanding-bcrypt/) for the hash algorithm.  
 
 #### JWT  
-If the username and hashed passwords match, the server [digitally signs](https://en.wikipedia.org/wiki/Digital_signature) and returns a [jwt](https://jwt.io/) (JSON web token)([RFC 7519](https://tools.ietf.org/html/rfc7519)) to the client. The jwt payload contains user authorization claims such as user id or customer id.  
+If the username and hashed passwords match, the server [digitally signs](https://en.wikipedia.org/wiki/Digital_signature) and returns a [jwt](https://jwt.io/) (JSON web token)([RFC 7519](https://tools.ietf.org/html/rfc7519)) to the client. The jwt payload contains user authorization claims such as user id or customer id. When the client makes requests it sends the jwt and the server can trust the claims because the token has a digital signature and the claims can be verified cryptographically.   
 
 #### JWT secret
 Generate a secure, random jwt secret. I typically use [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) and it's default algorithm, HS256, with a key length of at least 32 characters. I typically generate a random jwt secret using openssl. The trade off with jwt secret length is performance versus security. For instance, HS512 algorith with 172 byte secret would be very secure.  
