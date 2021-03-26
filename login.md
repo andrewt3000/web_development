@@ -8,7 +8,7 @@ Best practice: use a hash algorithm designed for passwords such [bcrypt](https:/
 Best Practice: Use an appropriate cost factor for the hash algorithm.  
 Best Practice: Add a salt to the hasing process.  
 
-#### Login 
+#### JWT  
 - If the username and hashed passwords match, the server signs and returns a [jwt](https://jwt.io/) (JSON web token)([RFC 7519](https://tools.ietf.org/html/rfc7519)) to the client. User authorization claims such as user id or group id are encrypted in the token payload.  
 Here is [documentation](https://github.com/auth0/node-jsonwebtoken) for signing and verifying jwt tokens in node using [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) library.   
 Trade off: jwt tokens have an expiration. The pro of longer expirations is convenience for users. The con is longer sessions are less secure.   
