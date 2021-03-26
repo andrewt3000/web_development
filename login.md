@@ -2,11 +2,9 @@
 This article explains how to build a login system for a single page app with a rest api.  
 
 #### Password Hash
-When a user signs up (or changes their password) the password is stored in the database as a one way, cryptographic [hash](https://auth0.com/blog/hashing-passwords-one-way-road-to-security/). When the user attempts to login by submiting username and password, the user submitted password is hashed and compared to the stored hashed password in the database.   
-Best practice: store hashed passwords rather than cleartext passwords.  
-Best practice: use a hash algorithm designed for passwords such [bcrypt](https://auth0.com/blog/hashing-in-action-understanding-bcrypt/).  
-Best Practice: Use an appropriate cost factor for the hash algorithm.  
-Best Practice: Add a salt to the hasing process.  
+When a user signs up (or changes their password) the password is stored in the database as a one way, [cryptographic hash](https://en.wikipedia.org/wiki/Cryptographic_hash_function). When the user attempts to login by submiting username and password, the user submitted password is hashed and compared to the stored hashed password to determine the validity of the credentials. Since it's a one way hashing function, the password can not easily be decrypted and it maintains the confidentiality of the user's password. Password hashing mitigates the risk of a data breach for the users (since users often use the same password on multiple sites) and for the organization's reputation.  
+
+There are many cryptographic hash algorithms but I recomend using a hash algorithm designed for passwords such as [bcrypt](https://auth0.com/blog/hashing-in-action-understanding-bcrypt/). It is also a best practice to use a salt and select an appropriate cost factor for the hash algorithm.  
 
 #### JWT  
 If the username and hashed passwords match, the server signs and returns a [jwt](https://jwt.io/) (JSON web token)([RFC 7519](https://tools.ietf.org/html/rfc7519)) to the client. The jwt payload contains user authorization claims such as user id or group id.  
