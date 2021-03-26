@@ -16,13 +16,13 @@ openssl rand -base64 172 | tr -d '\n'
 ```
 Store the jwt secret securely. I typically store it in an environment varialbe. Don't put the jwt secret in the source code. If the jwt secret is compromised change it. 
 
-After a successful login, on the browser client, store the token in sessionStorage or localStorage so the single page app data doesn't lose authtenticaion information if there is a  browser refresh. sessionStorage is chosen when you want logins to persist over multiple browser sessions.  
+After a successful login, on the browser client, store the jwt in sessionStorage or localStorage so the single page app data doesn't lose authtenticaion information during a browser refresh. sessionStorage is chosen when you want logins to persist over multiple browser sessions.  
 
 #### Client side authentication
 On the client side wrap react router's Route object with logic to redirect if the user isn't logged in [Example](https://reacttraining.com/react-router/web/example/auth-workflow). The user's login status, user name, etc. can be stored in a global store or Context. Client side authentication is for convenience, the pages without data are typically not secure assets. Also if the store is empty check localStorage or sessionStorage to restore login infomation after a user refresh.      
 
 #### Use jwt to authenticate each rest api call. 
-On the client, authenticated api calls are sent through a library function to add the jwt token to all ajax requests in the authorization header using Bearer {token} scheme. 
+On the client, authenticated api calls are sent through a custom library function to add the jwt to all ajax requests in the [authorization header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) using Bearer {token} scheme.  
 The node api has [middleware](http://expressjs.com/en/guide/using-middleware.html) that filter routes to protected data calls. If the request doesn't has a valid authenticated token, the api responds with unauthorized (http error 401). If the token is valid the request for data is continued. User authorization data from the token payload can be trusted and used to authorize or filter database queries based on permission. If the user is authenticated but is requesting information that it doesn't have permission to access respond with http error code 403.    
 
 #### Additional considerations 
