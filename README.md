@@ -67,8 +67,11 @@ Preferred: [npm](https://www.npmjs.com/)  - npm is a cli package manager and tas
 Alternatives: [yarn](https://yarnpkg.com/)  
 
 ### Updating packages
-Best practice: Periodically (weekly) update javascript packages on front and back end. This is important for security reasons, but can challenging when libraries change and break your project. After upgrading run tests.    
+Best practice: Periodically (weekly?) update javascript packages on front and back end. This is important for security reasons, but can challenging when libraries change and break your project. After upgrading run tests.    
 ```
+# install ncu
+npm install -g npm-check-updates  
+
 #command show what needs to be updated
 ncu 
 
