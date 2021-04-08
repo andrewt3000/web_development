@@ -333,7 +333,7 @@ An early problem for adoption of serverless was running the environment locally 
 One solution to vendor lockin is to use another 3rd party.  
 [serverless](https://serverless.com/) - cli (serverless) + yaml config file w/ routes (serverless.yml). supports aws, azure, google cloud etc.   
 
-#### Containers / Immutable Infrastructure  
+### Containers / Immutable Infrastructure  
 Another devops option is to create your own containers using docker. Kubernetes can be used to scale containers to multiple nodes.  
 
 [Terraform](https://www.terraform.io/) - teraform configuration language enables infrastructure as code. Cloud agnostic (aws/azure/google etc.) Terraform is used for creating an environment on demand rather than for simply deploying web apps.  
