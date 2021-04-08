@@ -330,8 +330,6 @@ Cons:
  
 An early problem for adoption of serverless was running the environment locally for development. Most providers have a local dev enfironment now. Azure function development is now [integrated into VS Code](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp) through a plugin.  
 
-Alternative: serverless containers such as kubernetes. [comparison of serverless containers and functions](https://www.simplethread.com/serverless-im-a-big-kid-now/)  
-
 One solution to vendor lockin is to use another 3rd party.  
 [serverless](https://serverless.com/) - cli (serverless) + yaml config file w/ routes (serverless.yml). supports aws, azure, google cloud etc.   
 
