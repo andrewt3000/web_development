@@ -287,7 +287,7 @@ On the server side, you can search (grep) system logs. There are also many serve
 
 # Dev Ops
 
-### Old School: hosting on a server 
+### hosting on a server 
 Manage node using [pm2](https://pm2.keymetrics.io/)    
 [nginx](https://www.nginx.com/) web server to serve front end, and [reverse proxy to node](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
 ).    
@@ -312,7 +312,7 @@ Pro:
 Many cdns such as [vercel](https://vercel.com/) will default sensibly for react apps. For example it will publish when you push to master, redirecting to https and rewriting urls to create deep links.  Where as using azure or amazon they will require you to specify each step.  Using azure yaml pipelines (part of [azure devops](https://dev.azure.com/)) specify each step for continuous deployment (specify the push to master trigger to build deployment, specify the build command etc.).  Azure cdn needs to be purged after changes.  Deploying a spa will require Azure cdn rules such as [redirecting http to https requests](https://docs.microsoft.com/en-us/azure/cdn/cdn-standard-rules-engine) and add a URL rewrite to deep links in the single page app.    
 
 
-### Future: Serverless functions
+### Serverless functions
 Serverless function execute independently. That has pros and cons.  
 Pros: 
 - fine grain, horizontal scalability  
@@ -332,9 +332,11 @@ An early problem for adoption of serverless was running the environment locally 
 
 Alternative: serverless containers such as kubernetes. [comparison of serverless containers and functions](https://www.simplethread.com/serverless-im-a-big-kid-now/)  
 
-#### Cloud agnostic Frameworks  
 One solution to vendor lockin is to use another 3rd party.  
 [serverless](https://serverless.com/) - cli (serverless) + yaml config file w/ routes (serverless.yml). supports aws, azure, google cloud etc.   
+
+#### Containers / Immutable Infrastructure  
+Another devops option is to create your own containers using docker. Kubernetes can be used to scale containers to multiple nodes.  
 
 [Terraform](https://www.terraform.io/) - teraform configuration language enables infrastructure as code. Cloud agnostic (aws/azure/google etc.) Terraform is used for creating an environment on demand rather than for simply deploying web apps.  
 
