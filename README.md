@@ -336,7 +336,7 @@ One solution to vendor lockin is to use another 3rd party.
 [serverless](https://serverless.com/) - cli (serverless) + yaml config file w/ routes (serverless.yml). supports aws, azure, google cloud etc.   
 
 ### Containers / Immutable Infrastructure  
-Another deployment option is to create your own containers using docker. One advantage of docker containers is you can easily replicate the exact same environment in development, testing, production etc.  
+Another deployment option is to create and deploy docker containers. One advantage of docker containers is you can replicate your environment in development, testing, production etc. You also avoid vendor lock-in between cloud providers. Docker is similar to a VM, but more lightweight.    
 
 Kubernetes can be used to scale containers to multiple nodes.  
 
