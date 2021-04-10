@@ -289,6 +289,7 @@ On the server side, you can search (grep) system logs. There are also many serve
 # Dev Ops
 
 ### hosting on a server 
+This is the old school way to set up an app.  
 Manage node using [pm2](https://pm2.keymetrics.io/)    
 [nginx](https://www.nginx.com/) web server to serve front end, and [reverse proxy to node](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
 ).    
@@ -298,11 +299,11 @@ Typially use ssh for setup and use crontab for background jobs.
 One simple option is to serve the front end through node. This avoids cors setup because everything is served from the same domain. You can also put a catch all route in node to serve the root of the spa.    
 
 Pro:  
-- More control of the environment. For instance, you can run any version of node you want (an older version for a legacy app or a cutting edge version to take advantage of new features).   
+- Control of the environment. For instance, you can run any version of node you want (an older version for a legacy app or a cutting edge version to take advantage of new features).   
 - No proprietary lock in    
 
 
-### Current: CDN / application container
+### CDN / application container
 | service | MS Azure | Amazon AWS | Other | 
 |---|---|---|----|
 | Front end file hosting | [Azure blob storage](https://azure.microsoft.com/en-us/services/storage/blobs/), [Azure cdn](https://azure.microsoft.com/en-us/services/cdn/) | S3, CloudFront | vercel, cloudflare |   
@@ -335,9 +336,8 @@ One solution to vendor lockin is to use another 3rd party.
 [serverless](https://serverless.com/) - cli (serverless) + yaml config file w/ routes (serverless.yml). supports aws, azure, google cloud etc.   
 
 ### Containers / Immutable Infrastructure  
-Another devops option is to create your own containers using docker. Kubernetes can be used to scale containers to multiple nodes.  
+Another deployment option is to create your own containers using docker. One advantage of docker containers is you can easily replicate the exact same environment in development, testing, production etc.  
+
+Kubernetes can be used to scale containers to multiple nodes.  
 
 [Terraform](https://www.terraform.io/) - teraform configuration language enables infrastructure as code. Cloud agnostic (aws/azure/google etc.) Terraform is used for creating an environment on demand rather than for simply deploying web apps.  
-
-
-
