@@ -126,11 +126,12 @@ Alternatives:
 
 
 ### State Management   
-I typically use a state store for non-trivial projects. One reason is to avoid excessive [lifting of state](https://reactjs.org/docs/lifting-state-up.html) and prop drilling. Another reason to use a state store is middleware can simplify some tasks such as logging or [undo](https://redux.js.org/recipes/implementing-undo-history) functinality.     
+I typically use a state store for non-trivial projects. One reason is to avoid excessive [lifting of state](https://reactjs.org/docs/lifting-state-up.html) and prop drilling. Another reason to use a state store is middleware can simplify some tasks such as logging or [undo](https://redux.js.org/recipes/implementing-undo-history) functinality.  
+State stores typically have reducers that accept an action and the state and return the new state. Change to the state store is initiated by dispatching an action.    
 Preferred: [mobx](https://mobx.js.org/) - simple, scalable, state management.  
 
 Alternatives:  
-- [react Context](https://reactjs.org/docs/context.html)  
+- [react Context](https://reactjs.org/docs/context.html) can be used with useContext and [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer) hook.  
 - [redux](https://redux.js.org/) is a predictable state container for JS Apps. Has immutable state. It has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367). [See my redux cheat sheet](redux.md)
 
 ### React Router
