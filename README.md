@@ -127,11 +127,12 @@ Alternatives:
 
 ### State Management   
 I typically use a state store for non-trivial projects. One reason is to avoid excessive [lifting of state](https://reactjs.org/docs/lifting-state-up.html) and prop drilling. Another reason to use a state store is middleware can simplify some tasks such as logging or [undo](https://redux.js.org/recipes/implementing-undo-history) functinality.     
-Preferred: [mobx](https://mobx.js.org/intro/overview.html) - simple, scalable, state management.  
+Preferred: [mobx](https://mobx.js.org/) - simple, scalable, state management.  
 [mobx-react](https://mobx-react.js.org/)  
 [mobx chrome extension](https://chrome.google.com/webstore/detail/mobx-developer-tools/pfgnfdagidkfgccljigdamigbcnndkod?hl=en)  
 
 Alternatives:  
+- [react Context](https://reactjs.org/docs/context.html)  
 - [redux](https://redux.js.org/) is a predictable state container for JS Apps. Has immutable state. It has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367). [See my redux cheat sheet](redux.md)
 
 Considering: [immer](https://immerjs.github.io/immer/docs/introduction) - work with immutable state in a more convenient way. Can be used to simplify redux or mobx reducers.    
