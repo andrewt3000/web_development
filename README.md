@@ -131,7 +131,7 @@ State stores typically have reducers that accept an action and the state and ret
 Preferred: [mobx](https://mobx.js.org/) - simple, scalable, state management.  
 
 Alternatives:  
-- [react Context](https://reactjs.org/docs/context.html) can be used with useContext and [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer) hook.  
+- [react Context](https://reactjs.org/docs/context.html) can be used with useContext hook.  
 - [redux](https://redux.js.org/) is a predictable state container for JS Apps. Has immutable state. It has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367). [See my redux cheat sheet](redux.md)
 
 ### React Router
