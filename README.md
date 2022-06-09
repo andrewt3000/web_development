@@ -19,8 +19,6 @@ Language Alternatives:
 
 Prefered: I prefer using javascript on the front end because it's native to the browser. I prefer node on the backend because as full stack dev I prefer to work in the same lanuage as it increases fluency.  
 
-Prefered: async/await methods in try/catch blocks are prefered. Promises are the next preference. Callback hell is avoided if possible.  
-
 ### IDE, text editors
 Preferred: [Visual Studio Code](https://code.visualstudio.com/), [vi](https://www.vim.org/)     
 VS Code has support for [emmet](https://emmet.io/) in [jsx](https://stackoverflow.com/questions/56311467/configure-emmet-for-jsx-in-vscode) and [code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)    
