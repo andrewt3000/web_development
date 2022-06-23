@@ -6,7 +6,6 @@ This document contains opinions about building web apps.
 [Front End](#front-end)  
 [Server Side](#server-side)  
 [Database](#databases)  
-[Application Logic](#application-logic)  
 [Dev Ops](#dev-ops)  
 
 # Dev Tools 
