@@ -156,8 +156,7 @@ CRA now includes [react testing library](https://testing-library.com/docs/), a u
 npm test
 ```
 
-#### Dom manipulation, and assertion libraries
-- [Enzyme](https://enzymejs.github.io/enzyme/) is used for assert, manipulate, and traverse your React Components’ output. It mimicks jQuery api.  
+#### Dom and assertion libraries
 - [react testing library](https://testing-library.com/docs/react-testing-library/intro) is an alternative to enzyme for dom manipulation and traversal. Written by Kent C. Dodds.    
 
 ### End to End Testing
