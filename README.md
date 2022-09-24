@@ -25,8 +25,10 @@ VS Code has support for [emmet](https://emmet.io/) in [jsx](https://stackoverflo
 Alternative: [Atom](https://atom.io/), [emacs](https://www.gnu.org/software/emacs/)  
 
 ### Coding standards
-[prettier](https://prettier.io/) code formatter  
 [eslint](https://eslint.org/) code linter   
+[prettier](https://prettier.io/) code formatter. 
+- Install vs code prettier extension and make prettier the [default formatter](https://github.com/prettier/prettier-vscode#default-formatter). 
+- Install husky [pre-commit hook](https://github.com/azz/pretty-quick#pre-commit-hook).  
 variables are in camelCase.  
 
 ### Source Control
