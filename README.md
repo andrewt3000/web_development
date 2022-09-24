@@ -29,6 +29,7 @@ Alternative: [Atom](https://atom.io/), [emacs](https://www.gnu.org/software/emac
 [prettier](https://prettier.io/) code formatter. 
 - Install vs code prettier extension and make prettier the [default formatter](https://github.com/prettier/prettier-vscode#default-formatter). 
 - Install husky [pre-commit hook](https://github.com/azz/pretty-quick#pre-commit-hook).  
+
 variables are in camelCase.  
 
 ### Source Control
@@ -104,6 +105,8 @@ I prefer react because of it's [one-way binding](https://reactjs.org/docs/thinki
 Most of my apps are targeted to desktop computers and not mobile, although they are mostly [responsive](https://en.wikipedia.org/wiki/Responsive_web_design).  
 
 Preferred:  
+- [material UI](https://material-ui.com/)   
+
 [antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. 
 - Pro: Antd is used by several chinese companies including alibaba, tencent and Baidu.   
 - Pro: Antd has a desktop oriented Table component that has scrolling features, based on [rc-table](https://github.com/react-component/table)  
@@ -111,7 +114,6 @@ Preferred:
 
 Alternatives:  
 - [react bootstrap](https://react-bootstrap.github.io/) - originally [bootstrap](https://getbootstrap.com/) was created by twitter.   
-- [material UI](https://material-ui.com/) - originally created by google  
 - [chakra](https://chakra-ui.com/)  
 - [blueprint](https://blueprintjs.com/)  
 - [element](https://element.eleme.io)  
