@@ -34,7 +34,7 @@ VS Code has support for productivity features such as [emmet](https://emmet.io/)
 	},
 ```
 
-Learn useful VS Code shortcuts. [mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf) / [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)  
+Learn useful VS Code shortcuts. [Mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf) / [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)  
 
 Alternative: [vi](https://www.vim.org/)  
 
