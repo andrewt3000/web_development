@@ -9,16 +9,16 @@ This document contains opinions about building web apps.
 [Dev Ops](#dev-ops)  
 
 # Dev Tools 
-Prefered Stack: [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) / [react](https://reactjs.org/) /  [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [Node](https://nodejs.org) / [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end. I have used mongodb and sql server on most recent projects.    
+Prefered Architecture: [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a / [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.  
 
 
-I prefer [typescript](https://www.typescriptlang.org/) (a superset of javascript) for long term projects with multiple contributors. I prefer javascript for fast prototypes with a small number of contributors.   
+For web projects, I prefer [typescript](https://www.typescriptlang.org/) for long term projects with multiple contributors. I prefer javascript for fast prototypes with a small number of contributors.   
 
-Prefered: I prefer using javascript on the front end because it's native to the browser. I prefer node on the backend because as full stack dev I prefer to work in the same lanuage as it increases fluency.  
+I prefer using javascript on the front end because it's native to the browser. I prefer [Node](https://nodejs.org) on the backend because as full stack dev I prefer to work in the same lanuage as it increases fluency.  
 
 ### IDE, text editors
 Preferred: [Visual Studio Code](https://code.visualstudio.com/), [vi](https://www.vim.org/)     
-VS Code has support for [emmet](https://emmet.io/) in [jsx](https://stackoverflow.com/questions/56311467/configure-emmet-for-jsx-in-vscode) and [code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)    
+VS Code has support for productivity features such as [emmet](https://emmet.io/) in [jsx](https://stackoverflow.com/questions/56311467/configure-emmet-for-jsx-in-vscode) and [code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)    
 
 Alternative: [Atom](https://atom.io/), [emacs](https://www.gnu.org/software/emacs/)  
 
