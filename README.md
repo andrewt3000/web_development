@@ -18,7 +18,21 @@ I prefer using javascript on the front end because it's native to the browser. I
 
 ### IDE, text editors
 Preferred: [Visual Studio Code](https://code.visualstudio.com/)      
-VS Code has support for productivity features such as [emmet](https://emmet.io/) in [jsx](https://stackoverflow.com/questions/56311467/configure-emmet-for-jsx-in-vscode) and [code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)    
+VS Code has support for productivity features such as [emmet](https://emmet.io/) and [code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)    
+
+- Configure emmet to work in [jsx](https://stackoverflow.com/questions/56311467/configure-emmet-for-jsx-in-vscode). (Code > Preferences > Settings: Emmet: Include Languages -> javascript / javascriptreact ). 
+- Create custom code snippets (Code > Preferences > Configure User Snippets / Javascript)
+
+``` json
+"Print to JSON console": {
+		"prefix": "logj",
+		"body": [
+			"console.log(JSON.stringify($1));",
+			"$2"
+		],
+		"description": "Log json output to console"
+	},
+```
 
 Alternative: [vi](https://www.vim.org/)  
 
