@@ -156,10 +156,6 @@ Alternatives:
 React router supports [nested](https://reacttraining.com/react-router/web/example/nesting) routing.   
 React router supports a DOM [history](https://reacttraining.com/react-router/web/api/history) which enables the browser back button even though it's used in single page applications.  
 
-Use the history object to redirect to a route.  
-```javascript
-history.push('/myroute')
-````
 ### Data fetching
 [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API#Concepts_and_usage) is a web api (natively supported in more recent browsers).  
 best practice: If supporting older browsers use a [polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill) such as [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch) or [fetch](https://github.com/github/fetch).  
