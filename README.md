@@ -9,7 +9,7 @@ This document contains opinions about building web apps.
 [Dev Ops](#dev-ops)  
 
 # Dev Tools 
-Prefered Architecture: [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a / [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.  
+Prefered Web Architecture: [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.  
 
 
 For web projects, I prefer [typescript](https://www.typescriptlang.org/) for long term projects with multiple contributors. I prefer javascript for fast prototypes with a small number of contributors.   
