@@ -17,16 +17,17 @@ For web projects, I prefer [typescript](https://www.typescriptlang.org/) for lon
 I prefer using javascript on the front end because it's native to the browser. I prefer [Node](https://nodejs.org) on the backend because as full stack dev I prefer to work in the same lanuage as it increases fluency.  
 
 ### IDE, text editors
-Preferred: [Visual Studio Code](https://code.visualstudio.com/), [vi](https://www.vim.org/)     
+Preferred: [Visual Studio Code](https://code.visualstudio.com/)      
 VS Code has support for productivity features such as [emmet](https://emmet.io/) in [jsx](https://stackoverflow.com/questions/56311467/configure-emmet-for-jsx-in-vscode) and [code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)    
 
-Alternative: [Atom](https://atom.io/), [emacs](https://www.gnu.org/software/emacs/)  
+Alternative: [vi](https://www.vim.org/)  
 
 ### Coding standards
 [eslint](https://eslint.org/) code linter   
 [prettier](https://prettier.io/) code formatter. 
-- Install vs code prettier extension and make prettier the [default formatter](https://github.com/prettier/prettier-vscode#default-formatter). 
-- Install husky [pre-commit hook](https://github.com/azz/pretty-quick#pre-commit-hook).  
+- Install VS Code [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).  
+- Install VS code Prettier extension and make prettier the [default formatter](https://github.com/prettier/prettier-vscode#default-formatter). 
+- Install husky [pre-commit hook](https://github.com/azz/pretty-quick#pre-commit-hook) to format code before commit.  
 
 variables are in camelCase.  
 
