@@ -61,13 +61,11 @@ Alternatives: [gitlab](https://about.gitlab.com/), [bitbucket](https://bitbucket
 ### Version control workflow
 Version control work flow is a function of the size and organization of your team as well as the stage of your project.  
 
-This is a reasonable work flow with multiple developers and an architects where the project is live.    
+As an example, this is a reasonable work flow with multiple developers and an architects where the project is live.    
 - Devs work on feature branches. 
 - When the feature is complete, devs do a PR ([pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)) to merge their branch to a test branch.  
-- Architect approves and tests the PR.   
-- Architect pushes from test to master which automatically deploys to production through continous deployment process. 
-
-This can get more complicated, for instance, if you have testing team.  
+- Architect approves the PR, inspects and tests the code.   
+- Architect pushes from test branch to main/master branch which automatically deploys to production through continous deployment process. 
 
 ### App Versioning  
 Preferred: [semantic verisioning](https://semver.org/)   
