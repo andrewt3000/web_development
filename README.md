@@ -15,6 +15,7 @@ Prefered Web Architecture: [single page app (spa)](https://en.wikipedia.org/wiki
 For web projects, I prefer [typescript](https://www.typescriptlang.org/) for long term projects with multiple contributors. I prefer [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for fast prototypes with a small number of contributors.   
 
 I prefer using javascript on the front end because it's native to the browser. I prefer [Node](https://nodejs.org) on the backend because as full stack dev I prefer to work in the same lanuage as it increases fluency.  
+Another consideration for choosing a backend is integration with the database. In the case you choose Sql Server for a database it might make sense to use a .Net backend or a Java backend for an Oracle database.  
 
 ### IDE, text editors
 Preferred: [Visual Studio Code](https://code.visualstudio.com/)      
