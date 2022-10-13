@@ -44,7 +44,7 @@ Alternative: [vi](https://www.vim.org/)
 [prettier](https://prettier.io/) code formatter. 
 - Install VS Code [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).  
 - Install VS code Prettier extension and make prettier the [default formatter](https://github.com/prettier/prettier-vscode#default-formatter). 
-- Install husky [pre-commit hook](https://github.com/azz/pretty-quick#pre-commit-hook) to format code before commit.  
+- Install husky [pre-commit hook](https://github.com/azz/pretty-quick#pre-commit-hook) to format code before commit. It's important all code is formatted the same, otherwise it makes diffs and merging conflicts difficult to understand.  
 
 variables are in camelCase.  
 
