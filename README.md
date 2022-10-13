@@ -65,7 +65,7 @@ As an example, this is a reasonable work flow with multiple developers and an ar
 - Devs work on feature branches. 
 - When the feature is complete, devs do a PR ([pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)) to merge their branch to a test branch.  
 - Architect approves the PR, inspects and tests the code.   
-- Architect pushes from test branch to main/master branch which automatically deploys to production through continous deployment process. 
+- Architect merges the test branch to main/master branch which automatically deploys to production through continous deployment process. 
 
 ### App Versioning  
 Preferred: [semantic verisioning](https://semver.org/)   
