@@ -24,7 +24,7 @@ VS Code has support for productivity features such as [emmet](https://emmet.io/)
 - Create custom code snippets (Code > Preferences > Configure User Snippets / Javascript)
 
 ``` json
-"Print to JSON console": {
+	"Print to JSON console": {
 		"prefix": "logj",
 		"body": [
 			"console.log(JSON.stringify($1));",
@@ -33,6 +33,8 @@ VS Code has support for productivity features such as [emmet](https://emmet.io/)
 		"description": "Log json output to console"
 	},
 ```
+
+Learn useful VS Code shortcuts. [mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf) / [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)  
 
 Alternative: [vi](https://www.vim.org/)  
 
