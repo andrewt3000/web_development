@@ -152,9 +152,9 @@ Alternatives:
 - [redux](https://redux.js.org/) is a predictable state container for JS Apps. Has immutable state. It has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367). [See my redux cheat sheet](redux.md)
 
 ### React Router
-[react router](https://reacttraining.com/react-router/web/guides/philosophy) is a declarative react routing framework.
-React router supports [nested](https://reacttraining.com/react-router/web/example/nesting) routing.   
-React router supports a DOM [history](https://reacttraining.com/react-router/web/api/history) which enables the browser back button even though it's used in single page applications.  
+prefered: [react router](https://reactrouter.com/) is a declarative react routing framework.
+React router supports nested routing.   
+React router supports a DOM history which enables the browser back button even though it's used in single page applications.  
 
 ### Data fetching
 [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API#Concepts_and_usage) is a web api (natively supported in more recent browsers).  
