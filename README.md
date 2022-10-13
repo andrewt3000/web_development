@@ -12,9 +12,7 @@ This document contains opinions about building web apps.
 Prefered Stack: [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) / [react](https://reactjs.org/) /  [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [Node](https://nodejs.org) / [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end. I have used mongodb and sql server on most recent projects.    
 
 
-Language Alternatives:  
-[typescript](https://www.typescriptlang.org/) (a superset of javascript) has type checking support.  
-[flow](https://flow.org/) - a javascript static type checker.  
+I prefer [typescript](https://www.typescriptlang.org/) (a superset of javascript) for long term projects with multiple contributors. I prefer javascript for fast prototypes with a small number of contributors.   
 
 Prefered: I prefer using javascript on the front end because it's native to the browser. I prefer node on the backend because as full stack dev I prefer to work in the same lanuage as it increases fluency.  
 
