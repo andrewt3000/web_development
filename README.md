@@ -17,7 +17,7 @@ For web projects, I prefer [typescript](https://www.typescriptlang.org/) for lon
 I prefer using javascript on the front end because it's native to the browser. I prefer [Node](https://nodejs.org) on the backend because as full stack dev I prefer to work in the same lanuage as it increases fluency.  
 Another consideration for choosing a backend is integration with the database. In the case you choose Sql Server for a database it might make sense to use a .Net backend or a Java backend for an Oracle database.  
 
-### IDE, text editors
+### IDE
 Preferred: [Visual Studio Code](https://code.visualstudio.com/)      
 VS Code has support for productivity features such as [emmet](https://emmet.io/) and [code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)    
 
