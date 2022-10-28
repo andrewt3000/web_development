@@ -14,8 +14,12 @@ Prefered Web Architecture: [single page app (spa)](https://en.wikipedia.org/wiki
 
 For web projects, I prefer [typescript](https://www.typescriptlang.org/) for long term projects with multiple contributors. I prefer [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for fast prototypes with a small number of contributors.   
 
-I prefer using javascript on the front end because it's native to the browser. I prefer [Node](https://nodejs.org) on the backend because as full stack dev I prefer to work in the same lanuage as it increases fluency.  
-Another consideration for choosing a backend is integration with the database. In the case you choose Sql Server for a database it might make sense to use a .Net backend or a Java backend for an Oracle database.  
+I prefer using javascript on the front end because it's native to the browser. I prefer [Node](https://nodejs.org) on the backend because as full stack dev I prefer to work in the same lanuage as it increases javascript fluency.  
+Another consideration for choosing a backend is integration with the database. It's important that the database api is well supported, stays up to date and has good support for database features types. Well supported ORMs are another key feature. Here are some well supported backend languages and database combinations:
+- .net / sql server  
+- java / oracle, ibm db2  
+- ruby on rails / postgres  
+- nodejs / mongodb  
 
 ### IDE
 Preferred: [Visual Studio Code](https://code.visualstudio.com/)      
@@ -188,13 +192,13 @@ Guide: [Routing](https://expressjs.com/en/guide/routing.html) [Using Middleware]
 Node contains objects: express, request, response and router.  
 Commonly used: app.use(), router.route(), req.params, req.body    
 
-Alternatives server APIs:  
+Alternatives node rest APIs:  
 - [hapi](https://hapi.dev/) - node rest api that doesn't use middleware. Express was originally designed for server side rendering, not rest apis.    
 - [loopback](https://loopback.io/doc/) - node rest api framework that uses express.   
 
+Alternatives:  
 - [graphql](https://graphql.org/) - is an alternative to rest apis. GraphQL is a specification for a typed query language similar to sql and runtime which incluces a client (eg. relay, apollo) and server. [Apollo](https://www.apollographql.com/) is a popular graphql implementation. [Relay](https://relay.dev/) is a popular graphql client.     
 - [serverless](https://serverless.com/) is a framework that can route to serverless cloud functions such as AWS lambda. Serverless cloud functions can be implemented in a variety of languages.   
-- [ruby on rails](https://rubyonrails.org/) - ror has support for [rest apis](https://guides.rubyonrails.org/api_app.html)   
 
 # Utilities
 For date time libraries I use [Luxon](https://moment.github.io/luxon/).  
