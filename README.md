@@ -14,7 +14,7 @@ Prefered Web Architecture: [single page app (spa)](https://en.wikipedia.org/wiki
 
 For web projects, I prefer [typescript](https://www.typescriptlang.org/) for long term projects with multiple contributors. I prefer [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for fast prototypes with a small number of contributors.   
 
-I prefer using javascript on the front end because it's native to the browser. I prefer [Node](https://nodejs.org) on the backend because as full stack dev I prefer to work in the same lanuage as it increases javascript fluency.  
+I prefer using javascript on the front end because it's native to the browser (this is changing due to [web assembly](https://developer.mozilla.org/en-US/docs/WebAssembly)). I prefer [Node](https://nodejs.org) on the backend because as full stack dev I prefer to work in the same lanuage as it increases javascript fluency.  
 Another consideration for choosing a backend is integration with the database. It's important that the database api is well supported, stays up to date and has good support for database features and types. Well supported ORMs are another key feature. Here are some well supported backend languages and database combinations:
 - nodejs / mongodb  
 - ruby on rails / postgres  
