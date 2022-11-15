@@ -1,5 +1,5 @@
-# Web Development
-This document contains opinions about building web apps.   
+# Software Development
+This document contains opinions about tools and methods of building web apps.   
 
 [Dev tools](#dev-tools)  
 [Project management](#project-management)  
