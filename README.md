@@ -114,7 +114,7 @@ ncu -u
 [create react app](https://create-react-app.dev/) ([src](https://github.com/facebook/create-react-app)) ([docs](https://create-react-app.dev/docs/getting-started)) - cli to generate new react app. CRA configures [webpack](https://webpack.js.org/), a js module bundler.   
 CRA depends on react-scripts which should be [updated](https://create-react-app.dev/docs/updating-to-new-releases). We have not and do not plan to [eject](https://create-react-app.dev/docs/available-scripts#npm-run-eject)  
 
-Currently, CRA is out of date and the [current thinking](https://twitter.com/acdlite/status/1617611126514266112) is that you should use a framework such as next.js, remix, or expo when starting a react project.  
+Currently, CRA is out of date and the [current thinking](https://twitter.com/acdlite/status/1617611126514266112) is that you should use a framework such as [remix](https://remix.run/), [next.js](https://nextjs.org/), or [expo](https://expo.dev/) when starting a react project.  
 
 Preference: I generally prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html) and to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html) I also would consider using hooks in place of [higher order components](https://reactjs.org/docs/higher-order-components.html) and [render props](https://reactjs.org/docs/render-props.html).       
 
