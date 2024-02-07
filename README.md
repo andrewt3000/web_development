@@ -63,6 +63,8 @@ Best Practice: commit files with github issue number (eg. #151), if you forget l
 Preferred: [github](https://github.com/)  
 Alternatives: [gitlab](https://about.gitlab.com/), [bitbucket](https://bitbucket.org/)  
 
+If you're hosting at AWS you might want to consider [Code Commit](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html) due to integration features.  
+
 ### Version control workflow
 Version control work flow is a function of the size and organization of your team as well as the stage of your project.  
 
