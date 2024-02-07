@@ -9,7 +9,9 @@ This document contains opinions about tools and methods of building web apps.
 [Dev Ops](#dev-ops)  
 
 # Dev Tools 
-Prefered Web Architecture: [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end. Increasingly people are using SSR (server side rendering) frameworks that use [hydration](https://en.wikipedia.org/wiki/Hydration_(web_development)).   
+There are 2 common web architectures: 
+- [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end. 
+- SSR (server side rendering) frameworks that use [hydration](https://en.wikipedia.org/wiki/Hydration_(web_development)).   
 
 
 For web projects, I prefer [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for fast prototypes with a small number of contributors.  I prefer [typescript](https://www.typescriptlang.org/) for long term projects with multiple contributors.  
@@ -316,15 +318,18 @@ An early problem for adoption of serverless was running the environment locally 
 One solution to vendor lockin is to use another 3rd party.  
 [serverless](https://serverless.com/) - cli (serverless) + yaml config file w/ routes (serverless.yml). supports aws, azure, google cloud etc.   
 
-### Containers / Immutable Infrastructure  
+### Containers
 Another deployment option is to create and deploy docker containers. One advantage of docker containers is you can replicate your environment in development, testing, production etc. You also avoid vendor lock-in between cloud providers. Docker is similar to a VM, but more lightweight.    
 To deploy you [build](https://docs.docker.com/engine/reference/commandline/image_build/) an image using a [Dockerfile](https://docs.docker.com/engine/reference/builder/) and push it to a container repository such as Amazon [ECR](https://docs.aws.amazon.com/ecr/) or Docker Hub and then deploy it on a service such as Amazon [ECS](https://docs.aws.amazon.com/ecs/).  
 
-| | Amazon AWS | MS Azure |
-|---|---|----|  
-| container registry | [ECR](https://docs.aws.amazon.com/ecr/) | [Azure container registry](https://learn.microsoft.com/en-us/azure/container-registry) | 
-| container service | [ECS](https://docs.aws.amazon.com/ecs/) EKS | AKS |
+| | Amazon AWS | MS Azure | Other |  
+|---|---|---|----|  
+| container registry | [ECR](https://docs.aws.amazon.com/ecr/) | [Azure container registry](https://learn.microsoft.com/en-us/azure/container-registry) | [Docker Hub](https://hub.docker.com/) |  
+| container service | [ECS](https://docs.aws.amazon.com/ecs/) EKS | [ACI](https://learn.microsoft.com/en-us/azure/container-instances/) AKS | |  
 
 Kubernetes can be used to scale containers to multiple nodes.  
 
+###  Immutable Infrastructure  
 [Terraform](https://www.terraform.io/) - teraform configuration language enables infrastructure as code. Cloud agnostic (aws/azure/google etc.) Terraform is used for creating an environment on demand rather than for simply deploying web apps.  
+
+[AWS Cloud Formation](https://docs.aws.amazon.com/cloudformation/) - infrastucture as code. Has AWS lock in.    
