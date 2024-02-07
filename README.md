@@ -15,6 +15,7 @@ Prefered Web Architecture: [single page app (spa)](https://en.wikipedia.org/wiki
 For web projects, I prefer [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for fast prototypes with a small number of contributors.  I prefer [typescript](https://www.typescriptlang.org/) for long term projects with multiple contributors.  
 
 I prefer using javascript on the front end because it's native to the browser (this is changing due to [web assembly](https://developer.mozilla.org/en-US/docs/WebAssembly)). I prefer [Node](https://nodejs.org) on the backend because as full stack dev I prefer to work in the same lanuage as it increases javascript fluency.  
+
 Another consideration for choosing a backend is integration with the database. It's important that the database api is well supported, stays up to date and has good support for database features and types. Well supported ORMs are another key feature. Here are some well supported backend languages and database combinations:
 - nodejs / mongodb  
 - ruby on rails / postgres  
@@ -77,10 +78,6 @@ As an example, this is a reasonable work flow with multiple developers and an ar
 ### App Versioning  
 Preferred: [semantic verisioning](https://semver.org/)   
 I also plan to track an app version number in the package.json file and reflect that number to users to make sure they have the latest version. 
-
-How do I keep users on the most recent version? Currently, on some apps, users have to refresh the app, then close the browser to get the latest version.   
-Webpack Cache busting should help users get the latest version.  
-CRA 2 defaults apps to not be [Service workers](https://developers.google.com/web/fundamentals/primers/service-workers/) which may be related to problems updating apps in the past. 
 
 ### Package manager
 Preferred: [npm](https://www.npmjs.com/)  - npm is a cli package manager and task runner. npm hosts a public package repository.    
@@ -155,7 +152,7 @@ Preferred: [mobx](https://mobx.js.org/) - simple, scalable, state management.
 
 Alternatives:  
 - [react Context](https://reactjs.org/docs/context.html) can be used with useContext hook.  
-- [redux](https://redux.js.org/) is a predictable state container for JS Apps. Has immutable state. It has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367). [See my redux cheat sheet](redux.md)
+- [redux](https://redux.js.org/) is a predictable state container for JS Apps. Has immutable state. It has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367). [See my redux cheat sheet](redux.md) Typically used with [Redux Toolkit](https://redux-toolkit.js.org/)  
 
 ### React Router
 prefered: [react router](https://reactrouter.com/) is a declarative react routing framework.
@@ -172,7 +169,7 @@ alternative: [axios](https://github.com/axios/axios)
 Jest - ([docs](https://jestjs.io/docs/en/getting-started)) test runner, assertion library, and mocking library.  
 [snapshot testing](https://jestjs.io/docs/en/snapshot-testing) is a feature that I use.  
 Jest expects tests to be in a folder named \_\_tests__ or to be named file_name.test.js  
-CRA now includes [react testing library](https://testing-library.com/docs/), a ui testing library, replacing enzyme.  
+[react testing library](https://testing-library.com/docs/), a ui testing library, replacing enzyme.  
 ```
 #to run tests
 npm test
@@ -322,6 +319,11 @@ One solution to vendor lockin is to use another 3rd party.
 ### Containers / Immutable Infrastructure  
 Another deployment option is to create and deploy docker containers. One advantage of docker containers is you can replicate your environment in development, testing, production etc. You also avoid vendor lock-in between cloud providers. Docker is similar to a VM, but more lightweight.    
 To deploy you [build](https://docs.docker.com/engine/reference/commandline/image_build/) an image using a [Dockerfile](https://docs.docker.com/engine/reference/builder/) and push it to a container repository such as Amazon [ECR](https://docs.aws.amazon.com/ecr/) or Docker Hub and then deploy it on a service such as Amazon [ECS](https://docs.aws.amazon.com/ecs/).  
+
+| | Amazon AWS | MS Azure |
+|---|---|----|  
+| container registry | [ECR](https://docs.aws.amazon.com/ecr/) | [Azure container registry](https://learn.microsoft.com/en-us/azure/container-registry) | 
+| container service | [ECS](https://docs.aws.amazon.com/ecs/) EKS | AKS |
 
 Kubernetes can be used to scale containers to multiple nodes.  
 
