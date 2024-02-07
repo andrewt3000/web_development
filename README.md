@@ -304,7 +304,7 @@ Pros:
 
 Cons:  
 - There are varying levels of support for cross-cutting concerns for serverless functions. For instance, all platfroms have proprietary routing apis. Examples also include functionality typically implemented in middleware such as authentication, cors, error logging etc.  
-- There are varying levels of support for maintaining shared state such as database connection pooling.  
+- There are varying levels of support for maintaining shared state such as database connection pooling. For instance, AWS has [RDS proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html) which allows serverless apps to do connection pooling.   
 
 
 | MS Azure | Amazon AWS | Vercel |  
@@ -319,6 +319,7 @@ One solution to vendor lockin is to use another 3rd party.
 
 ### Containers / Immutable Infrastructure  
 Another deployment option is to create and deploy docker containers. One advantage of docker containers is you can replicate your environment in development, testing, production etc. You also avoid vendor lock-in between cloud providers. Docker is similar to a VM, but more lightweight.    
+To deploy you [build](https://docs.docker.com/engine/reference/commandline/image_build/) an image using a [Dockerfile](https://docs.docker.com/engine/reference/builder/) and push it to a container repository such as Amazon [ECR](https://docs.aws.amazon.com/ecr/) or Docker Hub and then deploy it on a service such as Amazon [ECS](https://docs.aws.amazon.com/ecs/).  
 
 Kubernetes can be used to scale containers to multiple nodes.  
 
