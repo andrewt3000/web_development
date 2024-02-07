@@ -9,7 +9,7 @@ This document contains opinions about tools and methods of building web apps.
 [Dev Ops](#dev-ops)  
 
 # Dev Tools 
-Prefered Web Architecture: [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end.  
+Prefered Web Architecture: [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end. Increasingly people are using SSR (server side rendering) frameworks that use [hydration](https://en.wikipedia.org/wiki/Hydration_(web_development)).   
 
 
 For web projects, I prefer [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for fast prototypes with a small number of contributors.  I prefer [typescript](https://www.typescriptlang.org/) for long term projects with multiple contributors.  
@@ -114,7 +114,7 @@ ncu -u
 
 The [current thinking](https://twitter.com/acdlite/status/1617611126514266112) is to use a framework such as [remix](https://remix.run/), [next.js](https://nextjs.org/), or [expo](https://expo.dev/) when starting a react project.  
 
-In the past, [create react app](https://create-react-app.dev/) was used to start a react project but it's no longer maintained. [Vite](https://vitejs.dev/) is a maintained replacement for cra.     
+I typically use [Vite](https://vitejs.dev/) to create react apps. ([create react app](https://create-react-app.dev/) no longer maintained)
 
 Preference: I generally prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html) and to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html) I also would consider using hooks in place of [higher order components](https://reactjs.org/docs/higher-order-components.html) and [render props](https://reactjs.org/docs/render-props.html).       
 
