@@ -97,16 +97,6 @@ ncu
 #updates the package.json file. 
 ncu -u 
 ```
-# Project management
-[Agile manifesto](https://agilemanifesto.org/)  
-
-### Project management software
-[Asana](https://app.asana.com/)  
-[Atlassian Jira](https://www.atlassian.com/software/jira)  
-[basecamp](https://basecamp.com/)    
-[pivotal tracker](https://www.pivotaltracker.com/)  
-[trello](https://trello.com/) - kanban style list making  
-
 # Front End
 
 ### React  
@@ -333,3 +323,15 @@ Kubernetes can be used to scale containers to multiple nodes.
 [Terraform](https://www.terraform.io/) - teraform configuration language enables infrastructure as code. Cloud agnostic (aws/azure/google etc.) Terraform is used for creating an environment on demand rather than for simply deploying web apps.  
 
 [AWS Cloud Formation](https://docs.aws.amazon.com/cloudformation/) - infrastucture as code. Has AWS lock in.    
+
+
+# Project management
+[Agile manifesto](https://agilemanifesto.org/)  
+
+### Project management software
+[Asana](https://app.asana.com/)  
+[Atlassian Jira](https://www.atlassian.com/software/jira)  
+[basecamp](https://basecamp.com/)    
+[pivotal tracker](https://www.pivotaltracker.com/)  
+[trello](https://trello.com/) - kanban style list making  
+
