@@ -2,11 +2,11 @@
 This document contains opinions about tools and methods of building web apps.   
 
 [Dev tools](#dev-tools)  
-[Project management](#project-management)  
 [Front End](#front-end)  
 [Server Side](#server-side)  
 [Database](#databases)  
 [Dev Ops](#dev-ops)  
+[Project management](#project-management)  
 
 # Dev Tools 
 There are 2 common web architectures: 
