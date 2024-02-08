@@ -97,13 +97,16 @@ ncu
 #updates the package.json file. 
 ncu -u 
 ```
+
+# SSRs
+The [current thinking](https://twitter.com/acdlite/status/1617611126514266112) is to use a framework such as [remix](https://remix.run/), [next.js](https://nextjs.org/), or [expo](https://expo.dev/) when starting a react project.    
+
+
 # Front End
 
 ### React  
-[Reactjs](https://reactjs.org/) ([docs](https://reactjs.org/docs/getting-started.html)) - A JavaScript/typescript library for building user interfaces.  
+[Reactjs](https://reactjs.org/) ([docs]([https://reactjs.org/docs/getting-started.html](https://react.dev/learn))) - A JavaScript/typescript library for building user interfaces.  
 [chrome extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)  
-
-The [current thinking](https://twitter.com/acdlite/status/1617611126514266112) is to use a framework such as [remix](https://remix.run/), [next.js](https://nextjs.org/), or [expo](https://expo.dev/) when starting a react project.  
 
 I typically use [Vite](https://vitejs.dev/) to create react apps. ([create react app](https://create-react-app.dev/) no longer maintained)
 
@@ -154,6 +157,8 @@ React router supports a DOM history which enables the browser back button even t
 ### Data fetching
 [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API#Concepts_and_usage) is a web api (natively supported in more recent browsers).  
 best practice: If supporting older browsers use a [polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill) such as [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch) or [fetch](https://github.com/github/fetch).  
+
+[TanStack query](https://tanstack.com/query/latest/docs/framework/react/overview) formerly react query is a popular way to fetch data in react apps.  
 
 alternative: [axios](https://github.com/axios/axios)  
 
