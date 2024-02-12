@@ -265,7 +265,7 @@ On the server side, you can search (grep) system logs. There are also many serve
 
 # Dev Ops
 
-### hosting on a server 
+### Hosting on a server 
 This is the old school way to set up an app.  
 Manage node using [pm2](https://pm2.keymetrics.io/)    
 [nginx](https://www.nginx.com/) web server to serve front end, and [reverse proxy to node](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
@@ -299,6 +299,7 @@ Pros:
 - serverless can be easier for an architect to manage a large team and application.  
 
 Cons:  
+- Cold Starts - if the service hasn't been used recently there can be a delay starting the service.  
 - There are varying levels of support for cross-cutting concerns for serverless functions. For instance, all platfroms have proprietary routing apis. Examples also include functionality typically implemented in middleware such as authentication, cors, error logging etc.  
 - There are varying levels of support for maintaining shared state such as database connection pooling. For instance, AWS has [RDS proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html) which allows serverless apps to do connection pooling.   
 
@@ -308,7 +309,7 @@ Cons:
 |[Azure functions](https://azure.microsoft.com/en-us/services/functions/) | [Lambda functions](https://aws.amazon.com/lambda/) | [Serverless functions](https://vercel.com/docs/v2/serverless-functions/introduction) |  
 | http triggers and binding |  [API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) / [Lambda authorizers](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html) | |   
  
-An early problem for adoption of serverless was running the environment locally for development. Most providers have a local dev enfironment now. Azure function development is now [integrated into VS Code](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp) through a plugin.  
+An early problem for adoption of serverless was running the environment locally for development. Most providers have a local dev environment now. Azure function development is now [integrated into VS Code](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp) through a plugin.  
 
 One solution to vendor lockin is to use another 3rd party.  
 [serverless](https://serverless.com/) - cli (serverless) + yaml config file w/ routes (serverless.yml). supports aws, azure, google cloud etc.   
