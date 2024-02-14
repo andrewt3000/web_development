@@ -115,10 +115,21 @@ Preference: I generally prefer to use functional rather than class [components](
 Alternatives: [Angular](https://angularjs.org/), [Vue](https://vuejs.org/) ([vuex](https://vuex.vuejs.org/) [nuxt](https://nuxtjs.org/))   
 I prefer react because of it's [one-way binding](https://reactjs.org/docs/thinking-in-react.html) rather than two-way binding which is supported in angular and vue. I also prefer using javascript inline rather than directives for control such as ngFor, ngIf (angular) or v-for, v-if (vue). Using javascript inline increase javascript fluency.     
 
-### React component libraries:  
-Most of my apps are targeted to desktop computers and not mobile, although they are mostly [responsive](https://en.wikipedia.org/wiki/Responsive_web_design).  
+### Custom styling
+By default, I try to make apps [responsive](https://en.wikipedia.org/wiki/Responsive_web_design).  
 
-Preferred:  
+Preferred:
+[tailwind css](https://tailwindcss.com/) - [utility first](https://tailwindcss.com/docs/utility-first/) css framework. see also [tailwind ui](https://tailwindui.com/) and [headless ui](https://headlessui.dev/) The advantage of tailwinds over css is that it avoids css conflicts. The advantage over component libraries is that they all look the same and tailwinds is more customizeable.         
+
+For small projects and prototypes, I typically use [standard](https://www.w3.org/Style/CSS/Overview.en.html)  [css](https://developer.mozilla.org/en-US/docs/Web/CSS). I prefer using an atomic css style. I prefer using [css grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) for layout such as [holy grail layout](https://alligator.io/css/css-grid-holy-grail-layout/). I prefer [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) for laying out items in rows or columns. I often use media queries to make responsive styles. I typically avoid css preprocessors such as sass and less. I rarely use float, [clear](https://www.w3schools.com/howto/howto_css_clearfix.asp), etc. anymore.   
+
+Alternatives:  
+[styled components](https://www.styled-components.com/) - [CSS-in-JS](https://reactjs.org/docs/faq-styling.html#what-is-css-in-js) css framework that uses [tagged templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates)     
+
+### React component libraries:  
+In some cases a react component library is the easiest way to go.  
+
+Prefered:  
 - [material UI](https://material-ui.com/)   
 
 [antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. 
@@ -132,13 +143,6 @@ Alternatives:
 - [blueprint](https://blueprintjs.com/)  
 - [element](https://element.eleme.io)  
 - [semantic ui](https://semantic-ui.com/)  
-
-### Custom styling
-I typically use [standard](https://www.w3.org/Style/CSS/Overview.en.html)  [css](https://developer.mozilla.org/en-US/docs/Web/CSS). I prefer using an atomic css style. I prefer using [css grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) for layout such as [holy grail layout](https://alligator.io/css/css-grid-holy-grail-layout/). I prefer [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) for laying out items in rows or columns. I often use media queries to make responsive styles. I typically avoid css preprocessors such as sass and less. I rarely use float, [clear](https://www.w3schools.com/howto/howto_css_clearfix.asp), etc. anymore.   
-Alternatives:  
-[styled components](https://www.styled-components.com/) - [CSS-in-JS](https://reactjs.org/docs/faq-styling.html#what-is-css-in-js) css framework that uses [tagged templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates)     
-[tailwind css](https://tailwindcss.com/) - [utility first](https://tailwindcss.com/docs/utility-first/) css framework. see also [tailwind ui](https://tailwindui.com/) and [headless ui](https://headlessui.dev/)      
-
 
 ### State Management   
 I typically use a state store for non-trivial projects. One reason is to avoid excessive [lifting of state](https://reactjs.org/docs/lifting-state-up.html) and prop drilling. Another reason to use a state store is middleware can simplify some tasks such as logging or [undo](https://redux.js.org/recipes/implementing-undo-history) functinality.  
