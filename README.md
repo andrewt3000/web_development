@@ -9,10 +9,9 @@ This document contains opinions about tools and methods of building web apps.
 [Project management](#project-management)  
 
 # Dev Tools 
-There are 2 common web architectures: 
+Historically, there are 2 common web architectures (as of 2025 most frameworks take a hybrid approach): 
 - [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end. 
 - SSR (server side rendering) frameworks that use [hydration](https://en.wikipedia.org/wiki/Hydration_(web_development)).   
-
 
 For web projects, I prefer [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for fast prototypes with a small number of contributors.  I prefer [typescript](https://www.typescriptlang.org/) for long term projects with multiple contributors.  
 
