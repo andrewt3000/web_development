@@ -107,7 +107,7 @@ ncu -u
 [Reactjs](https://reactjs.org/) ([docs]([https://reactjs.org/docs/getting-started.html](https://react.dev/learn))) - A JavaScript/typescript library for building user interfaces.  
 [chrome extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)  
 
-[Vite](https://vitejs.dev/) is an option to create react apps. ([create react app](https://create-react-app.dev/) no longer maintained)  
+[Vite](https://vitejs.dev/) is a simple option to create react apps. ([create react app](https://create-react-app.dev/) no longer maintained).  However I would typically use a framework to start a project.    
 
 Preference: I generally prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html) and to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html) I also would consider using hooks in place of [higher order components](https://reactjs.org/docs/higher-order-components.html) and [render props](https://reactjs.org/docs/render-props.html). It's recommended to not use [unneccesary effects](https://react.dev/learn/you-might-not-need-an-effect) and consider server side rendering for event handling.  
 
@@ -118,27 +118,18 @@ I prefer react because of it's [one-way binding](https://reactjs.org/docs/thinki
 By default, I try to make apps [responsive](https://en.wikipedia.org/wiki/Responsive_web_design).  
 
 Preferred:
-[tailwind css](https://tailwindcss.com/) - [utility first](https://tailwindcss.com/docs/utility-first/) css framework. see also [tailwind ui](https://tailwindui.com/) and [headless ui](https://headlessui.dev/) The advantage of tailwinds over css is that it avoids css conflicts. The advantage over component libraries is that they all look the same and tailwinds is more customizeable.         
+[tailwind css](https://tailwindcss.com/) - [utility first](https://tailwindcss.com/docs/utility-first/) css framework. 
 
-For small projects and prototypes, I typically use [standard](https://www.w3.org/Style/CSS/Overview.en.html)  [css](https://developer.mozilla.org/en-US/docs/Web/CSS). I prefer using an atomic css style. I prefer using [css grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) for layout such as [holy grail layout](https://alligator.io/css/css-grid-holy-grail-layout/). I prefer [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) for laying out items in rows or columns. I often use media queries to make responsive styles. I typically avoid css preprocessors such as sass and less. I rarely use float, [clear](https://www.w3schools.com/howto/howto_css_clearfix.asp), etc. anymore.   
+In the past, I would use [standard](https://www.w3.org/Style/CSS/Overview.en.html)  [css](https://developer.mozilla.org/en-US/docs/Web/CSS). I prefer using an atomic css style. I prefer using [css grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) for layout such as [holy grail layout](https://alligator.io/css/css-grid-holy-grail-layout/). I prefer [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) for laying out items in rows or columns. I often use media queries to make responsive styles. I typically avoid css preprocessors such as sass and less. I rarely use float, [clear](https://www.w3schools.com/howto/howto_css_clearfix.asp), etc. anymore.   
+
+Using [Shad cn](https://ui.shadcn.com/) component library to start a project is my current default.  It's a modern, simple design with themes, and light/dark mode feature.  
 
 Alternatives:  
-[styled components](https://www.styled-components.com/) - [CSS-in-JS](https://reactjs.org/docs/faq-styling.html#what-is-css-in-js) css framework that uses [tagged templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates)     
-
-### React component libraries:  
-In some cases a react component library is the easiest way to go.  
-
-Prefered:  
-- [Shad cn](https://ui.shadcn.com/) - Modern simple design with light and dark mode feature.  
-
 - [material UI](https://material-ui.com/)  - Looks like Google.  
-
 [antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. 
 - Pro: Antd is used by several chinese companies including alibaba, tencent and Baidu.   
 - Pro: Antd has a desktop oriented Table component that has scrolling features, based on [rc-table](https://github.com/react-component/table)  
 - Con: I don't like the typography (probably due to Chinese influence and their different character set). There is not as much emphasis on responsive design as other packages.  
-
-Alternatives:  
 - [react bootstrap](https://react-bootstrap.github.io/) - originally [bootstrap](https://getbootstrap.com/) was created by twitter.   
 - [chakra](https://chakra-ui.com/)  
 - [blueprint](https://blueprintjs.com/)  
