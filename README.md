@@ -132,10 +132,9 @@ Using [Shad cn](https://ui.shadcn.com/) component library to start a project is 
 
 Alternatives:  
 - [material UI](https://material-ui.com/)  - Looks like Google.  
-[antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. 
-- Pro: Antd is used by several chinese companies including alibaba, tencent and Baidu.   
-- Pro: Antd has a desktop oriented Table component that has scrolling features, based on [rc-table](https://github.com/react-component/table)  
-- Con: I don't like the typography (probably due to Chinese influence and their different character set). There is not as much emphasis on responsive design as other packages.  
+- [antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. 
+	- Pro: Antd has a desktop oriented Table component that has scrolling features, based on [rc-table](https://github.com/react-component/table)  
+	- Con: I don't like the typography (probably due to Chinese influence and their different character set). There is not as much emphasis on responsive design as other packages.  
 - [react bootstrap](https://react-bootstrap.github.io/) - originally [bootstrap](https://getbootstrap.com/) was created by twitter.   
 - [chakra](https://chakra-ui.com/)  
 - [blueprint](https://blueprintjs.com/)  
