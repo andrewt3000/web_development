@@ -13,9 +13,11 @@ Historically, there are 2 common web architectures (as of 2025 most frameworks t
 - [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end. 
 - SSR (server side rendering) frameworks that use [hydration](https://en.wikipedia.org/wiki/Hydration_(web_development)).   
 
-For web projects, I prefer [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for fast prototypes with a small number of contributors.  I prefer [typescript](https://www.typescriptlang.org/) for long term projects with multiple contributors.  
-
-I prefer using javascript on the front end because it's native to the browser (this is changing due to [web assembly](https://developer.mozilla.org/en-US/docs/WebAssembly)). I prefer [Node](https://nodejs.org) on the backend because as full stack dev I prefer to work in the same lanuage as it increases javascript fluency.  
+I prefer using [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)/[typescript](https://www.typescriptlang.org/) on the front end because it's native to the browser (this may be changing due to [web assembly](https://developer.mozilla.org/en-US/docs/WebAssembly)). In the past I have used [Node](https://nodejs.org) on the backend because as full stack dev I prefer to work in the same lanuage as it increases javascript fluency. However I have more recenlty used frameworks such as 
+- [next.js](https://nextjs.org/) - Next js is good for ssr and runs well on vercel, but vercel can be expensive.  
+- [react router](https://reactrouter.com/)  formerly [remix](https://remix.run/) - react router 7 replaces remix.
+- [tan stack](https://tanstack.com/) - Tanstack is a client side framework that includes client-side data fetching, routing, and caching.  
+- [expo](https://expo.dev/) - for mobile apps    
 
 Another consideration for choosing a backend is integration with the database. It's important that the database api is well supported, stays up to date and has good support for database features and types. Well supported ORMs are another key feature. Here are some well supported backend languages and database combinations:
 - nodejs / mongodb  
@@ -97,8 +99,6 @@ ncu
 ncu -u 
 ```
 
-# SSRs
-The [current thinking](https://twitter.com/acdlite/status/1617611126514266112) is to use a framework such as [remix](https://remix.run/), [next.js](https://nextjs.org/), or [expo](https://expo.dev/) when starting a react project.    
 
 
 # Front End
@@ -107,7 +107,7 @@ The [current thinking](https://twitter.com/acdlite/status/1617611126514266112) i
 [Reactjs](https://reactjs.org/) ([docs]([https://reactjs.org/docs/getting-started.html](https://react.dev/learn))) - A JavaScript/typescript library for building user interfaces.  
 [chrome extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)  
 
-I typically use [Vite](https://vitejs.dev/) to create react apps. ([create react app](https://create-react-app.dev/) no longer maintained)
+[Vite](https://vitejs.dev/) is an option to create react apps. ([create react app](https://create-react-app.dev/) no longer maintained)  
 
 Preference: I generally prefer to use functional rather than class [components](https://reactjs.org/docs/components-and-props.html) and to use [state hooks](https://reactjs.org/docs/hooks-state.html) and [effect hooks](https://reactjs.org/docs/hooks-effect.html) rather than [state and lifecyle](https://reactjs.org/docs/state-and-lifecycle.html) I also would consider using hooks in place of [higher order components](https://reactjs.org/docs/higher-order-components.html) and [render props](https://reactjs.org/docs/render-props.html). It's recommended to not use [unneccesary effects](https://react.dev/learn/you-might-not-need-an-effect) and consider server side rendering for event handling.  
 
@@ -129,7 +129,9 @@ Alternatives:
 In some cases a react component library is the easiest way to go.  
 
 Prefered:  
-- [material UI](https://material-ui.com/)   
+- [Shad cn](https://ui.shadcn.com/) - Modern simple design with light and dark mode feature.  
+
+- [material UI](https://material-ui.com/)  - Looks like Google.  
 
 [antd](https://ant.design/docs/react/introduce) - Desktop oriented react ui components. 
 - Pro: Antd is used by several chinese companies including alibaba, tencent and Baidu.   
