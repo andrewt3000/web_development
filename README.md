@@ -9,9 +9,10 @@ This document contains opinions about tools and methods of building web apps.
 [Project management](#project-management)  
 
 # Dev Tools 
-Historically, there are 2 common web architectures (as of 2025 most frameworks take a hybrid approach): 
-- [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end. 
-- SSR (server side rendering) frameworks that use [hydration](https://en.wikipedia.org/wiki/Hydration_(web_development)).   
+Web architectures has gone through 3 phases: 
+- 90s/2000s - Server side rendering
+- 2010s - [single page app (spa)](https://en.wikipedia.org/wiki/Single-page_application) and a [rest api](https://en.wikipedia.org/wiki/Representational_state_transfer) for the back end. 
+- 2020s - Hybrid (client and SSR (server side rendering)) frameworks that use [hydration](https://en.wikipedia.org/wiki/Hydration_(web_development)).   
 
 I prefer using [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)/[typescript](https://www.typescriptlang.org/) on the front end because it's native to the browser (this may be changing due to [web assembly](https://developer.mozilla.org/en-US/docs/WebAssembly)). In the past I have used [Node](https://nodejs.org) on the backend because as full stack dev I prefer to work in the same lanuage as it increases javascript fluency. However I have more recenlty used frameworks such as 
 - [next.js](https://nextjs.org/) - Next js is good for ssr and runs well on vercel, but vercel can be expensive.  
