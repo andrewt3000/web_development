@@ -65,8 +65,9 @@ variables are in camelCase.
 ### Source Control
 Preferred: [git](https://git-scm.com/) ([command ref](https://git-scm.com/docs)  ) - open source, distributed [version control](https://en.wikipedia.org/wiki/Version_control)     
 
-Alternative: [Mercurial](https://www.mercurial-scm.org/). git obsoletes many other open source vcs such as rcs, cvs, and subversion.   
-Best Practice: commit files with github issue number (eg. #151), if you forget leave a comment on the commit with the issue number.  
+Alternative: [Mercurial](https://www.mercurial-scm.org/). 
+
+git obsoletes many other open source vcs I have previously used such as rcs, cvs, and subversion.   
 
 ### Source control hosting
 Preferred: [github](https://github.com/)  
@@ -81,7 +82,7 @@ As an example, this is a reasonable work flow with multiple developers and an ar
 - Devs work on feature branches. 
 - When the feature is complete, devs do a PR ([pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)) to merge their branch to a test branch.  
 - Architect approves the PR, inspects and tests the code.   
-- Architect merges the test branch to main/master branch which automatically deploys to production through continous deployment process. 
+- Architect merges the test branch to main/master branch which automatically deploys to production.  
 
 ### App Versioning  
 Preferred: [semantic verisioning](https://semver.org/)   
