@@ -29,16 +29,16 @@ Another consideration for choosing a backend is integration with the database. I
 ### AI 
 Prefered AI setups:
 I typically use [Cursor](https://cursor.com/) or [Claude Code](https://www.claude.com/product/claude-code) cli.  
-
+I periodically use open ai's codex, and google's gemini cli.  
 
 ### IDE
 Preferred: [Visual Studio Code](https://code.visualstudio.com/)      
 VS Code has support for productivity features such as [emmet](https://emmet.io/) and [code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)    
 
-- Configure emmet to work in [jsx](https://stackoverflow.com/questions/56311467/configure-emmet-for-jsx-in-vscode). (Code > Preferences > Settings: Emmet: Include Languages -> javascript / javascriptreact ). 
-- Create custom code snippets (Code > Preferences > Configure User Snippets / Javascript)
+- Configure emmet to work with jsx. (Code (or Cursor) > Setting > Settings -> Extension -> Emmet: Include Languages -> javascript / javascriptreact ). 
+- Create custom code snippets (Code > Settings > Configure Snippets / Javascript)
 
-``` json
+```
 	"Print to JSON console": {
 		"prefix": "logj",
 		"body": [
