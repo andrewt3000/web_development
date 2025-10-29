@@ -25,6 +25,10 @@ Another consideration for choosing a backend is integration with the database. I
 - .net / sql server  
 - java / oracle, ibm db2  
 
+### AI 
+Prefered AI setups:
+I typically use [Cursor](https://cursor.com/) or [Claude Code](https://www.claude.com/product/claude-code) cli.  
+
 
 ### IDE
 Preferred: [Visual Studio Code](https://code.visualstudio.com/)      
