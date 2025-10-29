@@ -16,7 +16,7 @@ Web architectures has gone through 3 phases:
 
 I prefer using [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)/[typescript](https://www.typescriptlang.org/) on the front end because it's native to the browser (this may be changing due to [web assembly](https://developer.mozilla.org/en-US/docs/WebAssembly)). In the past I have used [Node](https://nodejs.org) on the backend because as full stack dev I prefer to work in the same lanuage as it increases javascript fluency. However I have more recenlty used frameworks such as 
 - [next.js](https://nextjs.org/) - Next js is good for ssr and runs well on vercel, but vercel can be expensive.  
-- [react router](https://reactrouter.com/)  formerly [remix](https://remix.run/) - react router 7 replaces remix.
+- [react router](https://reactrouter.com/)  [remix](https://remix.run/) - react router 7 can be run in framework mode and effectively replaces remix.
 - [tan stack](https://tanstack.com/) - Tanstack is a client side framework that includes client-side data fetching, routing, and caching.  
 - [expo](https://expo.dev/) - for mobile apps    
 
@@ -72,8 +72,6 @@ git obsoletes many other open source vcs I have previously used such as rcs, cvs
 ### Source control hosting
 Preferred: [github](https://github.com/)  
 Alternatives: [gitlab](https://about.gitlab.com/), [bitbucket](https://bitbucket.org/)  
-
-If you're hosting at AWS you might want to consider [Code Commit](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html) due to integration features.  
 
 ### Version control workflow
 Version control work flow is a function of the size and organization of your team as well as the stage of your project.  
@@ -185,21 +183,15 @@ npm test
 ### Node  
 [node](https://nodejs.org) - javascript runtime built on chrome v8 javascript engine. Node is frequently run as an [http server](https://nodejs.org/en/docs/guides/getting-started-guide/).     
 [n](https://github.com/tj/n) - tool to switch versions of node.  
-
 [Express](https://expressjs.com/) node library for routing http requests.  
-[Express application generator](https://expressjs.com/en/starter/generator.html) - tool to generate node express   
-Guide: [Routing](https://expressjs.com/en/guide/routing.html) [Using Middleware](http://expressjs.com/en/guide/using-middleware.html)  Middleware, in the context of express, is code between receiving a request and producing a response.  
-[4.X API](https://expressjs.com/en/api.html)  
-Node contains objects: express, request, response and router.  
-Commonly used: app.use(), router.route(), req.params, req.body    
-
-Alternatives node rest APIs:  
-- [hapi](https://hapi.dev/) - node rest api that doesn't use middleware. Express was originally designed for server side rendering, not rest apis.    
-- [loopback](https://loopback.io/doc/) - node rest api framework that uses express.   
 
 Alternatives:  
 - [graphql](https://graphql.org/) - is an alternative to rest apis. GraphQL is a specification for a typed query language similar to sql and runtime which incluces a client (eg. relay, apollo) and server. [Apollo](https://www.apollographql.com/) is a popular graphql implementation. [Relay](https://relay.dev/) is a popular graphql client.     
 - [serverless](https://serverless.com/) is a framework that can route to serverless cloud functions such as AWS lambda. Serverless cloud functions can be implemented in a variety of languages.   
+
+# Hybrid frameworks
+- [next.js](https://nextjs.org/)  
+- [react router](https://reactrouter.com/)  [remix](https://remix.run/)  
 
 # Utilities
 For date time libraries I use [Luxon](https://moment.github.io/luxon/).  
@@ -231,10 +223,13 @@ I typically implment a [jwt login].
 
 Projects may benefit from outsourcing their authentication security because the 3rd party can dedicate more resource to making sure the process is secure. For instance, if a [vulnerability](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/) is discovered, presumably they would patch it very quickly.  There is less code to write and maintain by not storing and protecting sensitive information including user's passwords, and jwt secret key. They also typically handle, change password, forgot password, social logins, and user management functions. The con is dependence on a 3rd party has risks. Their service can go down and you are powerless to resolve the problem perhaps before an important demo. They can go out of business, get bought out, or change their pricing. They can change their api and force you to change your code on their time schedule. They still run the risk of being compromised.  
 - [okta](https://www.okta.com/) / [auth0](https://auth0.com/)
+- [clerk](https://clerk.com/)  
+- [fusion auth](https://fusionauth.io/)  
+ 
 - [Azure AD](https://azure.microsoft.com/en-us/services/active-directory/)  
 - [Amazon cognito](https://aws.amazon.com/cognito/)   
 - Firebase has builtin authentication, but is integrated with the firebase ecosystem.   
-- [fusion auth](https://fusionauth.io/)  
+
 
 ### Rest API best practices
 When writing a rest API use standard http repsonses.  
