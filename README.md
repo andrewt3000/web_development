@@ -259,15 +259,17 @@ On the server side, you can search (grep) system logs. There are also many serve
 
 
 ### Transactional email services
-- Twilio [sendgrid](https://sendgrid.com/)
+- [resend](https://resend.com)
+- [postmark](https://postmarkapp.com/) - recommended by peter levels.
+- Twilio [sendgrid](https://sendgrid.com/) - previous market leader but declining.  
 - [mailgun](https://www.mailgun.com/)  
 - [mailchimp](https://mailchimp.com/help/about-transactional-email/) mandrill api    
-- [Amazon AWS SES](https://aws.amazon.com/ses/)  
+- [Amazon AWS SES](https://aws.amazon.com/ses/)
 
 # Dev Ops
 
 ### Hosting on a server 
-This is the old school way to set up an app.  
+This is the classic way to set up a node app before cloud services.  
 Manage node using [pm2](https://pm2.keymetrics.io/)    
 [nginx](https://www.nginx.com/) web server to serve front end, and [reverse proxy to node](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
 ).    
