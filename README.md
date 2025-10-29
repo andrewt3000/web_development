@@ -142,13 +142,14 @@ Alternatives:
 - [semantic ui](https://semantic-ui.com/)  
 
 ### State Management   
-I typically use a state store for non-trivial projects. One reason is to avoid excessive [lifting of state](https://reactjs.org/docs/lifting-state-up.html) and prop drilling. Another reason to use a state store is middleware can simplify some tasks such as logging or [undo](https://redux.js.org/recipes/implementing-undo-history) functinality.  
+On most projects, I typically store widely used data (such as user login info) in [react Context](https://reactjs.org/docs/context.html). 
+In the past or on a big project, I might use a state store. One reason is to avoid excessive [lifting of state](https://reactjs.org/docs/lifting-state-up.html) and prop drilling. Another reason to use a state store is middleware can simplify some tasks such as logging or [undo](https://redux.js.org/recipes/implementing-undo-history) functinality.  
 State stores typically have reducers that accept an action and the state and return the new state. Change to the state store is initiated by dispatching an action.    
-Preferred: [mobx](https://mobx.js.org/) - simple, scalable, state management.  
 
 Alternatives:  
-- [react Context](https://reactjs.org/docs/context.html) can be used with useContext hook.  
-- [redux](https://redux.js.org/) is a predictable state container for JS Apps. Has immutable state. It has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367). [See my redux cheat sheet](redux.md) Typically used with [Redux Toolkit](https://redux-toolkit.js.org/)  
+- [redux](https://redux.js.org/) is a predictable state container for JS Apps. Has immutable state. It has more boilerplate than mobx, [redux tradeoffs](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367). [See my redux cheat sheet](redux.md) Typically used with [Redux Toolkit](https://redux-toolkit.js.org/)
+- [mobx](https://mobx.js.org/) - simple, scalable, state management.  
+
 
 ### React Router
 prefered: [react router](https://reactrouter.com/) is a declarative react routing framework.
