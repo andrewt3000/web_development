@@ -140,7 +140,8 @@ Alternatives:
 - [semantic ui](https://semantic-ui.com/)  
 
 ### State Management   
-On most projects, I typically store widely used data (such as user login info) in [react Context](https://reactjs.org/docs/context.html). 
+On most projects, I typically store widely used data (such as user login info) in [react Context](https://reactjs.org/docs/context.html).  
+
 In the past or on a big project, I might use a state store. One reason is to avoid excessive [lifting of state](https://reactjs.org/docs/lifting-state-up.html) and prop drilling. Another reason to use a state store is middleware can simplify some tasks such as logging or [undo](https://redux.js.org/recipes/implementing-undo-history) functinality.  
 State stores typically have reducers that accept an action and the state and return the new state. Change to the state store is initiated by dispatching an action.    
 
@@ -283,11 +284,12 @@ Pro:
 | service | MS Azure | Amazon AWS | Other | 
 |---|---|---|----|
 | Front end file hosting | [Azure blob storage](https://azure.microsoft.com/en-us/services/storage/blobs/), [Azure cdn](https://azure.microsoft.com/en-us/services/cdn/) | S3, CloudFront | vercel, cloudflare |   
-| Node hosting | [Azure App Services](https://azure.microsoft.com/en-us/services/app-service/) | elastic beanstalk | vercel serverless functions, cloudflare workers 
+| Node hosting | [Azure App Services](https://azure.microsoft.com/en-us/services/app-service/) | elastic beanstalk | 
+| Serverless edge hosting | | | vercel (nextjs), cloudflare workers 
 | Database hosting | [Azure Sql](https://azure.microsoft.com/en-us/services/sql-database/) | RDS |  [mongo db atlas](https://cloud.mongodb.com)|  
 | Continuous deployment | Azure Devops Pipelines | CodePipeline | [Jenkins](https://www.jenkins.io/), [Circle CI](https://circleci.com), github actions |
 
-Many cdns such as [vercel](https://vercel.com/) will default sensibly for react apps. For example it will publish when you push to master, redirecting to https and rewriting urls to create deep links.  Where as using azure or amazon they will require you to specify each step.  Using azure yaml pipelines (part of [azure devops](https://dev.azure.com/)) specify each step for continuous deployment (specify the push to master trigger to build deployment, specify the build command etc.).  Azure cdn needs to be purged after changes.  Deploying a spa will require Azure cdn rules such as [redirecting http to https requests](https://docs.microsoft.com/en-us/azure/cdn/cdn-standard-rules-engine) and add a URL rewrite to deep links in the single page app.    
+Many cdns such as [vercel](https://vercel.com/) will default sensibly for react apps. For example it will publish when you push to main, redirecting to https and rewriting urls to create deep links.  Where as using azure or amazon they will require you to specify each step.  Using azure yaml pipelines (part of [azure devops](https://dev.azure.com/)) specify each step for continuous deployment (specify the push to main trigger to build deployment, specify the build command etc.).  Azure cdn needs to be purged after changes.  Deploying a spa will require Azure cdn rules such as [redirecting http to https requests](https://docs.microsoft.com/en-us/azure/cdn/cdn-standard-rules-engine) and add a URL rewrite to deep links in the single page app.    
 
 
 ### Serverless functions
